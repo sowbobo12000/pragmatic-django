@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "156075935258",
+    "project_id": "fresco-news-release"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156075935258:android:ad14562ceaa67437",
+        "android_client_info": {
+          "package_name": "com.fresconews.fresco"
+        }
+      },
+	  "oauth_client": [
+        {
+          "client_id": "156075935258-9obvkk965v93t2j91irnm3i7pvi4g2k1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fresconews.fresco",
+            "certificate_hash": "1347b4801c293d3f8858452f22d97b471b640893"
+          }
+        },
+        {
+          "client_id": "156075935258-fqct4j8fqnj6lccg45mtjilq3mb612rs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],      
+	  "api_key": [
+        {
+          "current_key": "AIzaSyBFxJM0KMjJBBQbOIzqbKsst2b_Gvj6g-c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

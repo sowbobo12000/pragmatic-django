@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.aboutfresco.AboutFrescoViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginBottom="-20dp"
+            android:background="@drawable/selector_background_fresco_cream"
+            android:clickable="true"
+            android:padding="@dimen/about_fresco_close_btn_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/onboard_close"
+            android:tint="@color/fresco_button_tint"
+            app:onClick="@{model.goBack}"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/wordmark_y"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/about_fresco_content_top_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@{model.getVersionNumber()}"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/about_fresco_version_txt_sz"
+                    app:customFont="@{@string/notaBold}"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@{model.getReleaseDate}"
+                    android:textColor="@color/black_54"
+                    android:textSize="@dimen/about_fresco_values_txt_sz"
+                    app:customFont="@{@string/robotoRegular}"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/about_fresco_content_top_margin_2"
+                    android:text="@string/credits"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/about_fresco_lbl_txt_sz"
+                    app:customFont="@{@string/robotoMedium}"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/about_fresco_content_top_margin"
+                    android:gravity="center"
+                    android:text="@{model.getCredits}"
+                    android:textColor="@color/black_54"
+                    android:textSize="@dimen/about_fresco_lbl_txt_sz"
+                    app:customFont="@{@string/robotoRegular}"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/about_fresco_content_top_margin_3"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/twitter"
+                        app:onClick="@{model.onTwitterClicked}"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/about_fresco_social_icon_hor_mar"
+                        android:layout_marginRight="@dimen/about_fresco_social_icon_hor_mar"
+                        android:src="@drawable/facebook_box"
+                        app:onClick="@{model.onFaceBookClicked}"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/instagram"
+                        app:onClick="@{model.onInstagramClicked}"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/about_fresco_content_top_margin_2"
+                    android:text="@string/fresco_dot_com"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/about_fresco_lbl_txt_sz"
+                    app:customFont="@{@string/robotoMedium}"
+                    app:onClick="@{model.goToFrescoWeb}"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/about_fresco_content_top_margin_2"
+                    android:layout_marginTop="@dimen/about_fresco_content_top_margin_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/terms_of_service_bullet_point"
+                        android:textColor="@color/black_87"
+                        android:textSize="@dimen/about_fresco_lbl_txt_sz"
+                        app:customFont="@{@string/robotoMedium}"
+                        app:onClick="@{model.goToTermsOfServices}"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:text="@string/privacy_policy"
+                        android:textColor="@color/black_87"
+                        android:textSize="@dimen/about_fresco_lbl_txt_sz"
+                        app:customFont="@{@string/robotoMedium}"
+                        app:onClick="@{model.goToPrivacyPolicies}"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

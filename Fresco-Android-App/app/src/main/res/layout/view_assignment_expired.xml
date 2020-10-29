@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/dialog_asignment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/expired_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="25dp"
+            android:text="@string/error_assignment_expired"
+            android:textColor="@color/black_54"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="end"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal"
+            tools:background="@color/fresco_green">
+
+            <Button
+                android:id="@+id/positive_button_dismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dialog_footer_buttons_left_right_margin"
+                android:layout_marginRight="@dimen/dialog_footer_buttons_left_right_margin"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/fresco_blue"
+                android:textSize="@dimen/dialog_footer_button_text_size"
+                app:customFont="@{@string/notaBold}"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

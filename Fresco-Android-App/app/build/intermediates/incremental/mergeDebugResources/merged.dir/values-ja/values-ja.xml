@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="tw__time_hours">
+        <item quantity="one">1時間</item>
+        <item quantity="other">%d時間</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1分</item>
+        <item quantity="other">%d分</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1秒</item>
+        <item quantity="other">%d秒</item>
+    </plurals>
+    <string name="Smooch_activityConversation">チャット</string>
+    <string name="Smooch_btnSend">送信</string>
+    <string name="Smooch_errorCouldNotConnect">サーバーに接続できませんでした。</string>
+    <string name="Smooch_errorSendingMessage">メッセージが送信されませんでした。タップで再試行します。</string>
+    <string name="Smooch_errorUserOffline">インターネット接続がありません。</string>
+    <string name="Smooch_messageHint">メッセージを入力…</string>
+    <string name="Smooch_startOfConversation">こちらより %1$s チームとの会話が開始されます。アプリを最大限ご利用いただけるように、いつでもご連絡いただけます。</string>
+    <string name="Smooch_welcome">何かご不明な点がありましたら、いつでもお気軽にメッセージをお送りください。ご連絡いただいたお問い合わせ、ご提案などについて、可能な限り早急に折り返しご連絡いたします。</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"ホームへ移動"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s、%2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s、%2$s、%3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"上へ移動"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"その他のオプション"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"完了"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"すべて表示"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"アプリの選択"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"OFF"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ON"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"Space"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"検索…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"検索キーワードを削除"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"検索キーワード"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"検索"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"検索キーワードを送信"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"音声検索"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"共有"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%sと共有"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"折りたたむ"</string>
+    <string name="acc_label_card_number">カード番号</string>
+    <string name="acc_label_card_number_node">%s、カード番号</string>
+    <string name="acc_label_cvc_node">%s、セキュリティコード</string>
+    <string name="acc_label_expiry_date">有効期限</string>
+    <string name="acc_label_expiry_date_node">%s、有効期限</string>
+    <string name="acc_label_zip">郵便番号</string>
+    <string name="acc_label_zip_short">郵便番号</string>
+    <string name="add_card">このアプリで購入するには、別のデビットカードまたはクレジットカードの登録が必要です。</string>
+    <string name="added">追加された %s</string>
+    <string name="address_city_required">市区町村を入力してください</string>
+    <string name="address_country_invalid">国が無効です</string>
+    <string name="address_county_required">国を入力してください</string>
+    <string name="address_label_address">住所</string>
+    <string name="address_label_address_line1">住所 (1 行目)</string>
+    <string name="address_label_address_line1_optional">住所 (1 行目、省略可)</string>
+    <string name="address_label_address_line2">住所 (2 行目)</string>
+    <string name="address_label_address_line2_optional">住所 (2 行目、省略可)</string>
+    <string name="address_label_address_optional">住所 (省略可)</string>
+    <string name="address_label_apt">アパート / マンション名など</string>
+    <string name="address_label_apt_optional">アパート / マンション名など (省略可)</string>
+    <string name="address_label_city">市</string>
+    <string name="address_label_city_optional">市区町村 (省略可)</string>
+    <string name="address_label_country">国</string>
+    <string name="address_label_county">群</string>
+    <string name="address_label_county_optional">群 (省略可)</string>
+    <string name="address_label_name">名称</string>
+    <string name="address_label_name_optional">名称 (省略可)</string>
+    <string name="address_label_phone_number">電話番号</string>
+    <string name="address_label_phone_number_optional">電話番号 (省略可)</string>
+    <string name="address_label_postal_code">郵便番号</string>
+    <string name="address_label_postal_code_optional">郵便番号 (省略可)</string>
+    <string name="address_label_postcode">郵便番号</string>
+    <string name="address_label_postcode_optional">郵便番号 (省略可)</string>
+    <string name="address_label_province">都道府県</string>
+    <string name="address_label_province_optional">都道府県 (省略可)</string>
+    <string name="address_label_region_generic">都道府県</string>
+    <string name="address_label_region_generic_optional">都道府県 (省略可)</string>
+    <string name="address_label_state">州</string>
+    <string name="address_label_state_optional">都道府県 (省略可)</string>
+    <string name="address_label_zip_code">郵便番号</string>
+    <string name="address_label_zip_code_optional">郵便番号 (省略可)</string>
+    <string name="address_label_zip_postal_code">郵便番号</string>
+    <string name="address_label_zip_postal_code_optional">郵便番号 (省略可)</string>
+    <string name="address_name_required">名前を入力してください</string>
+    <string name="address_phone_number_required">電話番号を入力してください</string>
+    <string name="address_postal_code_invalid">郵便番号が無効です</string>
+    <string name="address_postcode_invalid">郵便番号が無効です</string>
+    <string name="address_province_required">都道府県を入力してください</string>
+    <string name="address_region_generic_required">都道府県を入力してください</string>
+    <string name="address_required">住所を入力してください</string>
+    <string name="address_shipping_address">配送先住所</string>
+    <string name="address_state_required">都道府県を入力してください</string>
+    <string name="address_zip_invalid">郵便番号が無効です。</string>
+    <string name="address_zip_postal_invalid">郵便番号が無効です</string>
+    <string name="articles_list_fragment_error_message">記事を取得できませんでした</string>
+    <string name="articles_list_fragment_no_articles_found">記事が見つかりません</string>
+    <string name="articles_search_results_list_fragment_contact_us">お問い合わせ</string>
+    <string name="articles_search_results_list_fragment_error_message">問題が発生しました</string>
+    <string name="articles_search_results_list_fragment_no_articles_found">結果がありません</string>
+    <string name="attachment_add_menu">添付ファイル</string>
+    <string name="attachment_select_source_choose_existing">既存の画像を選択</string>
+    <string name="attachment_select_source_new_photo">写真を撮る</string>
+    <string name="attachment_upload_error_cancel">キャンセル</string>
+    <string name="attachment_upload_error_file_already_added">ファイルは既に追加されています</string>
+    <string name="attachment_upload_error_file_not_found">ファイルが見つかりません</string>
+    <string name="attachment_upload_error_file_too_big">添付ファイルの最大サイズは%sです</string>
+    <string name="attachment_upload_error_try_again">もう一度やり直してください</string>
+    <string name="attachment_upload_error_upload_failed">添付ファイルをアップロードできませんでした</string>
+    <string name="becs_mandate_acceptance">
+    お客様の銀行情報を提供し、この支払いを確認することで、お客様はこの口座引き落とし依頼およびダイレクトデビットリクエスト利用規約
+    に同意し、
+    Stripe Payments Australia Pty Ltd ACN 160 180 343 Direct Debit User ID number 507156
+    (「Stripe」) が、%1$s (「加盟店」) の代理として、加盟店から別途連絡された金額について、Bulk
+    Electronic Clearing System (BECS 振替) を通して口座引き落としを行うことを承認するものとします。お客様が上
+    記の口座の口座名義人または承認された署名者であることを、
+    お客様は証明するものとします。
+    </string>
+    <string name="becs_widget_account_number">アカウント番号</string>
+    <string name="becs_widget_account_number_required">アカウント番号を入力してください。</string>
+    <string name="becs_widget_bsb">BSB</string>
+    <string name="becs_widget_bsb_incomplete">入力した BSB コードに不備があります。</string>
+    <string name="becs_widget_bsb_invalid">入力した BSB コードが無効です。</string>
+    <string name="becs_widget_email">メールアドレス</string>
+    <string name="becs_widget_email_required">メールアドレスを入力してください。</string>
+    <string name="becs_widget_name">名前</string>
+    <string name="becs_widget_name_required">名前を入力してください。</string>
+    <string name="card_ending_in">%1$s - %2$s</string>
+    <string name="categories_list_fragment_error_message">カテゴリを取得できませんでした</string>
+    <string name="categories_list_fragment_no_categories_found">カテゴリが見つかりません</string>
+    <string name="close">閉じる</string>
+    <string name="com_facebook_device_auth_instructions">スマートフォンまたはコンピュータから&lt;b>facebook.com/device&lt;/b>にアクセスし、次のコードを入力してください。</string>
+    <string name="com_facebook_image_download_unknown_error">画像のダウンロード中に予期しないエラーが発生しました。</string>
+    <string name="com_facebook_internet_permission_error_message">WebViewログインにはINTERNET権限が必要です</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifestエラー</string>
+    <string name="com_facebook_like_button_liked">いいね！済み</string>
+    <string name="com_facebook_like_button_not_liked">いいね！</string>
+    <string name="com_facebook_loading">読み込み中…</string>
+    <string name="com_facebook_loginview_cancel_action">キャンセル</string>
+    <string name="com_facebook_loginview_log_in_button">ログイン</string>
+    <string name="com_facebook_loginview_log_in_button_long">Facebookでログイン</string>
+    <string name="com_facebook_loginview_log_out_action">ログアウト</string>
+    <string name="com_facebook_loginview_log_out_button">ログアウト</string>
+    <string name="com_facebook_loginview_logged_in_as">次のユーザーとしてログイン中: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Facebookを使用してログイン中</string>
+    <string name="com_facebook_send_button_text">送信</string>
+    <string name="com_facebook_share_button_text">シェア</string>
+    <string name="com_facebook_tooltip_default">新機能！アプリと共有する情報をコントロールできます。</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"有効にする"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行には、Google Play開発者サービスの有効化が必要です。"</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play開発者サービスの有効化"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"インストール"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」の実行には Google Play 開発者サービスが必要ですが、お使いの端末にはインストールされていません。"</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play開発者サービスの入手"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Google Play 開発者サービスの利用"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play開発者サービスのエラー"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」で Google Play 開発者サービスに問題が発生しています。もう一度お試しください。"</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"「<ns1:g id="APP_NAME">%1$s</ns1:g>」の実行には Google Play 開発者サービスが必要ですが、お使いの端末ではサポートされていません。"</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"更新"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行にはGoogle Play開発者サービスの更新が必要です。"</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play開発者サービスの更新"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>の実行にはGoogle Play開発者サービスが必要ですが、このサービスは現在更新中です。"</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Google Play開発者サービスの新しいバージョンが必要です。まもなく自動更新されます。"</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"スマートフォンで開く"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"ログイン"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Googleにログイン"</string>
+    <string name="contact_fragment_description_hint">説明</string>
+    <string name="contact_fragment_email_hint">メール</string>
+    <string name="contact_fragment_email_validation_error">誤ったメールアドレス</string>
+    <string name="contact_fragment_request_subject">アプリチケット</string>
+    <string name="contact_fragment_send_button_label">送信</string>
+    <string name="contact_fragment_title">お問い合わせ</string>
+    <string name="delete_payment_method">支払い方法を削除しますか？</string>
+    <string name="delete_payment_method_prompt_title">支払い方法を削除しますか？</string>
+    <string name="expiry_date_hint">MM/YY</string>
+    <string name="expiry_label_short">有効期限</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"その他"</string>
+    <string name="fpx_bank_offline">%s - オフライン</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="help_search_no_results_label">検索結果なし</string>
+    <string name="help_see_all_articles_label">記事をすべて表示</string>
+    <string name="help_see_all_n_articles_label">%d件の記事をすべて表示</string>
+    <string name="invalid_card_number">カードの番号が無効です。</string>
+    <string name="invalid_cvc">カードのセキュリティコードが無効です。</string>
+    <string name="invalid_expiry_month">カードの有効期限の月が無効です。</string>
+    <string name="invalid_expiry_year">カードの有効期限の年が無効です。</string>
+    <string name="invalid_shipping_information">配送先住所が無効です</string>
+    <string name="invalid_zip">郵便番号の入力に不備があります。</string>
+    <string name="messenger_send_button_text">送信</string>
+    <string name="network_activity_no_connectivity">接続がありません</string>
+    <string name="no_payment_methods">支払い方法が指定されていません。</string>
+    <string name="payment_method_add_new_card">新しいカードを追加...</string>
+    <string name="payment_method_add_new_fpx">銀行口座を選択 (FPX)...</string>
+    <string name="price_free">無料</string>
+    <string name="rate_my_app_dialog_dismiss_action_label">今後このメッセージを表示しない</string>
+    <string name="rate_my_app_dialog_feedback_description_label">当社ではこのアプリをさらに改善したいと考えております。お客様が経験された問題点をお知らせください。</string>
+    <string name="rate_my_app_dialog_feedback_device_api_version">OS API: %1$d</string>
+    <string name="rate_my_app_dialog_feedback_device_memory">メモリ: %1$sMB / %2$sMB</string>
+    <string name="rate_my_app_dialog_feedback_device_model">モデル: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_device_name">デバイス: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_device_os_version">OSバージョン: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_request_subject">アプリフィードバック</string>
+    <string name="rate_my_app_dialog_feedback_send_error_no_connectivity_toast">接続がありません</string>
+    <string name="rate_my_app_dialog_feedback_send_error_toast">エラーが発生しました。もう一度やり直してください。</string>
+    <string name="rate_my_app_dialog_feedback_send_success_toast">お問い合わせいただきありがとうございます</string>
+    <string name="rate_my_app_dialog_feedback_title_label">それは残念です</string>
+    <string name="rate_my_app_dialog_negative_action_label">いいえ、不満なので評価を送ります</string>
+    <string name="rate_my_app_dialog_positive_action_label">はい、アプリを評価します</string>
+    <string name="rate_my_app_dialog_title_label">当社のアプリにご満足されていますか?</string>
+    <string name="rate_my_app_dialogue_feedback_cancel_button_label">キャンセル</string>
+    <string name="rate_my_app_dialogue_feedback_issue_hint">問題を説明してください</string>
+    <string name="rate_my_app_dialogue_feedback_send_button_label">フィードバックを送る</string>
+    <string name="removed">削除された %s</string>
+    <string name="request_list_activity_title">マイチケット</string>
+    <string name="request_list_fragment_error_message">チケットを取得できませんでした</string>
+    <string name="request_list_fragment_no_requests">現在オープンのチケットはありません</string>
+    <string name="request_view_comment_entry_hint">コメント</string>
+    <string name="retry_view_button_label">再試行</string>
+    <string name="row_request_unread_indicator_alt">未読のコメントがあることを示すアイコン</string>
+    <string msgid="146198913615257606" name="search_menu_title">"検索"</string>
+    <string name="sections_list_fragment_error_message">セクションを取得できませんでした</string>
+    <string name="sections_list_fragment_no_sections_found">セクションが見つかりません</string>
+    <string name="secure_checkout">安全なチェックアウト</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stripe_3ds2_brand_amex">American Express</string>
+    <string name="stripe_3ds2_brand_discover">Discover</string>
+    <string name="stripe_3ds2_brand_mastercard">Mastercard</string>
+    <string name="stripe_3ds2_brand_visa">Visa</string>
+    <string name="stripe_3ds2_bzv_issuer_image_description">発行会社のイメージ</string>
+    <string name="stripe_3ds2_bzv_payment_system_image_description">決済システムのイメージ</string>
+    <string name="stripe_3ds2_czv_whitelist_no_label">いいえ</string>
+    <string name="stripe_3ds2_czv_whitelist_yes_label">はい</string>
+    <string name="stripe_3ds2_hzv_cancel_label">キャンセル</string>
+    <string name="stripe_3ds2_hzv_header_label">セキュアな Checkout</string>
+    <string name="stripe_3ds2_processing">処理中\u2026</string>
+    <string name="support_activity_title">サポート</string>
+    <string name="support_activity_unable_to_contact_support">接続できません</string>
+    <string name="support_contact_menu">問い合わせ</string>
+    <string name="support_conversations_menu">会話</string>
+    <string name="support_list_search_hint">何をお探しでしょうか?</string>
+    <string name="title_add_a_card">カードを追加</string>
+    <string name="title_add_an_address">住所を設定してください</string>
+    <string name="title_bank_account">銀行口座</string>
+    <string name="title_payment_method">支払い方法</string>
+    <string name="title_select_shipping_method">配送方法を選択してください</string>
+    <string name="tw__allow_btn_txt">許可</string>
+    <string name="tw__composer_hint">いまどうしてる?</string>
+    <string name="tw__cta_text">Vineで開く</string>
+    <string name="tw__install">インストール</string>
+    <string name="tw__like_tweet">ツイートにいいねする</string>
+    <string name="tw__liked_tweet">いいねを取り消す</string>
+    <string name="tw__loading_tweet">ツイートを読込中</string>
+    <string name="tw__login_btn_txt">Twitterにログイン</string>
+    <string name="tw__max_tweet_chars">140</string>
+    <string name="tw__not_now_btn_txt">今はしない</string>
+    <string name="tw__pause">一時停止</string>
+    <string name="tw__play">再生</string>
+    <string name="tw__post_tweet">ツイート</string>
+    <string name="tw__relative_date_format_long">y/M/d</string>
+    <string name="tw__relative_date_format_short">M月d日</string>
+    <string name="tw__replay">リプレイ</string>
+    <string name="tw__retweeted_by_format">%1$sさんがリツイート</string>
+    <string name="tw__share_content_format">\@%1$sさんのツイートをチェックしましょう　 https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_email_desc">あなたのTwitterアカウント\@%2$sに登録されているメールアドレスへのアクセスを%1$sに許可します。%1$sはそのメールアドレスをプライバシーポリシーに従って使用できるようになります。たとえば、%1$sはそのアドレス宛に更新情報などを送信することができます。</string>
+    <string name="tw__share_email_title">メールアドレスを共有</string>
+    <string name="tw__share_subject_format">%1$s (\@%2$s)さんからのツイート</string>
+    <string name="tw__share_tweet">ツイートを共有</string>
+    <string name="tw__tweet_content_description">%1$s、 %2$s、 %3$s。</string>
+    <string name="tw__tweet_media">画像/動画を投稿</string>
+    <string name="view_article_attachments_error">添付ファイルを取得できませんでした</string>
+    <string name="view_article_seperator">\u2022</string>
+    <string name="view_request_agent_avatar_imageview_alt">エージェントのアバター</string>
+    <string name="view_request_load_comments_error">コメントを読み込むことができませんでした</string>
+    <string name="view_request_send_comment_error">コメントを送信できませんでした</string>
+</resources>

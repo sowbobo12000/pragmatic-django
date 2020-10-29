@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="tw__time_hours">
+        <item quantity="one">1s</item>
+        <item quantity="other">%ds</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1d</item>
+        <item quantity="other">%dd</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1s</item>
+        <item quantity="other">%d</item>
+    </plurals>
+    <string name="Smooch_activityConversation">Mesajlar</string>
+    <string name="Smooch_btnChangeCard">Kredi Kartını Değiştirin</string>
+    <string name="Smooch_btnPayNow">Şimdi Öde</string>
+    <string name="Smooch_btnPaymentCompleted">Ödeme tamamlandı</string>
+    <string name="Smooch_btnSend">Gönder</string>
+    <string name="Smooch_creditErrorMessage">Ödeme yaparken bir sorun oluştu, tekrar deneyin veya başka bir kart kullanın</string>
+    <string name="Smooch_creditMessage">%2$s için, %1$s tutarını ödemek üzere kredi kartı bilginizi giriniz</string>
+    <string name="Smooch_errorCouldNotConnect">Sunucuya ulaşılamadı.</string>
+    <string name="Smooch_errorSendingMessage">Mesaj iletilemedi, tekrar denemek için hafifçe tekrar basın.</string>
+    <string name="Smooch_errorUserOffline">Internet bağlantısı bulunamadı.</string>
+    <string name="Smooch_messageHint">Mesajınızı yazın</string>
+    <string name="Smooch_savedCreditMessage">Birazdan güvenli bir şekilde %2$s için, %1$s tutarını ödeyeceksiniz</string>
+    <string name="Smooch_startOfConversation">%1$s takımı ile mesajlaşmaya buradan başlayabilirsiniz. Uygulamayı en iyi şekilde kullanabilmeniz için size buradan yardımcı olmaya çalışacağız.</string>
+    <string name="Smooch_welcome">Bize istediğiniz konuda mesaj yazabilirsiniz. Size en kısa zamanda geri dönüş yapacağız.</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Ana ekrana git"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Yukarı git"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Diğer seçenekler"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Bitti"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Tümünü göster"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Bir uygulama seçin"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"KAPAT"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"AÇ"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"sil"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Üst Karakter+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"boşluk"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menü+"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Ara…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Sorguyu temizle"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Arama sorgusu"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Ara"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Sorguyu gönder"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Sesli arama"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Şununla paylaş"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s ile paylaş"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Daralt"</string>
+    <string name="acc_label_card_number">Kart numarası</string>
+    <string name="acc_label_card_number_node">%s, Kart numarası</string>
+    <string name="acc_label_cvc_node">%s, CVC</string>
+    <string name="acc_label_expiry_date">Son Kullanma Tarihi</string>
+    <string name="acc_label_expiry_date_node">%s, Son kullanma tarihi</string>
+    <string name="acc_label_zip">Posta Kodu</string>
+    <string name="acc_label_zip_short">Posta kodu</string>
+    <string name="add_card">Bu uygulama içinden satın alma yapmak için yeni banka kartı veya kredi kartı ekleyin.</string>
+    <string name="added">%s Eklendi</string>
+    <string name="address_city_required">Lütfen şehrinizi girin</string>
+    <string name="address_country_invalid">Ülkeniz geçersiz</string>
+    <string name="address_county_required">Lütfen ülkenizi girin</string>
+    <string name="address_label_address">Adres</string>
+    <string name="address_label_address_line1">Adres satırı 1</string>
+    <string name="address_label_address_line1_optional">Adres satırı 1</string>
+    <string name="address_label_address_line2">Adres satırı 2</string>
+    <string name="address_label_address_line2_optional">Adres satırı 2 (steğe bağlı)</string>
+    <string name="address_label_address_optional">Adres (isteğe bağlı)</string>
+    <string name="address_label_apt">Apt.</string>
+    <string name="address_label_apt_optional">Apt. (isteğe bağlı)</string>
+    <string name="address_label_city">Şehir</string>
+    <string name="address_label_city_optional">Şehir (isteğe bağlı)</string>
+    <string name="address_label_country">Ülke</string>
+    <string name="address_label_county">Ülke</string>
+    <string name="address_label_county_optional">Ülke (isteğe bağlı)</string>
+    <string name="address_label_name">Adı</string>
+    <string name="address_label_name_optional">Adı (isteğe bağlı)</string>
+    <string name="address_label_phone_number">Telefon numarası</string>
+    <string name="address_label_phone_number_optional">Telefon numarası (isteğe bağlı)</string>
+    <string name="address_label_postal_code">Posta kodu</string>
+    <string name="address_label_postal_code_optional">Posta kodu (isteğe bağlı)</string>
+    <string name="address_label_postcode">Posta kodu</string>
+    <string name="address_label_postcode_optional">Posta kodu (isteğe bağlı)</string>
+    <string name="address_label_province">İlçe</string>
+    <string name="address_label_province_optional">İlçe (isteğe bağlı)</string>
+    <string name="address_label_region_generic">İl / İlçe / Bölge</string>
+    <string name="address_label_region_generic_optional">İl / İlçe / Bölge (isteğe bağlı)</string>
+    <string name="address_label_state">Eyalet</string>
+    <string name="address_label_state_optional">Eyalet (isteğe bağlı)</string>
+    <string name="address_label_zip_code">Posta kodu</string>
+    <string name="address_label_zip_code_optional">Posta kodu (isteğe bağlı)</string>
+    <string name="address_label_zip_postal_code">Posta kodu</string>
+    <string name="address_label_zip_postal_code_optional">Posta kodu (isteğe bağlı)</string>
+    <string name="address_name_required">Lütfen adınızı girin</string>
+    <string name="address_phone_number_required">Lütfen telefon numaranızı girin</string>
+    <string name="address_postal_code_invalid">Posta kodunuz geçersiz</string>
+    <string name="address_postcode_invalid">Posta kodunuz geçersiz</string>
+    <string name="address_province_required">Lütfen ilçenizi girin</string>
+    <string name="address_region_generic_required">Lütfen İl/İlçe/Bölgenizi girin</string>
+    <string name="address_required">Lütfen adresinizi girin</string>
+    <string name="address_shipping_address">Gönderi Adresi</string>
+    <string name="address_state_required">Lütfen eyaletinizi girin</string>
+    <string name="address_zip_invalid">Posta kodunuz geçersiz.</string>
+    <string name="address_zip_postal_invalid">Posta kodunuz geçersiz</string>
+    <string name="articles_list_fragment_error_message">Makaleler alınamadı</string>
+    <string name="articles_list_fragment_no_articles_found">Makale bulunamadı</string>
+    <string name="articles_search_results_list_fragment_contact_us">Bizimle iletişime geçin</string>
+    <string name="articles_search_results_list_fragment_error_message">Bir sorun oluştu</string>
+    <string name="articles_search_results_list_fragment_no_articles_found">Hiçbir sonuç bulunamadı</string>
+    <string name="attachment_add_menu">Ekler</string>
+    <string name="attachment_select_source_choose_existing">Mevcut birini seçin</string>
+    <string name="attachment_select_source_new_photo">Yeni fotoğraf çekin</string>
+    <string name="attachment_upload_error_cancel">İptal</string>
+    <string name="attachment_upload_error_file_already_added">Dosya zaten eklendi</string>
+    <string name="attachment_upload_error_file_not_found">Dosya bulunamadı</string>
+    <string name="attachment_upload_error_file_too_big">Maksimum ek boyutu %s</string>
+    <string name="attachment_upload_error_try_again">Tekrar deneyin</string>
+    <string name="attachment_upload_error_upload_failed">Ek yüklenemedi</string>
+    <string name="becs_mandate_acceptance">
+    Banka hesap bilgilerinizi sağlayarak ve bu ödemeyi onaylayarak, bu Otomatik
+    Ödeme Talebini ve Otomatik Ödeme Talebi hizmet sözleşmesini kabul etmiş
+    olursunuz ve Otomatik Ödeme 507156 Kullanıcı Kimlikli Stripe Payments
+    Australia Pty Ltd ACN 160 180 343 (\"Stripe\")
+    şirketine %1$s (\"Satıcı\") adına, Satıcı tarafından size iletilen herhangi bir tutarı
+    Toplu Elektronik Takas Sistemi (BECS) aracılığıyla hesabınızı borçlandırması için
+    yetki verirsiniz. Yukarıda listelenen hesabın sahibi veya yetkili imza sahibi olduğunuzu onaylarsınız.
+    </string>
+    <string name="becs_widget_account_number">Hesap numarası</string>
+    <string name="becs_widget_account_number_required">Hesap numaranız gereklidir.</string>
+    <string name="becs_widget_bsb">BSB</string>
+    <string name="becs_widget_bsb_incomplete">Eksik BSB girdiniz.</string>
+    <string name="becs_widget_bsb_invalid">Geçersiz BSB girdiniz.</string>
+    <string name="becs_widget_email">E-posta Adresi</string>
+    <string name="becs_widget_email_required">E-posta adresiniz gereklidir.</string>
+    <string name="becs_widget_name">Ad</string>
+    <string name="becs_widget_name_required">Adınız gereklidir.</string>
+    <string name="categories_list_fragment_error_message">Kategoriler alınamadı</string>
+    <string name="categories_list_fragment_no_categories_found">Kategori bulunamadı</string>
+    <string name="close">Kapat</string>
+    <string name="com_facebook_device_auth_instructions">Akıllı telefonunda veya bilgisayarında &lt;b>facebook.com/device&lt;/b> adresine git ve bu kodu gir:</string>
+    <string name="com_facebook_image_download_unknown_error">Görsel indirilirken beklenmeyen hata.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView girişi için İNTERNET izni gerekir</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest Hatası</string>
+    <string name="com_facebook_like_button_liked">Beğendin</string>
+    <string name="com_facebook_like_button_not_liked">Beğen</string>
+    <string name="com_facebook_loading">Yükleniyor…</string>
+    <string name="com_facebook_loginview_cancel_action">İptal</string>
+    <string name="com_facebook_loginview_log_in_button">Giriş yap</string>
+    <string name="com_facebook_loginview_log_in_button_long">Facebook ile giriş yap</string>
+    <string name="com_facebook_loginview_log_out_action">Çıkış yap</string>
+    <string name="com_facebook_loginview_log_out_button">Çıkış yap</string>
+    <string name="com_facebook_loginview_logged_in_as">Giriş yapan: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Facebook ile giriş yapıldı</string>
+    <string name="com_facebook_send_button_text">Gönder</string>
+    <string name="com_facebook_share_button_text">Paylaş</string>
+    <string name="com_facebook_tooltip_default">Yeni! Kontrol sende. Uygulamalarla paylaşmak istediğin bilgileri seç.</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Etkinleştir"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Google Play hizmetlerini etkinleştirmezseniz <ns1:g id="APP_NAME">%1$s</ns1:g> çalışmaz."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play hizmetlerini etkinleştirin"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Yükle"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>, şu anda cihazınızda bulunmayan Google Play hizmetleri olmadan çalışmaz."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play hizmetlerini edinin"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Google Play hizmetlerinin kullanılabilirliği"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play Hizmetleri hatası"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g>, Google Play hizmetleriyle ilgili sorun yaşıyor. Lütfen tekrar deneyin."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>, Google Play hizmetleri olmadan çalışmaz ve bu hizmetler cihazınız tarafından desteklenmiyor."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Güncelle"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"Google Play hizmetlerini güncellemezseniz <ns1:g id="APP_NAME">%1$s</ns1:g> çalışmayacak."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play hizmetlerini güncelleyin"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>, şu anda güncellenmekte olan Google Play hizmetleri olmadan çalışmaz."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Google Play hizmetlerinin yeni sürümü gerekiyor. Kendisini kısa süre içinde güncelleyecektir."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Telefonda aç"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Oturum aç"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Google\'da oturum aç"</string>
+    <string name="contact_fragment_description_hint">Açıklama</string>
+    <string name="contact_fragment_email_hint">E-posta</string>
+    <string name="contact_fragment_email_validation_error">Yanlış e-posta adresi</string>
+    <string name="contact_fragment_request_subject">Uygulama kaydı</string>
+    <string name="contact_fragment_send_button_label">Gönder</string>
+    <string name="contact_fragment_title">Bizimle iletişime geçin</string>
+    <string name="delete_payment_method">Ödeme Metodu Silinsin mi?</string>
+    <string name="delete_payment_method_prompt_title">Ödeme yöntemi silinsin mi?</string>
+    <string name="expiry_date_hint">AA/YY</string>
+    <string name="expiry_label_short">Son kullanma</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Çeşitli"</string>
+    <string name="fpx_bank_offline">%s - Çevrimdışı</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="help_search_no_results_label">Şunun için sonuç bulunamadı:</string>
+    <string name="help_see_all_articles_label">Tüm makaleleri görüntüle</string>
+    <string name="help_see_all_n_articles_label">%d makalenin tümünü görüntüle</string>
+    <string name="invalid_card_number">Kart numaranız geçersiz.</string>
+    <string name="invalid_cvc">Kartınızın güvenlik kodu geçersiz</string>
+    <string name="invalid_expiry_month">Kartınızın son kullanma ayı geçersiz.</string>
+    <string name="invalid_expiry_year">Kartınızın son kullanma yılı geçersiz.</string>
+    <string name="invalid_shipping_information">Geçersiz Gönderi Adresi</string>
+    <string name="invalid_zip">Posta kodunuz eksik</string>
+    <string name="messenger_send_button_text">Gönder</string>
+    <string name="network_activity_no_connectivity">Bağlantı yok</string>
+    <string name="no_payment_methods">Ödeme metodu yok</string>
+    <string name="payment_method_add_new_card">Yeni kart ekle...</string>
+    <string name="payment_method_add_new_fpx">Banka Hesabı Seçin (FPX)...</string>
+    <string name="price_free">Ücretsiz</string>
+    <string name="rate_my_app_dialog_dismiss_action_label">Bana tekrar sorma</string>
+    <string name="rate_my_app_dialog_feedback_description_label">Size daha iyi hizmet sunmayı hedefliyoruz. Lütfen yaşadığınız sorunları bize bildirin.</string>
+    <string name="rate_my_app_dialog_feedback_device_api_version">OS API: %1$d</string>
+    <string name="rate_my_app_dialog_feedback_device_memory">Bellek: %1$s MB / %2$s MB</string>
+    <string name="rate_my_app_dialog_feedback_device_model">Model: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_device_name">Cihaz: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_device_os_version">OS sürümü: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_request_subject">Uygulama geri bildirimi</string>
+    <string name="rate_my_app_dialog_feedback_send_error_no_connectivity_toast">Bağlantı yok</string>
+    <string name="rate_my_app_dialog_feedback_send_error_toast">Bir hata oluştu, lütfen tekrar deneyin.</string>
+    <string name="rate_my_app_dialog_feedback_send_success_toast">Bizimle iletişime geçtiğiniz için teşekkür ederiz</string>
+    <string name="rate_my_app_dialog_feedback_title_label">Bunun için üzgünüz</string>
+    <string name="rate_my_app_dialog_negative_action_label">Hayırsa, geri bildirim gönderin</string>
+    <string name="rate_my_app_dialog_positive_action_label">Evetse, uygulamamızı değerlendirin</string>
+    <string name="rate_my_app_dialog_title_label">Uygulamamızdan memnun musunuz?</string>
+    <string name="rate_my_app_dialogue_feedback_cancel_button_label">İptal</string>
+    <string name="rate_my_app_dialogue_feedback_issue_hint">Sorununuzu açıklayın</string>
+    <string name="rate_my_app_dialogue_feedback_send_button_label">Geri bildirimi gönder</string>
+    <string name="removed">çıkartıldı</string>
+    <string name="request_list_activity_title">Kayıtlarım</string>
+    <string name="request_list_fragment_error_message">Kayıtlar alınamadı</string>
+    <string name="request_list_fragment_no_requests">Şu anda açık kayıt yok</string>
+    <string name="request_view_comment_entry_hint">Yorum</string>
+    <string name="retry_view_button_label">Yeniden dene</string>
+    <string name="row_request_unread_indicator_alt">Okunmamış yorumlar olduğunu gösteren simge</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Ara"</string>
+    <string name="sections_list_fragment_error_message">Bölümler alınamadı</string>
+    <string name="sections_list_fragment_no_sections_found">Hiçbir bölüm bulunamadı</string>
+    <string name="secure_checkout">Güvenli Ödeme</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stripe_3ds2_brand_amex">American Express</string>
+    <string name="stripe_3ds2_brand_discover">Keşfet</string>
+    <string name="stripe_3ds2_brand_mastercard">Mastercard</string>
+    <string name="stripe_3ds2_brand_visa">Visa</string>
+    <string name="stripe_3ds2_bzv_issuer_image_description">Verenin Görseli</string>
+    <string name="stripe_3ds2_bzv_payment_system_image_description">Ödeme Sistemi Görseli</string>
+    <string name="stripe_3ds2_czv_whitelist_no_label">Hayır</string>
+    <string name="stripe_3ds2_czv_whitelist_yes_label">Evet</string>
+    <string name="stripe_3ds2_hzv_cancel_label">İptal</string>
+    <string name="stripe_3ds2_hzv_header_label">Güvenli Ödeme</string>
+    <string name="stripe_3ds2_processing">İşleniyor/u2026</string>
+    <string name="support_activity_title">Destek</string>
+    <string name="support_activity_unable_to_contact_support">Bağlantı kurulamıyor</string>
+    <string name="support_contact_menu">İletişim</string>
+    <string name="support_conversations_menu">Görüşmeler</string>
+    <string name="support_list_search_hint">Size nasıl yardımcı olabiliriz?</string>
+    <string name="title_add_a_card">Kart Ekle</string>
+    <string name="title_add_an_address">Adresi Ayarla</string>
+    <string name="title_bank_account">Banka Hesabı</string>
+    <string name="title_payment_method">Ödeme Metodu</string>
+    <string name="title_select_shipping_method">Gönderi Metodunu Seçin</string>
+    <string name="tw__allow_btn_txt">İzin ver</string>
+    <string name="tw__composer_hint">Neler oluyor?</string>
+    <string name="tw__cta_text">Vine\'da aç</string>
+    <string name="tw__install">Yükle</string>
+    <string name="tw__like_tweet">Tweet Beğen</string>
+    <string name="tw__liked_tweet">Beğenmekten Vazgeç</string>
+    <string name="tw__loading_tweet">Tweet Yükleniyor</string>
+    <string name="tw__login_btn_txt">Twitter ile giriş yap</string>
+    <string name="tw__max_tweet_chars">140</string>
+    <string name="tw__not_now_btn_txt">Şu an değil</string>
+    <string name="tw__pause">duraklat</string>
+    <string name="tw__play">oynat</string>
+    <string name="tw__post_tweet">Tweet</string>
+    <string name="tw__relative_date_format_long">dd.MM.y</string>
+    <string name="tw__relative_date_format_short">d MMM</string>
+    <string name="tw__replay">tekrar oynat</string>
+    <string name="tw__retweeted_by_format">%1$s tarafından Retweetlendi</string>
+    <string name="tw__share_content_format">\@%1$s adlı kişinin Tweetini incele: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_email_desc">Twitter hesabın \@%2$s ile ilişkilendirilmiş e-posta adresine erişmesi için %1$s uygulamasına izin ver. Böylece %1$s bu e-posta adresini kendi gizlilik politikası kapsamında kullanabilir. Örneğin, %1$s bu adres üzerinden sana en yeni haberleri ve diğer bilgileri gönderebilir.</string>
+    <string name="tw__share_email_title">E-posta adresini paylaş</string>
+    <string name="tw__share_subject_format">Tweet gönderen: %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Tweet Paylaş</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">Tweet Medyası</string>
+    <string name="view_article_attachments_error">Ekler alınamadı</string>
+    <string name="view_article_seperator">\u2022</string>
+    <string name="view_request_agent_avatar_imageview_alt">Temsilcinin avatarı</string>
+    <string name="view_request_load_comments_error">Yorumlar yüklenemedi</string>
+    <string name="view_request_send_comment_error">Yorum gönderilemedi</string>
+</resources>

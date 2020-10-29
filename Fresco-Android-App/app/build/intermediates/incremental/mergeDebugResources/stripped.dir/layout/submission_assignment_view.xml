@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp">
+
+    <RadioButton
+        android:id="@+id/radio_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Hello World"/>
+
+    <TextView
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:paddingLeft="4dp"
+        android:textColor="@color/black"
+        android:id="@+id/assignment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/ic_help"
+        android:drawableLeft="@drawable/ic_help"
+        android:gravity="center_vertical"
+        tools:text="Hello World" />
+
+</LinearLayout>

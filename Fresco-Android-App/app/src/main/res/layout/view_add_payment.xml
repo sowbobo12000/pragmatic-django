@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.settings.dialogs.AddPaymentDialogViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/btn_debit_card"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                app:onClick="@{model.showDebitCard}">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/debit_card"
+                    android:textAllCaps="true"/>
+
+                <View
+                    android:id="@+id/view_footer_debit_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/selector_background_blue"
+                    android:visibility="@{model.showAccount ? View.GONE : View.VISIBLE}"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_bank_account"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                app:onClick="@{model.showBankAccount}">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/bank_account"
+                    android:textAllCaps="true"/>
+
+                <View
+                    android:id="@+id/view_footer_bank_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/fresco_blue"
+                    android:visibility="@{model.showAccount ? View.VISIBLE : View.GONE}"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/debit_card_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_layout"
+            android:orientation="vertical"
+            android:visibility="@{model.showAccount ? View.GONE : View.VISIBLE}">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="172dp"
+                android:background="@color/black_12">
+
+                <ImageView
+                    android:id="@+id/card_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="@{model.cardImage == null ? View.GONE : View.VISIBLE}"
+                    app:image="@{model.cardImage}"
+                    tools:visibility="visible"/>
+
+                <ImageButton
+                    android:id="@+id/camera_button"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="28dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:onClick="onScanPress"
+                    android:src="@drawable/ic_camera_white_64dp"
+                    android:visibility="@{model.cardImage == null ? View.VISIBLE : View.GONE}"/>
+
+                <Button
+                    android:id="@+id/scan_card_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/camera_button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/fresco_blue"
+                    android:onClick="onScanPress"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/scan_your_card"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="@{model.cardImage == null ? View.VISIBLE : View.GONE}"
+                    app:customFont="@{@string/robotoRegular}"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+                android:paddingLeft="@dimen/settings_dialog_padding_left_right"
+                android:paddingRight="@dimen/settings_dialog_padding_left_right"
+                android:paddingTop="@dimen/settings_dialog_section_padding_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/card_number_text"
+                    android:textColor="@color/black_54"
+                    android:textSize="@dimen/settings_dialog_section_label_text_size"
+                    app:customFont="@{@string/robotoRegular}"/>
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="01234‌​56789 \u2022"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="19"
+                    android:text="@{model.redactedCard}"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                    android:windowSoftInputMode="stateAlwaysHidden"
+                    app:bind="@{model.cardNumberEditText}"
+                    tools:text="1234123412341234"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+                android:paddingLeft="@dimen/settings_dialog_padding_left_right"
+                android:paddingRight="@dimen/settings_dialog_padding_left_right"
+                android:paddingTop="@dimen/settings_dialog_section_padding_top">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/month_and_year_text"
+                        android:textColor="@color/black_54"
+                        android:textSize="@dimen/settings_dialog_section_label_text_size"
+                        app:customFont="@{@string/robotoRegular}"/>
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:digits="01234‌​56789/"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:textColor="@color/black_87"
+                        android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                        android:windowSoftInputMode="stateAlwaysHidden"
+                        app:bind="@{model.expirationDateEditText}"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/settings_screen_section_cvv_lft_margin"
+                    android:layout_marginStart="@dimen/settings_screen_section_cvv_lft_margin"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/settings_dialog_padding_left_right"
+                    android:paddingRight="@dimen/settings_dialog_padding_left_right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cvv_text"
+                        android:textColor="@color/black_54"
+                        android:textSize="@dimen/settings_dialog_section_label_text_size"
+                        app:customFont="@{@string/robotoRegular}"/>
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="80dip"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textColor="@color/black_87"
+                        android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                        app:bind="@{model.cvvEditText}"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_footer_height"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/settings_dialog_footer_padding_top_bottom"
+                android:paddingTop="@dimen/settings_dialog_footer_padding_top_bottom">
+
+                <Button
+                    style="@style/DialogButton.Negative"
+                    android:text="@string/cancel"
+                    app:customFont="@{@string/notaBold}"
+                    app:onClick="@{model.cancel}"
+                    tools:background="@color/fresco_red"/>
+
+                <Button
+                    style="@style/DialogButton.Positive"
+                    android:text="@string/save_card"
+                    app:customFont="@{@string/notaBold}"
+                    app:onClick="@{model.save}"
+                    tools:background="@color/fresco_green"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- BANK ACCOUNT-->
+        <LinearLayout
+            android:id="@+id/bank_account_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_layout"
+            android:orientation="vertical"
+            android:visibility="@{model.showAccount ? View.VISIBLE : View.GONE}"
+            tools:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+                android:paddingLeft="@dimen/settings_dialog_padding_left_right"
+                android:paddingRight="@dimen/settings_dialog_padding_left_right"
+                android:paddingTop="@dimen/settings_dialog_section_padding_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_number_text"
+                    android:textColor="@color/black_54"
+                    android:textSize="@dimen/settings_dialog_section_label_text_size"
+                    app:customFont="@{@string/robotoRegular}"/>
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                    app:bind="@{model.accountNumberEditText}"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+                android:paddingLeft="@dimen/settings_dialog_padding_left_right"
+                android:paddingRight="@dimen/settings_dialog_padding_left_right"
+                android:paddingTop="@dimen/settings_dialog_section_padding_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/routing_number_text"
+                    android:textColor="@color/black_54"
+                    android:textSize="@dimen/settings_dialog_section_label_text_size"
+                    app:customFont="@{@string/robotoRegular}"/>
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                    app:bind="@{model.routingNumberEditText}"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_footer_height"
+                android:gravity="end"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/settings_dialog_footer_padding_top_bottom"
+                android:paddingTop="@dimen/settings_dialog_footer_padding_top_bottom">
+
+                <Button
+                    style="@style/DialogButton.Negative"
+                    android:text="@string/cancel"
+                    app:customFont="@{@string/notaBold}"
+                    app:onClick="@{model.cancel}"
+                    tools:background="@color/fresco_red"/>
+
+                <Button
+                    style="@style/DialogButton.Positive"
+                    android:text="@string/save_account"
+                    app:customFont="@{@string/notaBold}"
+                    app:onClick="@{model.save}"
+                    tools:background="@color/fresco_green"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

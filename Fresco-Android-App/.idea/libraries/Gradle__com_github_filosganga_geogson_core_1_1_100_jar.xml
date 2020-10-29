@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.filosganga:geogson-core:1.1.100@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.filosganga/geogson-core/1.1.100/b494410fc5af9baa249a64974f3c49766f750feb/geogson-core-1.1.100.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.filosganga/geogson-core/1.1.100/e2c200ad3ee09f81ff7ce255f945a250b0d295e6/geogson-core-1.1.100-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.filosganga/geogson-core/1.1.100/bf0435e626e6f5eb3b7e0ab09e3bc95ebc8a7afa/geogson-core-1.1.100-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

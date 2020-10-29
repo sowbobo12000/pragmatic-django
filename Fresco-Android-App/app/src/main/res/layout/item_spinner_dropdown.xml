@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:singleLine="true"
+    android:layout_width="wrap_content"
+    android:layout_height="46dp"
+    android:ellipsize="marquee"
+    android:textColor="@color/black_87"
+    android:textSize="@dimen/settings_dialog_section_edit_text_size"
+    android:text="KHALID"
+    android:gravity="bottom"/>

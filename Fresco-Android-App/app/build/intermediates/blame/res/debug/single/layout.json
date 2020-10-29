@@ -1,0 +1,294 @@
+[
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_change_user_name.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_change_user_name.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_user_see_all.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_user_see_all.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_user.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/item_user.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_notification_feed.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/item_notification_feed.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_change_notification_radius.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_change_notification_radius.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_change_tax_info.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_change_tax_info.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_suggested_user.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/item_suggested_user.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_comments_list.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_comments_list.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_followers.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/fragment_followers.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_notifications_toolbar_menu.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_notifications_toolbar_menu.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_report_gallery.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_report_gallery.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_story_gallery.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_story_gallery.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_settings_social.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_settings_social.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_signup.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_signup.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_user_feed.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/fragment_user_feed.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_article.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/item_article.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_profile.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_profile.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_report_user.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_report_user.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_notification_feed.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_notification_feed.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/media_browser_bot_loc_message.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/media_browser_bot_loc_message.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_post.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/item_post.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_about_fresco.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_about_fresco.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/awkward_frog.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/awkward_frog.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/drawer_header.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/drawer_header.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_report_bottom_sheet.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_report_bottom_sheet.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_following.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/fragment_following.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_search_story_preview.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_search_story_preview.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_gallery_detail.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_gallery_detail.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_auto_complete_user.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/item_auto_complete_user.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_edit_profile.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_edit_profile.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_assignment_expired.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_assignment_expired.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_global_assignment.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_global_assignment.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_purchased_post.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/item_purchased_post.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_onboarding.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_onboarding.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_comment.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/item_comment.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_search_stories_card.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_search_stories_card.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_home.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_home.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_search.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_search.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_settings_misc.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_settings_misc.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_gallery_status_bar.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_gallery_status_bar.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_settings_me.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_settings_me.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_tos.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_tos.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_business_type_row.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/item_business_type_row.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_disable_account.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_disable_account.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_assignment.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_assignment.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_search_users_card.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_search_users_card.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/global_assignment_view.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/global_assignment_view.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_add_payment.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_add_payment.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/submission_view_new.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/submission_view_new.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_log_out.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_log_out.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_stories_preview.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_stories_preview.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_follow.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_follow.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_settings.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_dev_options.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_dev_options.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_stories_preview.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/item_stories_preview.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_payment_method.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/item_payment_method.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/awkward_frog_profile_disabled.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/awkward_frog_profile_disabled.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_migrate_user.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_migrate_user.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_settings_assignments_payment.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_settings_assignments_payment.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_change_password.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_change_password.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_submission.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_submission.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_gallery_list.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_gallery_list.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_assignment_bottom_sheet.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_assignment_bottom_sheet.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_permissions.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_permissions.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_following_user.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/fragment_following_user.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_gallery.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/item_gallery.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_highlights.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/fragment_highlights.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/media_item_view.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/media_item_view.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_media_browser.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/activity_media_browser.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_change_email.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_change_email.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/view_gallery_status_details.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/view_gallery_status_details.xml"
+    },
+    {
+        "merged": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_likes_feed.xml",
+        "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/layout/fragment_likes_feed.xml"
+    }
+]

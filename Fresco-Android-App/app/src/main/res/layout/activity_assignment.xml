@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.assignments.AssignmentMapViewModel"/>
+    </data>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:onCreate="@{model.onDrawerLayoutCreated}">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:context=".v2.assignments.AssignmentMapActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.Fresco2.AppBarOverlay">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/upload_progress_clip"
+                            android:minHeight="?attr/actionBarSize"
+                            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                            app:bind="@{model.toolbar}"
+                            app:layout_collapseMode="pin"
+                            app:navigationIcon="@{model.navIcon}"
+                            app:onNavIconClick="@{model.onNavIconClicked}"
+                            app:title="@{model.title}">
+
+                            <include
+                                layout="@layout/view_notifications_toolbar_menu"
+                                app:avatarUrl="@{model.getAvatarUrl}"
+                                app:isLoggedIn="@{model.isLoggedIn}"
+                                app:onClick="@{model.profilePictureClicked}"
+                                app:unreadNotifications="@{model.unreadNotifications}"/>
+
+                            <ImageView
+                                style="@style/SearchButton"
+                                app:onClick="@{model.search}"/>
+
+                        </android.support.v7.widget.Toolbar>
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/error_toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/fresco_red"
+                            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                            android:visibility="invisible"
+                            app:bind="@{model.errorToolbar}"
+                            app:menu="@{model.uploadErrorMenu}"
+                            app:navigationIcon="@drawable/ic_close"
+                            app:onMenuItemClick="@{model.retryUpload}"
+                            app:onNavIconClick="@{model.cancelUpload}"
+                            app:title="@string/upload_failed"/>
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/accepted_toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/fresco_green"
+                            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                            android:visibility="invisible"
+                            app:bind="@{model.acceptedToolbar}"
+                            app:navigationIcon="@drawable/ic_close"
+                            app:onNavIconClick="@{model.unacceptAssignment}"
+                            app:title="">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@{model.feetAway}"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    app:customFont="@{@string/notaBold}"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@{model.expirationString}"
+                                    android:textColor="@color/secondary_text_default_material_dark"
+                                    android:textSize="12sp"
+                                    app:customFont="@{@string/robotoRegular}"/>
+
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/directions_button"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="end"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginRight="16dp"
+                                android:background="@color/transparent"
+                                android:src="@drawable/directions_white"
+                                app:onClick="@{model.openDirections}"/>
+
+                        </android.support.v7.widget.Toolbar>
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/in_range_toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/fresco_green"
+                            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                            android:visibility="invisible"
+                            app:bind="@{model.inRangeToolbar}"
+                            app:navigationIcon="@{model.navIcon}"
+                            app:onNavIconClick="@{model.onNavIconClicked}"
+                            app:title="">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/open_camera"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    app:customFont="@{@string/notaBold}"/>
+
+                            </LinearLayout>
+
+                            <include
+                                layout="@layout/view_notifications_toolbar_menu"
+                                app:avatarUrl="@{model.getAvatarUrl}"
+                                app:isLoggedIn="@{model.isLoggedIn}"
+                                app:onClick="@{model.profilePictureClicked}"
+                                app:unreadNotifications="@{model.unreadNotifications}"/>
+
+                            <ImageView
+                                style="@style/SearchButton"
+                                app:onClick="@{model.search}"/>
+
+                        </android.support.v7.widget.Toolbar>
+
+                    </FrameLayout>
+
+                </android.support.design.widget.AppBarLayout>
+
+                <fragment
+                    android:id="@+id/map"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    fresco:uiZoomControls="false"/>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/view_assignment_bottom_sheet"
+                app:model="@{model}"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_anchor="@+id/assignment_drawer_content"
+                app:layout_anchorGravity="end|top">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:scaleType="center"
+                    android:src="@drawable/crosshairs_gps"
+                    app:backgroundTint="@android:color/white"
+                    app:onClick="@{model.recenterToUserLocation}"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginBottom="62dp"
+                    android:layout_marginEnd="@dimen/fab_margin"
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:layout_marginStart="@dimen/fab_margin"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_camera_iris_56dp"
+                    app:fabBackground="@{model.green ? @color/fresco_green : @color/fresco_yellow}"
+                    app:onClick="@{model.openCamera}"/>
+
+            </LinearLayout>
+
+            <!-- assignment footer -->
+            <RelativeLayout
+                android:id="@+id/assignment_footer"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/assignment_toolbar_border"
+                android:gravity="center_vertical"
+                app:layout_behavior="com.fresconews.fresco.ui.behavior.AssignmentToolbarBehavior">
+
+                <Button
+                    android:id="@+id/assignment_accept"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@{model.acceptButtonText}"
+                    android:textColor="@color/fresco_green"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:customFont="@{@string/notaBold}"
+                    app:onClick="@{model.acceptAssignment}"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/assignment_accept"
+                    android:layout_toStartOf="@id/assignment_accept"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:src="@drawable/directions"
+                    app:onClick="@{model.openDirections}"
+                    tools:background="@color/accent"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/global_footer"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/assignment_toolbar_border"
+                android:gravity="center_vertical"
+                android:visibility="@{model.globalAssignments > 0 ? View.VISIBLE : View.GONE}"
+                app:bind="@{model.globalFooter}"
+                tools:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:src="@drawable/ic_globe"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="34dp"
+                    android:layout_marginStart="34dp"
+                    android:layout_weight="1"
+                    android:text="@{model.globalAssignmentsString}"
+                    android:textColor="@color/black_87"
+                    app:customFont="@{@string/robotoRegular}"
+                    tools:text="6 Global Assignments"/>
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/show"
+                    android:textColor="@color/fresco_blue"
+                    app:onClick="@{model.openGlobals}"/>
+
+            </LinearLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:bind="@{model.navigationView}"
+            app:itemBackground="@color/transparent"
+            app:menu="@menu/drawer"
+            app:onNavItemSelected="@{model.onNavItemSelected}"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</layout>

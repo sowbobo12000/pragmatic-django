@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:text="Submit your photos and videos"
+                android:id="@+id/onboardTitle"
+                style="@style/OnBoardingTitle" />
+
+            <TextView
+                android:text="Your media is visible to Fresco users worldwide and verified news outlets who need eyes on the ground."
+                android:id="@+id/onboardText"
+                style="@style/OnBoardingText"
+                 />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|center"
+            android:paddingTop="17dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/onboard_graphic_cloud"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_w"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="0dp"
+                android:tint="#ffffff" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/onboard_graphic_up_arrow"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="0dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/onboard_graphic_camera"
+                android:layout_marginTop="171dp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

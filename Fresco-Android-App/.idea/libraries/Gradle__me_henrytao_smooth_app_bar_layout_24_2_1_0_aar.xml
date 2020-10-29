@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: me.henrytao:smooth-app-bar-layout:24.2.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/199d376f292d0371000ededf444a56b2/smooth-app-bar-layout-24.2.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/199d376f292d0371000ededf444a56b2/smooth-app-bar-layout-24.2.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/199d376f292d0371000ededf444a56b2/smooth-app-bar-layout-24.2.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.henrytao/smooth-app-bar-layout/24.2.1.0/990f05f8de4431f5f2badf09b08d3bafc70d84f4/smooth-app-bar-layout-24.2.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.henrytao/smooth-app-bar-layout/24.2.1.0/2129d9af9f57afa89071e3ca29837bb98cf2a8df/smooth-app-bar-layout-24.2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

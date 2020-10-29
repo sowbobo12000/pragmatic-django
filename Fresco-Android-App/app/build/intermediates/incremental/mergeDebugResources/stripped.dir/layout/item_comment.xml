@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                              
+
+                                                       
+
+    
+
+                 
+                        
+                                                                                     
+           
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:tag="layout/item_comment_0" 
+                                                       xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/user_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/black_26_background"
+                android:tag="binding_1"           
+                app:failureImage="@drawable/account_white"
+                                               
+                fresco:placeholderImage="@drawable/account_white"
+                fresco:roundAsCircle="true"/>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/user_avatar"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/user_avatar"
+                android:tag="binding_2"         
+                android:textColor="@color/black_54"
+                android:textSize="14sp"
+                                                        
+                                               />
+
+            <TextView
+                android:id="@+id/postedTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/username"
+                android:layout_toRightOf="@+id/username"
+                android:tag="binding_3"                 
+                android:textColor="@color/black_26"
+                android:textSize="12sp"
+                                                         
+                                                    
+                                                             />
+
+            <TextView
+                android:id="@+id/comment_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@+id/user_avatar"
+                android:clickable="true"
+                android:textColor="@color/black_87"
+                android:textSize="14sp"
+                android:tag="binding_4"              
+                                                         
+                                                             />
+
+            <!--I might need these for displaying username and delete button for editing-->
+            <!--<TextView-->
+            <!--android:id="@+id/user_fullname"-->
+            <!--android:layout_toRightOf="@+id/user_avatar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:text="@{model.getFullName}"-->
+            <!--android:textColor="@color/black_87"-->
+            <!--android:textSize="16sp"-->
+            <!--app:customFont="@{@string/robotoRegular}"-->
+            <!--app:onClick="@{model.profilePictureClicked}"-->
+
+            <!--/>-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/user_username"-->
+            <!--android:layout_toRightOf="@+id/user_fullname"-->
+            <!--android:layout_alignBottom="@+id/user_fullname"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginBottom="1.4dp"-->
+
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@{model.getUsername}"-->
+            <!--android:textColor="@color/black_54"-->
+            <!--android:textSize="12sp"-->
+            <!--app:customFont="@{@string/robotoRegular}"-->
+            <!--app:onClick="@{model.profilePictureClicked}"-->
+
+            <!--/>-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="24dp"-->
+            <!--android:layout_height="24dp"-->
+            <!--android:src="@{model.following ? @drawable/ic_minus : @drawable/ic_plus}"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:visibility="@{model.me ? View.GONE : View.VISIBLE}"-->
+            <!--app:onClick="@{model.toggleFollow}"/>-->
+
+        </RelativeLayout>
+    </LinearLayout>
+
+         

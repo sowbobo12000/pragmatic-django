@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.settings.dialogs.TaxInfoDialogViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/settings_dialog_padding_left_right"
+        android:paddingRight="@dimen/settings_dialog_padding_left_right">
+
+        <com.fresconews.fresco.v2.views.MaxHeightScrollView
+            android:id="@+id/main_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:maxHeight="452dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="@dimen/settings_dialog_section_padding_top"
+                    android:background="@drawable/selector_background_blue"
+                    android:drawableLeft="@drawable/ic_upload"
+                    android:drawablePadding="@dimen/settings_dialog_footer_padding_top_bottom"
+                    android:drawableStart="@drawable/ic_upload"
+                    android:padding="@dimen/settings_dialog_footer_padding_top_bottom"
+                    android:text="@string/state_id"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="@{model.documentVisible ? View.VISIBLE : View.GONE}"
+                    app:customFont="@{@string/notaBold}"
+                    app:onClick="@{model.uploadDocument}"
+                    tools:visibility="visible"/>
+
+                <!--FIRST NAME-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+                    android:paddingTop="@dimen/settings_dialog_section_padding_top"
+                    android:visibility="@{model.firstNameVisible ? View.VISIBLE : View.GONE}"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/first_name"
+                        android:textColor="@color/black_54"
+                        android:textSize="@dimen/settings_dialog_section_label_text_size"
+                        app:customFont="@{@string/robotoRegular}"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:error="@{model.firstNameError}">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapWords"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:textColor="@color/black_87"
+                            android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                            app:bind="@{model.firstNameEditText}"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <!--END FIRST NAME-->
+
+                <!--LAST NAME-->
+                <LinearLayout
+                    android:id="@+id/mLayoutLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+                    android:paddingTop="@dimen/settings_dialog_section_padding_top"
+                    android:visibility="@{model.lastNameVisible ? View.VISIBLE : View.GONE}"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/last_name"
+                        android:textColor="@color/black_54"
+                        android:textSize="@dimen/settings_dialog_section_label_text_size"
+                        app:customFont="@{@string/robotoRegular}"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:error="@{model.lastNameError}">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapWords"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:textColor="@color/black_87"
+                            android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                            app:bind="@{model.lastNameEditText}"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <!--END LAST NAME-->
+
+                <!--DoB-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+                    android:paddingTop="@dimen/settings_dialog_section_padding_top"
+                    android:visibility="@{model.dobVisible ? View.VISIBLE : View.GONE}"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dob"
+                        android:textColor="@color/black_54"
+                        android:textSize="@dimen/settings_dialog_section_label_text_size"
+                        app:customFont="@{@string/robotoRegular}"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:error="@{model.dobError}">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/menu_down"
+                            android:drawableRight="@drawable/menu_down"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textColor="@color/black_87"
+                            android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                            app:bind="@{model.dobEditText}"
+                            app:onClick="@{model.selectDOB}"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <!--END DoB-->
+
+                <!--Tax ID # (SSN)-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+                    android:paddingTop="@dimen/settings_dialog_section_padding_top"
+                    android:visibility="@{model.taxIdVisible ? View.VISIBLE : View.GONE}"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{model.ssnTitle}"
+                        android:textColor="@color/black_54"
+                        android:textSize="@dimen/settings_dialog_section_label_text_size"
+                        app:customFont="@{@string/robotoRegular}"
+                        tools:text="@string/tax_id_ssn"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:error="@{model.taxIdError}">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLength="9"
+                            android:maxLines="1"
+                            android:textColor="@color/black_87"
+                            android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                            app:bind="@{model.taxIdEditText}"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <!--END Tax ID # (SSN)-->
+
+                <!--ADDRESS-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+                    android:paddingTop="@dimen/settings_dialog_section_padding_top"
+                    android:visibility="@{model.addressVisible ? View.VISIBLE : View.GONE}"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/address"
+                        android:textColor="@color/black_54"
+                        android:textSize="@dimen/settings_dialog_section_label_text_size"
+                        app:customFont="@{@string/robotoRegular}"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/xTextInputLayoutAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:error="@{model.addressError}">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/xTextInputEditTextAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapWords"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:textColor="@color/black_87"
+                            android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                            app:bind="@{model.addressEditText}"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <!--END ADDRESS-->
+
+                <!--UNIT & ZIP-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:visibility="@{model.addressVisible ? View.VISIBLE : View.GONE}"
+                    tools:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+                        android:paddingTop="@dimen/settings_dialog_section_padding_top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/address_unit"
+                            android:textColor="@color/black_54"
+                            android:textSize="@dimen/settings_dialog_section_label_text_size"
+                            app:customFont="@{@string/robotoRegular}"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/black_87"
+                                android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                                app:bind="@{model.unitEditText}"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/settings_dialog_padding_left_right"
+                        android:layout_marginStart="@dimen/settings_dialog_padding_left_right"
+                        android:layout_weight="1.5"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+                        android:paddingTop="@dimen/settings_dialog_section_padding_top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/zip"
+                            android:textColor="@color/black_54"
+                            android:textSize="@dimen/settings_dialog_section_label_text_size"
+                            app:customFont="@{@string/robotoRegular}"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:error="@{model.zipError}">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:lines="1"
+                                android:maxLength="5"
+                                android:maxLines="1"
+                                android:textColor="@color/black_87"
+                                android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                                app:bind="@{model.zipEditText}"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--END UNIT & ZIP-->
+
+                <!--CITY & STATE-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:visibility="@{model.addressVisible ? View.VISIBLE : View.GONE}"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+                        android:paddingTop="@dimen/settings_dialog_section_padding_top">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/city"
+                            android:textColor="@color/black_54"
+                            android:textSize="@dimen/settings_dialog_section_label_text_size"
+                            app:customFont="@{@string/robotoRegular}"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:error="@{model.cityError}">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapWords"
+                                android:lines="1"
+                                android:maxLines="1"
+                                android:textColor="@color/black_87"
+                                android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                                app:bind="@{model.cityEditText}"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/settings_dialog_padding_left_right"
+                        android:layout_marginStart="@dimen/settings_dialog_padding_left_right"
+                        android:layout_weight="1.5"
+                        android:paddingBottom="9dp"
+                        android:paddingTop="@dimen/settings_dialog_section_padding_top">
+
+                        <TextView
+                            android:id="@+id/state_label_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/state"
+                            android:textColor="@color/black_54"
+                            android:textSize="@dimen/settings_dialog_section_label_text_size"
+                            app:customFont="@{@string/robotoRegular}"/>
+
+                        <Spinner
+                            style="@style/SpinnerStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/state_label_text_view"
+                            android:background="@drawable/abc_spinner_textfield_background_material"
+                            android:gravity="bottom"
+                            app:bind="@{model.statesSpinner}"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <!--END CITY & STATE-->
+
+            </LinearLayout>
+
+        </com.fresconews.fresco.v2.views.MaxHeightScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_footer_height"
+            android:layout_below="@+id/main_content_layout"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/settings_dialog_footer_padding_top_bottom"
+            android:paddingTop="@dimen/settings_dialog_footer_padding_top_bottom">
+
+            <Button
+                style="@style/DialogButton.Negative"
+                android:text="@string/cancel"
+                app:customFont="@{@string/notaBold}"
+                app:onClick="@{model.cancel}"
+                tools:background="@color/fresco_red"/>
+
+            <Button
+                style="@style/DialogButton.Positive"
+                android:text="@string/save_tax_info"
+                app:customFont="@{@string/notaBold}"
+                app:onClick="@{model.save}"
+                tools:background="@color/fresco_green"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

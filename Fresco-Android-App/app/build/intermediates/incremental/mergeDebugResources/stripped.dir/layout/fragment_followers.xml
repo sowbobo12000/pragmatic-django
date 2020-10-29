@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                       
+
+    
+
+                                          
+
+                 
+                        
+                                                                                 
+           
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                                       android:tag="layout/fragment_followers_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:tag="binding_1">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/content_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="binding_2"         
+                tools:context=".v2.home.HomeActivity"
+                tools:showIn="@layout/activity_home"/>
+
+            <include
+                layout="@layout/awkward_frog"
+                                                   />
+
+        </FrameLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+         

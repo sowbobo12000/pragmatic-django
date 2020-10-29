@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                              
+                                                       
+
+    
+
+                                          
+
+                 
+                        
+                                                                
+           
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="layout/activity_home_0"           xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:context=".v2.home.HomeActivity">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Theme.Fresco2.AppBarOverlay">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|enterAlways">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/upload_progress_clip"
+                        android:minHeight="?attr/actionBarSize"
+                        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        android:tag="binding_1"    
+                        app:layout_collapseMode="pin"
+                                                             
+                                                                      
+                                                  >
+
+                        <include
+                            layout="@layout/view_notifications_toolbar_menu"
+                                                                 
+                                                                
+                                                                        
+                                                                                  />
+
+                        <ImageView
+                            style="@style/SearchButton"
+                            android:tag="binding_2"      />
+
+                    </android.support.v7.widget.Toolbar>
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/error_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/fresco_red"
+                        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        android:visibility="invisible"
+                        android:tag="binding_3"         
+                                                           
+                        app:navigationIcon="@drawable/ic_close"
+                                                                  
+                                                                  
+                        app:title="@string/upload_failed"/>
+
+                </FrameLayout>
+
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="binding_4"      
+                    app:tabIndicatorColor="@color/fresco_white"
+                    app:tabIndicatorHeight="2dp"/>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="binding_5"      
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                android:scaleType="center"
+                android:src="@drawable/ic_camera_iris_56dp"
+                android:tag="binding_6"          />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:tag="binding_7"           
+            app:itemBackground="@color/transparent"
+            app:menu="@menu/drawer"
+                                                              />
+
+    </android.support.v4.widget.DrawerLayout>
+         

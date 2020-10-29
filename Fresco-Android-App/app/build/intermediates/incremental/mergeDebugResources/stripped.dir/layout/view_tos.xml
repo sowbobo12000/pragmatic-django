@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                       
+
+    
+
+                                          
+
+                 
+                        
+                                                                      
+           
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:tag="layout/view_tos_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            android:id="@+id/tos_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:tag="binding_1"         
+            android:textColor="@color/black_87"
+            android:textSize="20sp"
+                                                
+            tools:text="@string/tos"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tos_body"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:tag="binding_2"            
+                android:textColor="@color/black_54"
+                android:textSize="16sp"
+                                                         
+                tools:text="@string/tos"/>
+
+        </ScrollView>
+
+        <!--Horizontal Bar-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/black_26"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_footer_height"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/settings_dialog_footer_padding_top_bottom"
+            android:paddingTop="@dimen/settings_dialog_footer_padding_top_bottom">
+
+            <Button
+                android:id="@+id/negative_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="@string/log_out"
+                android:textColor="@color/fresco_red"
+                android:textSize="@dimen/dialog_footer_button_text_size"
+                android:tag="binding_3"                                                      
+                                                    
+                                             />
+
+            <Button
+                android:id="@+id/positive_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dialog_footer_buttons_left_right_margin"
+                android:layout_marginRight="@dimen/dialog_footer_buttons_left_right_margin"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:tag="binding_4"                      
+                android:textColor="@color/fresco_blue"
+                android:textSize="@dimen/dialog_footer_button_text_size"
+                                                    
+                                            
+                tools:text="@string/close"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+         

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.fresconews.fresco"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:installLocation="internalOnly">
+
+    <uses-sdk tools:overrideLibrary="net.ypresto.androidtranscoder"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <!-- for google location background service -->
+    <!-- removing for beta build, receive on boot is not fully tested -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false"/>
+
+    <application
+        android:name=".Fresco2"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Fresco2">
+        <activity
+            android:name=".v2.home.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Fresco2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="OPEN_MAIN_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="www.fresconews.com"
+                    android:path="/"
+                    android:scheme="https"/>
+                <data
+                    android:host="fresconews.com"
+                    android:path="/"
+                    android:scheme="https"/>
+                <data
+                    android:host="www.fresconews.com"
+                    android:path="/"
+                    android:scheme="http"/>
+                <data
+                    android:host="fresconews.com"
+                    android:path="/"
+                    android:scheme="http"/>
+                <data
+                    android:host="fresconews"
+                    android:scheme="fresconews"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:name=".v2.login.LoginActivity"/>
+        <activity android:name=".v2.onboarding.OnboardingActivity"/>
+        <activity android:name=".v2.signup.SignupActivity"/>
+        <activity android:name=".v2.camera.CameraWrapperActivity">
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity
+            android:name=".v2.gallery.gallerydetail.GalleryDetailActivity"
+            android:parentActivityName=".v2.home.HomeActivity"
+            android:theme="@style/Theme.Fresco2.Translucent"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fresconews.fresco.v2.home.HomeActivity"/>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="www.fresconews.com"
+                    android:pathPrefix="/gallery"
+                    android:scheme="https"/>
+                <data
+                    android:host="fresconews.com"
+                    android:pathPrefix="/gallery"
+                    android:scheme="https"/>
+                <data
+                    android:host="www.fresconews.com"
+                    android:pathPrefix="/gallery"
+                    android:scheme="http"/>
+                <data
+                    android:host="fresconews.com"
+                    android:pathPrefix="/gallery"
+                    android:scheme="http"/>
+                <data
+                    android:host="gallery"
+                    android:scheme="fresconews"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".v2.storiespreview.StoriesPreviewActivity">
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:name=".v2.storygallery.StoryGalleryActivity"/>
+        <activity android:name=".v2.settings.SettingsActivity"/>
+        <activity android:name=".v2.aboutfresco.AboutFrescoActivity"/>
+        <activity android:name=".v2.mediabrowser.MediaBrowserActivity"/>
+        <activity
+            android:name=".v2.submission.SubmissionActivity"
+            android:theme="@style/Theme.Fresco2.Translucent"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".v2.profile.ProfileActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="www.fresconews.com"
+                    android:pathPrefix="/user"
+                    android:scheme="https"/>
+                <data
+                    android:host="fresconews.com"
+                    android:pathPrefix="/user"
+                    android:scheme="https"/>
+                <data
+                    android:host="www.fresconews.com"
+                    android:pathPrefix="/user"
+                    android:scheme="http"/>
+                <data
+                    android:host="fresconews.com"
+                    android:pathPrefix="/user"
+                    android:scheme="http"/>
+                <data
+                    android:host="user"
+                    android:scheme="fresconews"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".v2.editprofile.EditProfileActivity"/>
+        <activity
+            android:name=".v2.search.SearchActivity"
+            android:theme="@style/Theme.Fresco2"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".v2.camera.CameraActivity"
+            android:hardwareAccelerated="true"
+            android:theme="@style/Theme.Fresco2.Camera"/>
+        <activity android:name=".v2.assignments.AssignmentMapActivity">
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity
+            android:name=".v2.assignments.GlobalAssignmentActivity"
+            android:theme="@style/Theme.Fresco2.Gray"/>
+        <activity android:name=".v2.gallery.gallerylist.GalleryListActivity"/>
+        <activity android:name=".v2.search.UserSeeAllActivity"/>
+        <activity android:name=".v2.follow.FollowActivity"/>
+        <activity android:name=".v2.notificationfeed.NotificationFeedActivity"/>
+        <activity android:name=".v2.dev.DevOptionsActivity"/>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"/>
+
+        <!-- Activities responsible for gathering payment info -->
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="io.card.payment.DataEntryActivity"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID"/>
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/GOOGLE_MAPS_API_KEY"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="5d3a50cd6b6c16af7a378a24019dc620c50ea24e"/>
+
+        <service
+            android:name=".framework.persistence.managers.FrescoUploadService2"
+            android:exported="false"/>
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true"/>
+        <service android:name=".v2.notifications.FcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".v2.notifications.InstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".v2.backgroundservice.FrescoLocationService"/>
+        <service
+            android:name=".v2.backgroundservice.OnClearFromRecentService"
+            android:stopWithTask="false"/>
+
+        <receiver android:name=".framework.network.ConnectionReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.adjust.sdk.AdjustReferrerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.localytics.android.ReferralReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

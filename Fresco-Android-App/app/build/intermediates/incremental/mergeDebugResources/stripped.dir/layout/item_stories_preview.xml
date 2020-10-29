@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                       
+
+    
+
+                                          
+
+                 
+                        
+                                                                                            
+           
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/stories_preview_top_margin"
+        app:cardElevation="@dimen/stories_preview_card_elevation" android:tag="layout/item_stories_preview_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/stories_preview_item_header_height">
+
+                <!--1 image-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="binding_1"                                                        >
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:tag="binding_2"       
+                        app:progressBarImage="@drawable/image_download_clip"/>
+                </LinearLayout>
+
+                <!--2 images-->
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="binding_3"                                                        >
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/left_image_2_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:tag="binding_4"               
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="50%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                    <View
+                        android:id="@+id/divider_2_images_view"
+                        android:layout_width="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/left_image_2_image_view"
+                        android:layout_toRightOf="@+id/left_image_2_image_view"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_toEndOf="@+id/divider_2_images_view"
+                        android:layout_toRightOf="@+id/divider_2_images_view"
+                        android:tag="binding_5"               
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="50%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <!--3 images-->
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="binding_6"                                                        >
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/left_image_3_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:tag="binding_7"               
+                        app:layout_heightPercent="100%"
+                        app:layout_widthPercent="50%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                    <View
+                        android:id="@+id/divider_3_1_images_view"
+                        android:layout_width="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/left_image_3_image_view"
+                        android:layout_toRightOf="@+id/left_image_3_image_view"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/top_right_image_3_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_toEndOf="@+id/divider_3_1_images_view"
+                        android:layout_toRightOf="@+id/divider_3_1_images_view"
+                        android:tag="binding_8"               
+                        app:layout_heightPercent="66%"
+                        app:layout_widthPercent="50%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                    <View
+                        android:id="@+id/divider_3_2_images_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_below="@+id/top_right_image_3_image_view"
+                        android:layout_toEndOf="@+id/divider_3_1_images_view"
+                        android:layout_toRightOf="@+id/divider_3_1_images_view"
+                        app:layout_widthPercent="50%"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/divider_3_2_images_view"
+                        android:layout_toEndOf="@+id/divider_3_1_images_view"
+                        android:layout_toRightOf="@+id/divider_3_1_images_view"
+                        android:tag="binding_9"               
+                        app:layout_heightPercent="37%"
+                        app:layout_widthPercent="50%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <!--4 images-->
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="binding_10"                                                       >
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/top_left_image_4_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:tag="binding_11"              
+                        app:layout_heightPercent="37%"
+                        app:layout_widthPercent="50%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                    <View
+                        android:id="@+id/divider_4_1_images_view"
+                        android:layout_height="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_below="@+id/top_left_image_4_image_view"
+                        app:layout_widthPercent="50%"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/bot_left_image_4_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/divider_4_1_images_view"
+                        android:tag="binding_12"              
+                        app:layout_heightPercent="66%"
+                        app:layout_widthPercent="50%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                    <View
+                        android:id="@+id/divider_4_2_images_view"
+                        android:layout_width="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/top_left_image_4_image_view"
+                        android:layout_toRightOf="@+id/top_left_image_4_image_view"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/top_right_image_4_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_toEndOf="@+id/divider_4_2_images_view"
+                        android:layout_toRightOf="@+id/divider_4_2_images_view"
+                        android:tag="binding_13"              
+                        app:layout_heightPercent="50%"
+                        app:layout_widthPercent="50%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                    <View
+                        android:id="@+id/divider_4_3_images_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_below="@+id/top_right_image_4_image_view"
+                        android:layout_toEndOf="@+id/divider_4_2_images_view"
+                        android:layout_toRightOf="@+id/divider_4_2_images_view"
+                        app:layout_widthPercent="50%"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/divider_4_3_images_view"
+                        android:layout_toEndOf="@+id/divider_4_2_images_view"
+                        android:layout_toRightOf="@+id/divider_4_2_images_view"
+                        android:tag="binding_14"              
+                        app:layout_heightPercent="50%"
+                        app:layout_widthPercent="50%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <!--5 images-->
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:tag="binding_15"                                                       >
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/top_left_image_5_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:tag="binding_16"              
+                        app:layout_heightPercent="50%"
+                        app:layout_widthPercent="39%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                    <View
+                        android:id="@+id/divider_5_1_images_view"
+                        android:layout_width="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_height="0dp"
+                        android:layout_toEndOf="@+id/top_left_image_5_image_view"
+                        android:layout_toRightOf="@+id/top_left_image_5_image_view"
+                        app:layout_heightPercent="50%"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/top_mid_image_5_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_toEndOf="@+id/divider_5_1_images_view"
+                        android:layout_toRightOf="@+id/divider_5_1_images_view"
+                        android:tag="binding_17"              
+                        app:layout_heightPercent="50%"
+                        app:layout_widthPercent="27%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                    <View
+                        android:id="@+id/divider_5_2_images_view"
+                        android:layout_width="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_height="0dp"
+                        android:layout_toEndOf="@+id/top_mid_image_5_image_view"
+                        android:layout_toRightOf="@+id/top_mid_image_5_image_view"
+                        app:layout_heightPercent="50%"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/top_right_image_5_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_toEndOf="@+id/divider_5_2_images_view"
+                        android:layout_toRightOf="@+id/divider_5_2_images_view"
+                        android:tag="binding_18"              
+                        app:layout_heightPercent="50%"
+                        app:layout_widthPercent="34%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                    <View
+                        android:id="@+id/divider_5_3_images_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_below="@+id/top_left_image_5_image_view"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/bot_left_image_5_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/divider_5_3_images_view"
+                        android:tag="binding_19"              
+                        app:layout_heightPercent="50%"
+                        app:layout_widthPercent="60%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                    <View
+                        android:id="@+id/divider_5_4_images_view"
+                        android:layout_width="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/divider_5_3_images_view"
+                        android:layout_toEndOf="@+id/bot_left_image_5_image_view"
+                        android:layout_toRightOf="@+id/bot_left_image_5_image_view"
+                        app:layout_heightPercent="50%"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/divider_5_3_images_view"
+                        android:layout_toEndOf="@+id/divider_5_4_images_view"
+                        android:layout_toRightOf="@+id/divider_5_4_images_view"
+                        android:tag="binding_20"              
+                        app:layout_heightPercent="50%"
+                        app:layout_widthPercent="40%"
+                        app:progressBarImage="@drawable/image_download_clip"/>
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <!--Images - 6-->
+                <android.support.percent.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:tag="binding_21"                                                                                     >
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/top_left_image_6_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:tag="binding_22"              
+                        app:layout_heightPercent="67%"
+                        app:layout_widthPercent="25%"
+                        app:progressBarImage="@drawable/image_download_clip"
+                        tools:background="@color/accent"/>
+
+                    <View
+                        android:id="@+id/divider_6_1_images_view"
+                        android:layout_width="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_height="0dp"
+                        android:layout_toEndOf="@+id/top_left_image_6_image_view"
+                        android:layout_toRightOf="@+id/top_left_image_6_image_view"
+                        app:layout_heightPercent="67%"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/top_mid_image_6_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_toEndOf="@+id/divider_6_1_images_view"
+                        android:layout_toRightOf="@+id/divider_6_1_images_view"
+                        android:tag="binding_23"              
+                        app:layout_heightPercent="67%"
+                        app:layout_widthPercent="25%"
+                        app:progressBarImage="@drawable/image_download_clip"
+                        tools:background="@color/fresco_blue"/>
+
+                    <View
+                        android:id="@+id/divider_6_2_images_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_below="@+id/top_left_image_6_image_view"
+                        app:layout_widthPercent="50%"/>
+
+                    <View
+                        android:id="@+id/divider_6_3_images_view"
+                        android:layout_width="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@+id/top_mid_image_6_image_view"
+                        android:layout_toRightOf="@+id/top_mid_image_6_image_view"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/bot_left_image_6_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/divider_6_2_images_view"
+                        android:layout_toLeftOf="@+id/divider_6_3_images_view"
+                        android:layout_toStartOf="@+id/divider_6_3_images_view"
+                        android:tag="binding_24"              
+                        app:layout_heightPercent="33%"
+                        app:progressBarImage="@drawable/image_download_clip"
+                        tools:background="@color/fresco_red"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/top_right_image_6_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_toEndOf="@+id/divider_6_3_images_view"
+                        android:layout_toRightOf="@+id/divider_6_3_images_view"
+                        android:tag="binding_25"              
+                        app:layout_heightPercent="27%"
+                        app:layout_widthPercent="50%"
+                        app:progressBarImage="@drawable/image_download_clip"
+                        tools:background="@color/fresco_green"/>
+
+                    <View
+                        android:id="@+id/divider_6_4_images_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_below="@+id/top_right_image_6_image_view"
+                        android:layout_toEndOf="@+id/divider_6_3_images_view"
+                        android:layout_toRightOf="@+id/divider_6_3_images_view"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/mid_right_image_6_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/divider_6_4_images_view"
+                        android:layout_toEndOf="@+id/divider_6_3_images_view"
+                        android:layout_toRightOf="@+id/divider_6_3_images_view"
+                        android:tag="binding_26"              
+                        app:layout_heightPercent="34%"
+                        app:layout_widthPercent="50%"
+                        app:progressBarImage="@drawable/image_download_clip"
+                        tools:background="@color/black"/>
+
+                    <View
+                        android:id="@+id/divider_6_5_images_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/stories_preview_item_thumbnails_divider_sz"
+                        android:layout_below="@+id/mid_right_image_6_image_view"
+                        android:layout_toEndOf="@+id/divider_6_3_images_view"
+                        android:layout_toRightOf="@+id/divider_6_3_images_view"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:id="@+id/bot_right_image_6_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_below="@+id/divider_6_5_images_view"
+                        android:layout_toEndOf="@+id/divider_6_3_images_view"
+                        android:layout_toRightOf="@+id/divider_6_3_images_view"
+                        android:tag="binding_27"              
+                        app:layout_heightPercent="39%"
+                        app:layout_widthPercent="50%"
+                        app:progressBarImage="@drawable/image_download_clip"
+                        tools:background="@color/fresco_cream"/>
+
+                </android.support.percent.PercentRelativeLayout>
+
+                <!---->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/assignment_shadow"
+                    android:padding="@dimen/stories_preview_item_title_caption_margin">
+
+                    <TextView
+                        android:id="@+id/story_title_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:tag="binding_28"        
+                        android:textColor="@color/fresco_white"
+                        android:textSize="@dimen/stories_preview_item_title_txt_sz"
+                        android:textStyle="bold"
+                                                            
+                        tools:text="Title"/>
+
+                    <TextView
+                        android:id="@+id/location_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/story_title_text_view"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="6dp"
+                        android:drawableLeft="@drawable/ic_map_white_13dp"
+                        android:drawablePadding="16dp"
+                        android:drawableStart="@drawable/ic_map_white_13dp"
+                        android:shadowColor="@color/black_54"
+                        android:shadowDx="0"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:tag="binding_29"       
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                                                                                                                       
+                        tools:text="New York, NY, United States"
+                        tools:visibility="gone"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/story_title_text_view"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="6dp"
+                        android:layout_toEndOf="@+id/location_text_view"
+                        android:layout_toRightOf="@+id/location_text_view"
+                        android:drawableLeft="@drawable/ic_clock_white_13dp"
+                        android:drawablePadding="16dp"
+                        android:drawableStart="@drawable/ic_clock_white_13dp"
+                        android:shadowColor="@color/black_54"
+                        android:shadowDx="0"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"
+                        android:tag="binding_30"    
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        tools:text="1/1/11 11:11"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:drawableLeft="@drawable/ic_repeat_white"
+                    android:drawablePadding="12dp"
+                    android:drawableStart="@drawable/ic_repeat_white"
+                    android:gravity="center_vertical"
+                    android:tag="binding_31"          
+                    android:textColor="@color/fresco_white"
+                    android:textSize="14sp"
+                                                                                             
+                                                        
+                    tools:text="Susan Black"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:padding="@dimen/stories_preview_item_title_caption_margin"
+                android:tag="binding_32"          
+                android:textSize="16sp"
+                                                                                        
+                tools:text="Title"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_26"
+                android:tag="binding_33"                                                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_more"
+                    android:textColor="@color/fresco_blue"
+                    android:textStyle="bold"
+                    android:tag="binding_34"            
+                                                   />
+
+                <ImageButton
+                    android:id="@+id/share_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_share"
+                    android:tint="@color/fresco_button_tint"
+                    android:tag="binding_35"    />
+
+                <TextView
+                    android:id="@+id/repost_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/share_button"
+                    android:layout_toStartOf="@id/share_button"
+                    android:tag="binding_36"                       
+                                                                                                           
+                                                        
+                                                 
+                    tools:text="85"/>
+
+                <ImageButton
+                    android:id="@+id/repost_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/repost_count"
+                    android:layout_toStartOf="@id/repost_count"
+                    android:tag="binding_37"                                                                 
+                                                                                                      
+                                                 
+                    tools:src="@drawable/fresco_repost_green"/>
+
+                <TextView
+                    android:id="@+id/like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/repost_button"
+                    android:layout_toStartOf="@id/repost_button"
+                    android:tag="binding_38"                     
+                                                                                                      
+                                                        
+                                               
+                    tools:text="66"/>
+
+                <ImageButton
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/like_count"
+                    android:layout_toStartOf="@id/like_count"
+                    android:tag="binding_39"                                                      
+                                                                                                 
+                                               
+                    tools:src="@drawable/ic_heart"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+         

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.report.ReportGalleryDialogViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/main_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/report_gallery"
+                android:textColor="@color/black_87"
+                android:textSize="20sp"
+                app:customFont="@{@string/notaBold}"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/report_gallery_message"
+                android:textColor="@color/black_54"
+                android:textSize="14sp"
+                app:customFont="@{@string/robotoRegular}"/>
+
+            <TextView
+                style="@style/ReportCheckBox"
+                android:drawableLeft="@{model.abusiveChecked ? @drawable/ic_checkbox_marked_blue : @drawable/ic_checkbox_blank_outline_54}"
+                android:drawableStart="@{model.abusiveChecked ? @drawable/ic_checkbox_marked_blue : @drawable/ic_checkbox_blank_outline_54}"
+                android:text="@string/its_abusive"
+                app:customFont="@{model.abusiveChecked ? {@string/robotoMedium} : {@string/robotoRegular}}"
+                app:onClick="@{model.checkAbusive}"
+                tools:drawableLeft="@drawable/ic_checkbox_blank_outline_54"/>
+
+            <TextView
+                style="@style/ReportCheckBox"
+                android:drawableLeft="@{model.spamChecked ? @drawable/ic_checkbox_marked_blue : @drawable/ic_checkbox_blank_outline_54}"
+                android:drawableStart="@{model.spamChecked ? @drawable/ic_checkbox_marked_blue : @drawable/ic_checkbox_blank_outline_54}"
+                android:text="@string/its_spam"
+                app:customFont="@{model.spamChecked ? {@string/robotoMedium} : {@string/robotoRegular}}"
+                app:onClick="@{model.checkSpam}"
+                tools:drawableLeft="@drawable/ic_checkbox_marked_blue"/>
+
+            <TextView
+                style="@style/ReportCheckBox"
+                android:drawableLeft="@{model.stolenContentChecked ? @drawable/ic_checkbox_marked_blue : @drawable/ic_checkbox_blank_outline_54}"
+                android:drawableStart="@{model.stolenContentChecked ? @drawable/ic_checkbox_marked_blue : @drawable/ic_checkbox_blank_outline_54}"
+                android:text="@string/includes_stolen_content"
+                app:customFont="@{model.stolenContentChecked ? {@string/robotoMedium} : {@string/robotoRegular}}"
+                app:onClick="@{model.checkStolenContent}"
+                tools:drawableLeft="@drawable/ic_checkbox_marked_blue"/>
+
+            <TextView
+                style="@style/ReportCheckBox"
+                android:drawableLeft="@{model.graphicContentChecked ? @drawable/ic_checkbox_marked_blue : @drawable/ic_checkbox_blank_outline_54}"
+                android:drawableStart="@{model.graphicContentChecked ? @drawable/ic_checkbox_marked_blue : @drawable/ic_checkbox_blank_outline_54}"
+                android:text="@string/includes_graphic_content"
+                app:customFont="@{model.graphicContentChecked ? {@string/robotoMedium} : {@string/robotoRegular}}"
+                app:onClick="@{model.checkGraphicContent}"
+                tools:drawableLeft="@drawable/ic_checkbox_marked_blue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/please_share_more_details"
+                android:textColor="@color/black_54"
+                android:textSize="14sp"
+                app:customFont="@{@string/robotoRegular}"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="200"
+                android:maxLines="5"
+                app:bind="@{model.detailsEditText}"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_footer_height"
+            android:layout_below="@+id/main_content_layout"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/settings_dialog_footer_padding_top_bottom"
+            android:paddingTop="@dimen/settings_dialog_footer_padding_top_bottom">
+
+            <Button
+                style="@style/DialogButton.Negative"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:text="@string/cancel"
+                app:customFont="@{@string/notaBold}"
+                app:onClick="@{model.cancel}"
+                tools:background="@color/fresco_red"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <Button
+                style="@style/DialogButton.Positive"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:text="@string/send_report"
+                app:customFont="@{@string/notaBold}"
+                app:onClick="@{model.sendReport}"
+                tools:background="@color/fresco_green"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

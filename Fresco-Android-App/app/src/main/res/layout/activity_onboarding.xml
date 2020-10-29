@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.onboarding.OnBoardingViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginBottom="-20dp"
+            android:background="@drawable/selector_background_fresco_cream"
+            android:clickable="true"
+            android:contentDescription="@string/close_onboarding_desc"
+            android:padding="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/onboard_close"
+            android:tint="#5C5C59"
+            app:onClick="@{model.goBack}"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/logo_height"
+            android:contentDescription="@string/fresco_wordmark_desc"
+            android:src="@drawable/onboard_wordmark"/>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:bind="@{model.viewPager}"/>
+
+        <com.viewpagerindicator.CirclePageIndicator
+            style="@style/CircleStyleIndicator"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            app:bind="@{model.circleIndicator}"
+            app:pageColor="@color/black_26"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/tabstrip_margin"
+            android:layout_marginTop="@dimen/tabstrip_margin"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/black_12"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:text="@string/log_in"
+                app:customFont="@{@string/notaBold}"
+                app:onClick="@{model.login}"/>
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:text="@string/sign_up"
+                android:textColor="@color/fresco_blue"
+                app:customFont="@{@string/notaBold}"
+                app:onClick="@{model.signup}"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

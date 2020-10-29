@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fresconews.fresco.v2.login.LoginActivity">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.login.LoginViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/DarkToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:minHeight="?attr/actionBarSize"
+            app:bind="@{model.toolbar}"
+            app:navigationIcon="@{model.navIcon}"
+            app:onNavIconClick="@{model.goBack}"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/Theme.Fresco2.AppBarOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:text="@string/log_in"
+                android:textColor="@color/black_87"
+                android:textSize="20sp"
+                app:customFont="@{@string/notaBold}"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="72dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="72dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="72dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    style="@style/AuthEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="@{model.controlsEnabled}"
+                    android:hint="@string/login_usesrname_label"
+                    android:inputType="textEmailAddress"
+                    app:bindValue="@{model.username}"
+                    app:customFont="@{@string/robotoRegular}"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/password_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        style="@style/AuthEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="@{model.controlsEnabled}"
+                        android:fontFamily="sans-serif"
+                        android:hint="@string/password_text"
+                        android:inputType="textPassword"
+                        app:bindValue="@{model.password}"
+                        app:customFont="@{@string/robotoRegular}"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/transparent"
+                    android:backgroundTint="@color/transparent"
+                    android:src="@drawable/help_circle_26"
+                    app:onClick="@{model.forgotPassword}"/>
+
+            </RelativeLayout>
+
+            <Button
+                style="@style/AuthButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:enabled="@{model.controlsEnabled}"
+                android:text="@string/log_in_button"
+                app:customFont="@{@string/notaBold}"
+                app:onClick="@{model.login}"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in_with"
+                    android:textSize="14sp"
+                    app:customFont="@{@string/robotoRegular}"/>
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:src="@drawable/twitter"
+                    app:onClick="@{model.loginTwitter}"/>
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:src="@drawable/facebook_box"
+                    app:onClick="@{model.loginFacebook}"/>
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:src="@drawable/google_plus"
+                    app:onClick="@{model.loginGoogle}"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

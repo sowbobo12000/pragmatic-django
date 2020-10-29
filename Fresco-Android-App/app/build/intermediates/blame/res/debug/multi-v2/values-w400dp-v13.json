@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w400dp-v13/values-w400dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/kyuyeon/.gradle/caches/transforms-2/files-2.1/ffe2d42368f419f8aaa1621c38547682/ui-8.0.0/res/values-w400dp-v13/values-w400dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,111,169,226,280",
+                        "endColumns": "55,57,56,53,57",
+                        "endOffsets": "106,164,221,275,333"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,8",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,111,169,226,394",
+                        "endColumns": "55,57,56,53,57",
+                        "endOffsets": "106,164,221,275,447"
+                    }
+                },
+                {
+                    "source": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/src/main/res/values-w400dp/dimens.xml",
+                    "from": {
+                        "startLines": "3,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "115,55",
+                        "endColumns": "53,59",
+                        "endOffsets": "164,110"
+                    },
+                    "to": {
+                        "startLines": "6,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "280,334",
+                        "endColumns": "53,59",
+                        "endOffsets": "329,389"
+                    }
+                }
+            ]
+        }
+    ]
+}

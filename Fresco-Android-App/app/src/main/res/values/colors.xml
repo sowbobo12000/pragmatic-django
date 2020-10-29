@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- all backgrounds should be setup with this color original hex f5f5f5, tried fafafa-->
+    <color name="layout_background">#FAFAFA</color>
+
+    <color name="primary">#FEBF00</color>
+    <color name="primary_dark">#f4a727</color>
+    <color name="upload_progress">#ffa800</color>
+    <color name="accent">#ffc400</color>
+    <color name="text_primary">#33322f</color>
+    <color name="text_secondary">#4e4b42</color>
+    <color name="search_hint">#4dffffff</color>
+
+    <color name="toolbar_icon">#FFFFFF</color>
+
+    <color name="horizontal_line_fill_color">#E0E0E0</color>
+    <color name="transparent">#00000000</color>
+    <color name="background_pressed">#11000000</color>
+
+    <color name="text_primary_pressed">#e1d250a7</color>
+    <color name="text_secondary_login">#d912c4ca</color>
+
+    <color name="gray">#EFEFE8</color>
+    <color name="black">#FF000000</color>
+    <color name="black_87">#DD000000</color>
+    <color name="black_54">#8A000000</color>
+    <color name="black_31">#1F000000</color>
+    <color name="black_26">#42000000</color>
+    <color name="black_24">#3D000000</color>
+    <color name="black_12">#1E000000</color>
+    <color name="black_10">#1A000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_27">#46FFFFFF</color>
+    <color name="white_70">#B2FFFFFF</color>
+    <color name="white_95">#F2FFFFFF</color>
+    <color name="fresco_yellow">#FFC600</color>
+    <color name="fresco_cream">#F2F2ED</color>
+    <color name="fresco_cream_dark">#DADAD6</color>
+    <color name="fresco_green">#4CD764</color>
+    <color name="fresco_dark_green">#44C159</color>
+    <color name="color_ic_instagram">#3F729B</color>
+    <color name="social_twitter">#55ACEE</color>
+    <color name="social_facebook">#3B5998</color>
+    <color name="social_google">#DD4B39</color>
+    <color name="fresco_red">#D0021B</color>
+    <color name="fresco_red_dark">#BA0118</color>
+    <color name="fresco_yellow_30">#4CFFC600</color>
+    <color name="lightish_green_30">#4C4BD763</color>
+    <color name="fresco_orange">#FFB500</color>
+    <color name="fresco_blue">#0047BB</color>
+    <color name="fresco_blue_pressed">#A00047BB</color>
+    <color name="fresco_white">#FFFFFF</color>
+    <color name="status_bar_translucent">#1A000000</color>
+
+    <color name="fresco_assignment_radius">#4DFFC600</color>
+    <color name="fresco_assignment_radius_green">#4d4bd763</color>
+
+    <color name="fresco_assignment_radius_active">#4D4BD763</color>
+
+    <color name="Smooch_accent">#FFC600</color>
+    <color name="Smooch_accentDark">#FFB500</color>
+    <color name="Smooch_accentLight">#4CFFC600</color>
+
+    <color name="progress_background">#1E000000</color>
+    <color name="background_material_light">#B17C7C</color>
+
+    <color name="text_shadow">#000000</color>
+
+    <color name="fresco_button_tint">#5C5C59</color>
+    <color name="fresco_assignment_radius_blue">#4D0047BB</color>
+
+</resources>

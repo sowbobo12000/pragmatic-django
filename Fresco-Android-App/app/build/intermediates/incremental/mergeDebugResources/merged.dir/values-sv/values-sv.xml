@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="tw__time_hours">
+        <item quantity="one">1h</item>
+        <item quantity="other">%dh</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1m</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1s</item>
+        <item quantity="other">%ds</item>
+    </plurals>
+    <string name="Smooch_activityConversation">Meddelanden</string>
+    <string name="Smooch_btnSend">Skicka</string>
+    <string name="Smooch_errorCouldNotConnect">Ingen kontakt med servern.</string>
+    <string name="Smooch_errorSendingMessage">Meddelande ej levererat. Tryck för nytt försök.</string>
+    <string name="Smooch_errorUserOffline">Ingen nätverksanslutning.</string>
+    <string name="Smooch_messageHint">Skriv ett meddelande…</string>
+    <string name="Smooch_startOfConversation">Här börjar din konversation med %1$s teamet. Vi finns här för att hjälpa dig få koll på allt i din app.</string>
+    <string name="Smooch_welcome">Tveka inte att lämna oss ett meddelande om vadhelst du funderar på. Vi återkommer till dig så fort vi kan.</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Visa startsidan"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Navigera uppåt"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Fler alternativ"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Klart"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Visa alla"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Välj en app"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"AV"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"PÅ"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt + "</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl + "</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"retur"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Funktion + "</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta + "</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Skift + "</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"blanksteg"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Symbol + "</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Meny + "</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Sök …"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Ta bort frågan"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Sökfråga"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Sök"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Skicka fråga"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Röstsökning"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Dela med"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Dela med %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Komprimera"</string>
+    <string name="acc_label_card_number">Kortnummer</string>
+    <string name="acc_label_card_number_node">%s, kortnummer</string>
+    <string name="acc_label_cvc_node">%s, CVC-kod</string>
+    <string name="acc_label_expiry_date">Sista giltighetsdag</string>
+    <string name="acc_label_expiry_date_node">%s, sista giltighetsdag</string>
+    <string name="acc_label_zip">Postnummer</string>
+    <string name="acc_label_zip_short">Postnummer</string>
+    <string name="add_card">Lägg till ett nytt betal- eller kreditkort för att göra köp i den här appen.</string>
+    <string name="added">Tillagt %s</string>
+    <string name="address_city_required">Ange ort</string>
+    <string name="address_country_invalid">Ditt land är felaktigt</string>
+    <string name="address_county_required">Ange land</string>
+    <string name="address_label_address">Adress</string>
+    <string name="address_label_address_line1">Adressrad 1</string>
+    <string name="address_label_address_line1_optional">Adressrad 1 (valfritt)</string>
+    <string name="address_label_address_line2">Adressrad 2</string>
+    <string name="address_label_address_line2_optional">Adressrad 2 (valfritt)</string>
+    <string name="address_label_address_optional">Adress (valfritt)</string>
+    <string name="address_label_apt">Lgh. </string>
+    <string name="address_label_apt_optional">Lgh. (valfritt)</string>
+    <string name="address_label_city">Ort</string>
+    <string name="address_label_city_optional">Ort (valfritt)</string>
+    <string name="address_label_country">Land</string>
+    <string name="address_label_county">Grevskap</string>
+    <string name="address_label_county_optional">Region (valfritt)</string>
+    <string name="address_label_name">Namn</string>
+    <string name="address_label_name_optional">Namn (valfritt)</string>
+    <string name="address_label_phone_number">Telefonnummer</string>
+    <string name="address_label_phone_number_optional">Telefonnummer (valfritt)</string>
+    <string name="address_label_postal_code">Postnummer</string>
+    <string name="address_label_postal_code_optional">Postnummer (valfritt)</string>
+    <string name="address_label_postcode">Postnummer</string>
+    <string name="address_label_postcode_optional">Postnummer (valfritt)</string>
+    <string name="address_label_province">Provins</string>
+    <string name="address_label_province_optional">Provins (valfritt)</string>
+    <string name="address_label_region_generic">Delstat/region/provins</string>
+    <string name="address_label_region_generic_optional">Delstat/region/provins (valfritt)</string>
+    <string name="address_label_state">Delstat</string>
+    <string name="address_label_state_optional">Delstat (valfritt)</string>
+    <string name="address_label_zip_code">Postnummer</string>
+    <string name="address_label_zip_code_optional">Postnummer (valfritt)</string>
+    <string name="address_label_zip_postal_code">Postnummer</string>
+    <string name="address_label_zip_postal_code_optional">Postnummer (valfritt)</string>
+    <string name="address_name_required">Ange ditt namn</string>
+    <string name="address_phone_number_required">Ange ditt telefonnummer</string>
+    <string name="address_postal_code_invalid">Postnumret är ogiltigt</string>
+    <string name="address_postcode_invalid">Postnumret är ogiltigt</string>
+    <string name="address_province_required">Ange provins</string>
+    <string name="address_region_generic_required">Ange delstat/region/provins</string>
+    <string name="address_required">Ange adress</string>
+    <string name="address_shipping_address">Leveransadress</string>
+    <string name="address_state_required">Ange delstat</string>
+    <string name="address_zip_invalid">Postnumret är ogiltigt.</string>
+    <string name="address_zip_postal_invalid">Postnumret är ogiltigt</string>
+    <string name="articles_list_fragment_error_message">Det gick inte att hämta artiklar</string>
+    <string name="articles_list_fragment_no_articles_found">Inga artiklar hittades</string>
+    <string name="articles_search_results_list_fragment_contact_us">Kontakta oss</string>
+    <string name="articles_search_results_list_fragment_error_message">Ett fel inträffade</string>
+    <string name="articles_search_results_list_fragment_no_articles_found">Inga resultat hittades</string>
+    <string name="attachment_add_menu">Bilagor</string>
+    <string name="attachment_select_source_choose_existing">Välj befintlig</string>
+    <string name="attachment_select_source_new_photo">Ta en bild</string>
+    <string name="attachment_upload_error_cancel">Avbryt</string>
+    <string name="attachment_upload_error_file_already_added">Filen har redan bifogats</string>
+    <string name="attachment_upload_error_file_not_found">Det gick inte att hitta filen</string>
+    <string name="attachment_upload_error_file_too_big">Maxstorlek för bilagan är %s</string>
+    <string name="attachment_upload_error_try_again">Försök igen</string>
+    <string name="attachment_upload_error_upload_failed">Det gick inte att överföra bilagan</string>
+    <string name="becs_mandate_acceptance">
+    Genom att tillhandahålla dina bankkontouppgifter och bekräfta denna betalning, samtycker du till denna 
+    Direktdebitering och serviceavtal med direktdebitering, och godkänner att
+    Stripe Payments Australia Pty Ltd ACN 160 180 343 Användar-ID för direktdebitering 507156
+    (“Stripe”) debiterar ditt konto via Bulk Electronic Clearing System (BECS) på 
+    uppdrag av %1$s (\"säljaren\") för eventuella belopp som separat meddelats till dig
+    av säljaren. Du intygar att du antingen är kontoinnehavare eller auktoriserad
+    undertecknare på det konto som anges ovan.
+    </string>
+    <string name="becs_widget_account_number">Kontonummer</string>
+    <string name="becs_widget_account_number_required">Ditt kontonummer krävs.</string>
+    <string name="becs_widget_bsb">BSB</string>
+    <string name="becs_widget_bsb_incomplete">Den BSB du angav är inkomplett.</string>
+    <string name="becs_widget_bsb_invalid">Den BSB du angav är fel.</string>
+    <string name="becs_widget_email">E-postadress</string>
+    <string name="becs_widget_email_required">Din e-postadress krävs.</string>
+    <string name="becs_widget_name">Namn</string>
+    <string name="becs_widget_name_required">Ditt namn krävs.</string>
+    <string name="categories_list_fragment_error_message">Det gick inte att hämta kategorier</string>
+    <string name="categories_list_fragment_no_categories_found">Inga kategorier hittades</string>
+    <string name="close">Stäng</string>
+    <string name="com_facebook_device_auth_instructions">Besök &lt;b>facebook.com/device&lt;/b> på din smartphone eller dator och ange den här koden:</string>
+    <string name="com_facebook_image_download_unknown_error">Oväntat fel vid hämtning av en bild.</string>
+    <string name="com_facebook_internet_permission_error_message">Webbinloggning kräver internetbehörighet</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest-fel</string>
+    <string name="com_facebook_like_button_liked">Gillade</string>
+    <string name="com_facebook_like_button_not_liked">Gilla</string>
+    <string name="com_facebook_loading">Laddar …</string>
+    <string name="com_facebook_loginview_cancel_action">Avbryt</string>
+    <string name="com_facebook_loginview_log_in_button">Logga in</string>
+    <string name="com_facebook_loginview_log_in_button_long">Logga in med Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Logga ut</string>
+    <string name="com_facebook_loginview_log_out_button">Logga ut</string>
+    <string name="com_facebook_loginview_logged_in_as">Inloggad som: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Inloggad med Facebook</string>
+    <string name="com_facebook_send_button_text">Skicka</string>
+    <string name="com_facebook_share_button_text">Dela</string>
+    <string name="com_facebook_tooltip_default">Nyhet! Du bestämmer – välj vilken info du vill dela med appar.</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Aktivera"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> fungerar inte om du inte aktiverar Google Play-tjänster."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Aktivera Google Play-tjänster"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Installera"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan inte köras utan Google Play-tjänsterna, som saknas på enheten."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Hämta Google Play-tjänster"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Tillgänglighet för Google Plays tjänster"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Fel på Google Play-tjänster"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"Det har uppstått ett fel mellan <ns1:g id="APP_NAME">%1$s</ns1:g> och Google Play-tjänsterna. Försök igen."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> fungerar inte utan Google Play-tjänsterna, som inte stöds på enheten."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Uppdatera"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan inte köras om du inte uppdaterar Google Play-tjänsterna."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Uppdatera Google Play-tjänster"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan inte köras utan Google Play-tjänster, och dessa uppdateras för närvarande."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"En ny version av Google Play-tjänster krävs. Den uppdateras automatiskt inom kort."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Öppna på mobilen"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Logga in"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Logga in med Google"</string>
+    <string name="contact_fragment_description_hint">Beskrivning</string>
+    <string name="contact_fragment_email_hint">E-postadress</string>
+    <string name="contact_fragment_email_validation_error">Felaktig e-postadress</string>
+    <string name="contact_fragment_request_subject">Appärende</string>
+    <string name="contact_fragment_send_button_label">Skicka</string>
+    <string name="contact_fragment_title">Kontakta oss</string>
+    <string name="delete_payment_method">Vill du ta bort betalningsmetoden?</string>
+    <string name="delete_payment_method_prompt_title">T bort betalningsmetoden?</string>
+    <string name="expiry_date_hint">MM/ÅÅ</string>
+    <string name="expiry_label_short">Giltighetstid</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Diverse"</string>
+    <string name="fpx_bank_offline">%s - offline</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="help_search_no_results_label">Inga träffar för</string>
+    <string name="help_see_all_articles_label">Se alla artiklar</string>
+    <string name="help_see_all_n_articles_label">Se alla %d artiklar</string>
+    <string name="invalid_card_number">Kortnumret är ogiltigt.</string>
+    <string name="invalid_cvc">Kortets säkerhetskod är ogiltig.</string>
+    <string name="invalid_expiry_month">Kortets utgångsmånad är ogiltig.</string>
+    <string name="invalid_expiry_year">Kortets utgångsår är ogiltigt.</string>
+    <string name="invalid_shipping_information">Ogiltig leveransadress</string>
+    <string name="invalid_zip">Postnumret är ofullständigt.</string>
+    <string name="messenger_send_button_text">Skicka</string>
+    <string name="network_activity_no_connectivity">Ingen anslutning</string>
+    <string name="no_payment_methods">Inga betalningssätt.</string>
+    <string name="payment_method_add_new_card">Lägg till nytt kort ...</string>
+    <string name="payment_method_add_new_fpx">Välj bankkonto (FPX) ...</string>
+    <string name="price_free">Gratis</string>
+    <string name="rate_my_app_dialog_dismiss_action_label">Fråga inte igen</string>
+    <string name="rate_my_app_dialog_feedback_description_label">Vi vill göra den bättre. Berätta om eventuella problem du har.</string>
+    <string name="rate_my_app_dialog_feedback_device_api_version">OS-API: %1$d</string>
+    <string name="rate_my_app_dialog_feedback_device_memory">Minne: %1$s MB/%2$s MB</string>
+    <string name="rate_my_app_dialog_feedback_device_model">Modell: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_device_name">Enhet; %1$s</string>
+    <string name="rate_my_app_dialog_feedback_device_os_version">OS-version: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_request_subject">Appfeedback</string>
+    <string name="rate_my_app_dialog_feedback_send_error_no_connectivity_toast">Ingen anslutning</string>
+    <string name="rate_my_app_dialog_feedback_send_error_toast">Ett fel inträffade. Försök igen.</string>
+    <string name="rate_my_app_dialog_feedback_send_success_toast">Tack för att du kontaktade oss</string>
+    <string name="rate_my_app_dialog_feedback_title_label">Det var tråkigt att höra</string>
+    <string name="rate_my_app_dialog_negative_action_label">Nej, jag vill skicka feedback</string>
+    <string name="rate_my_app_dialog_positive_action_label">Ja, bedöm vår app</string>
+    <string name="rate_my_app_dialog_title_label">Är du nöjd med vår app?</string>
+    <string name="rate_my_app_dialogue_feedback_cancel_button_label">Avbryt</string>
+    <string name="rate_my_app_dialogue_feedback_issue_hint">Beskriv ditt problem</string>
+    <string name="rate_my_app_dialogue_feedback_send_button_label">Skicka feedback</string>
+    <string name="removed">Borttaget %s</string>
+    <string name="request_list_activity_title">Mina ärenden</string>
+    <string name="request_list_fragment_error_message">Det gick inte att hämta ärenden</string>
+    <string name="request_list_fragment_no_requests">Inga ärenden öppna</string>
+    <string name="request_view_comment_entry_hint">Kommentar</string>
+    <string name="retry_view_button_label">Försök igen</string>
+    <string name="row_request_unread_indicator_alt">Symbol som ange att det finns olästa kommentarer</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Sök"</string>
+    <string name="sections_list_fragment_error_message">Det gick inte att hämta avsnitt</string>
+    <string name="sections_list_fragment_no_sections_found">Inga avsnitt hittades</string>
+    <string name="secure_checkout">Säker betalning</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">">999"</string>
+    <string name="support_activity_title">Support</string>
+    <string name="support_activity_unable_to_contact_support">Det går inte att ansluta</string>
+    <string name="support_contact_menu">Kontakt</string>
+    <string name="support_conversations_menu">Samtal</string>
+    <string name="support_list_search_hint">Hur kan vi hjälpa till?</string>
+    <string name="title_add_a_card">Lägg till ett kort</string>
+    <string name="title_add_an_address">Lägg till adress</string>
+    <string name="title_bank_account">Bankkonto</string>
+    <string name="title_payment_method">Betalningssätt</string>
+    <string name="title_select_shipping_method">Välj leveransmetod</string>
+    <string name="tw__allow_btn_txt">Tillåt</string>
+    <string name="tw__composer_hint">Vad händer?</string>
+    <string name="tw__cta_text">Öppna i Vine</string>
+    <string name="tw__install">Installera</string>
+    <string name="tw__like_tweet">Gilla Tweet</string>
+    <string name="tw__liked_tweet">Ångra gillamarkeringen</string>
+    <string name="tw__loading_tweet">Läser in tweeten</string>
+    <string name="tw__login_btn_txt">Logga in med Twitter</string>
+    <string name="tw__max_tweet_chars">140</string>
+    <string name="tw__not_now_btn_txt">Inte nu</string>
+    <string name="tw__pause">pausa</string>
+    <string name="tw__play">spela</string>
+    <string name="tw__post_tweet">Tweeta</string>
+    <string name="tw__relative_date_format_long">d.M.y</string>
+    <string name="tw__relative_date_format_short">d MMM</string>
+    <string name="tw__replay">spela om</string>
+    <string name="tw__retweeted_by_format">Retweetad av %1$s</string>
+    <string name="tw__share_content_format">Kolla in \@%1$ss tweet: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_email_desc">Tillåt %1$s att få tillgång till den e-postadress som är kopplad till ditt Twitter-konto \@%2$s så att %1$s kan använda den enligt deras integritetspolicy. Till exempel så skulle %1$s kunna skicka uppdateringar och annan information till den adressen.</string>
+    <string name="tw__share_email_title">Dela din e-postadress</string>
+    <string name="tw__share_subject_format">Tweet från %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Dela tweeten</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">Tweetmedia</string>
+    <string name="view_article_attachments_error">Det gick inte att hämta bilagor</string>
+    <string name="view_article_seperator">\u2022</string>
+    <string name="view_request_agent_avatar_imageview_alt">Agentens avatar</string>
+    <string name="view_request_load_comments_error">Det gick inte att läsa in kommentarer</string>
+    <string name="view_request_send_comment_error">Det gick inte att skicka kommentaren</string>
+</resources>

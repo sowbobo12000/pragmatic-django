@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Values from build type: debug -->
+    <string name="FACEBOOK_APP_ID" translatable="false">267157383448416</string>
+    <string name="GOOGLE_MAPS_API_KEY" translatable="false">AIzaSyBIDT8uNIvqdHMmX3eb7hIJjYPSVCYUFXA</string>
+
+</resources>

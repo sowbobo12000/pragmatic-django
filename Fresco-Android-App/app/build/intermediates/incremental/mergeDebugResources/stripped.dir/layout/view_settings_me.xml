@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                       
+                                                   
+
+    
+
+                 
+                        
+                                                                          
+           
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fresco_white"
+        android:elevation="@dimen/settings_screen_card_elevation"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/settings_screen_padding_left"
+        android:paddingRight="@dimen/settings_screen_padding_left"
+        tools:visibility="visible" android:tag="layout/view_settings_me_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:gravity="center_vertical"
+            android:text="@string/me"
+            android:textColor="@color/fresco_blue"
+            android:textSize="@dimen/settings_screen_section_title_txt_sz"
+            android:tag="binding_1"                 />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:drawableLeft="@drawable/account_settings"
+            android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+            android:drawableStart="@drawable/account_settings"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:tag="binding_2"         
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                                                     
+                                                           
+            tools:text="Username"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+            android:drawableStart="@drawable/email"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:tag="binding_3"          
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                                                     
+                                                        
+            tools:text="aaa@aaa.aaa"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:drawableLeft="@drawable/lock"
+            android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+            android:drawableStart="@drawable/lock"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/change_password"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+            android:tag="binding_4"                  
+                                                           />
+
+    </LinearLayout>
+
+         

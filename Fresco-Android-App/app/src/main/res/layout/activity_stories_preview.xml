@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.storiespreview.StoriesPreviewViewModel"/>
+    </data>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:onCreate="@{model.onDrawerLayoutCreated}">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:context=".v2.storiespreview.StoriesPreviewActivity">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Theme.Fresco2.AppBarOverlay">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/upload_progress_clip"
+                        android:minHeight="?attr/actionBarSize"
+                        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        app:bind="@{model.toolbar}"
+                        app:layout_collapseMode="pin"
+                        app:navigationIcon="@{model.navIcon}"
+                        app:onNavIconClick="@{model.fromSearch == true ? model.goBack : model.onNavIconClicked}"
+                        app:title="@{model.title}">
+
+                        <include
+                            layout="@layout/view_notifications_toolbar_menu"
+                            app:avatarUrl="@{model.getAvatarUrl}"
+                            app:isLoggedIn="@{model.isLoggedIn}"
+                            app:onClick="@{model.profilePictureClicked}"
+                            app:unreadNotifications="@{model.unreadNotifications}"/>
+
+                        <ImageView
+                            style="@style/SearchButton"
+                            app:onClick="@{model.search}"/>
+
+                    </android.support.v7.widget.Toolbar>
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/error_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/fresco_red"
+                        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        android:visibility="invisible"
+                        app:bind="@{model.errorToolbar}"
+                        app:menu="@{model.uploadErrorMenu}"
+                        app:navigationIcon="@drawable/ic_close"
+                        app:onMenuItemClick="@{model.retryUpload}"
+                        app:onNavIconClick="@{model.cancelUpload}"
+                        app:title="@string/upload_failed"/>
+
+                </FrameLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:refresh="@{model.refresh}">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/content_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:onCreate="@{model.onRecyclerViewCreated}"
+                        tools:context=".v2.storiespreview.StoriesPreviewActivity"
+                        tools:listitem="@layout/item_stories_preview"
+                        tools:showIn="@layout/activity_stories_preview"/>
+
+                    <include
+                        layout="@layout/awkward_frog"
+                        app:isVisible="@{model.emptyState}"/>
+
+                </FrameLayout>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                android:scaleType="center"
+                android:src="@drawable/ic_camera_iris_56dp"
+                app:onClick="@{model.openCamera}"/>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:bind="@{model.navigationView}"
+            app:itemBackground="@color/transparent"
+            app:menu="@menu/drawer"
+            app:onNavItemSelected="@{model.onNavItemSelected}"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</layout>

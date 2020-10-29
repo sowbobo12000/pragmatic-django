@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                       
+
+    
+
+                 
+                        
+                                                                                       
+           
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:tag="layout/view_change_notification_radius_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:id="@+id/map_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fresco_cream"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <fragment
+                    android:id="@+id/map"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="212dp"/>
+
+                <LinearLayout
+                    android:id="@+id/view_map_skin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="horizontal"
+                    android:tag="binding_1"                />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <SeekBar
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:max="1000"
+                    android:tag="binding_2"             
+                                                                 />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:tag="binding_3"                        
+                    android:textColor="@color/black_54"
+                                                             
+                    tools:text="50 mi."/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_footer_height"
+            android:layout_below="@+id/map_layout"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/settings_dialog_footer_padding_top_bottom"
+            android:paddingTop="@dimen/settings_dialog_footer_padding_top_bottom">
+
+            <Button
+                style="@style/DialogButton.Negative"
+                android:layout_width="wrap_content"
+                android:text="@string/cancel"
+                android:tag="binding_4"             
+                                             
+                tools:background="@color/fresco_red"/>
+
+            <Button
+                style="@style/DialogButton.Positive"
+                android:text="@string/save_radius"
+                android:tag="binding_5"             
+                                           
+                tools:background="@color/fresco_green"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+         

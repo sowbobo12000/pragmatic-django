@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="tw__time_hours">
+        <item quantity="one">1h</item>
+        <item quantity="other">%dh</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1m</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1s</item>
+        <item quantity="other">%ds</item>
+    </plurals>
+    <string name="Smooch_activityConversation">Mensagens</string>
+    <string name="Smooch_btnSend">Enviar</string>
+    <string name="Smooch_errorCouldNotConnect">Não foi possível ligar ao servidor.</string>
+    <string name="Smooch_errorSendingMessage">A mensagem não foi entregue. Toque para tentar novamente.</string>
+    <string name="Smooch_errorUserOffline">Sem ligação à Internet.</string>
+    <string name="Smooch_messageHint">Digite uma mensagem…</string>
+    <string name="Smooch_startOfConversation">Isto é o começo da sua conversa com a equipa %1$s. Vamos ficar em contacto, para o ajudar a aproveitar ao máximo a sua aplicação.</string>
+    <string name="Smooch_welcome">Não hesite em deixar-nos uma mensagem sobre o que quer que seja que lhe passe pela cabeça. Daremos resposta, o mais rapidamente possível, às suas perguntas, sugestões, ou a qualquer outra coisa que tenha em mente.</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navegar para a página inicial"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Navegar para cima"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Mais opções"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Concluído"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Ver tudo"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Selecione um app"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"DESATIVAR"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ATIVAR"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"espaço"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Pesquisar..."</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Limpar consulta"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Consulta de pesquisa"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Pesquisar"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Pesquisa por voz"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartilhar com"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartilhar com %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Recolher"</string>
+    <string name="acc_label_card_number">Número do cartão</string>
+    <string name="acc_label_card_number_node">%s, número do cartão</string>
+    <string name="acc_label_cvc_node">%s, CVC</string>
+    <string name="acc_label_expiry_date">Data de validade</string>
+    <string name="acc_label_expiry_date_node">%s, data de validade</string>
+    <string name="acc_label_zip">Código postal</string>
+    <string name="acc_label_zip_short">CP</string>
+    <string name="add_card">Adicione um novo cartão de débito ou de crédito para efetuar compras nesta aplicação.</string>
+    <string name="added">Adicionado %s</string>
+    <string name="address_city_required">Introduza a sua cidade</string>
+    <string name="address_country_invalid">O seu país é inválido</string>
+    <string name="address_county_required">Introduza o seu concelho</string>
+    <string name="address_label_address">Endereço</string>
+    <string name="address_label_address_line1">Linha de endereço 1</string>
+    <string name="address_label_address_line1_optional">Linha de endereço 1 (opcional)</string>
+    <string name="address_label_address_line2">Linha de endereço 2</string>
+    <string name="address_label_address_line2_optional">Linha de endereço 2 (opcional)</string>
+    <string name="address_label_address_optional">Endereço (opcional)</string>
+    <string name="address_label_apt">Apt.</string>
+    <string name="address_label_apt_optional">Apt. (opcional)</string>
+    <string name="address_label_city">Cidade</string>
+    <string name="address_label_city_optional">Cidade (opcional)</string>
+    <string name="address_label_country">País</string>
+    <string name="address_label_county">Concelho</string>
+    <string name="address_label_county_optional">Concelho (opcional)</string>
+    <string name="address_label_name">Nome</string>
+    <string name="address_label_name_optional">Nome (opcional)</string>
+    <string name="address_label_phone_number">Número de telefone</string>
+    <string name="address_label_phone_number_optional">Número de telefone (opcional)</string>
+    <string name="address_label_postal_code">Código postal</string>
+    <string name="address_label_postal_code_optional">Código postal (opcional)</string>
+    <string name="address_label_postcode">Código postal</string>
+    <string name="address_label_postcode_optional">Código postal (opcional)</string>
+    <string name="address_label_province">Província</string>
+    <string name="address_label_province_optional">Província (opcional)</string>
+    <string name="address_label_region_generic">Estado/Província/Região</string>
+    <string name="address_label_region_generic_optional">Estado/Província/Região (opcional)</string>
+    <string name="address_label_state">Estado</string>
+    <string name="address_label_state_optional">Estado (opcional)</string>
+    <string name="address_label_zip_code">Código postal</string>
+    <string name="address_label_zip_code_optional">Código postal (opcional)</string>
+    <string name="address_label_zip_postal_code">Código postal</string>
+    <string name="address_label_zip_postal_code_optional">Código postal (opcional)</string>
+    <string name="address_name_required">Introduza o seu nome</string>
+    <string name="address_phone_number_required">Introduza o seu número de telefone</string>
+    <string name="address_postal_code_invalid">O seu código postal é inválido.</string>
+    <string name="address_postcode_invalid">O seu código postal é inválido</string>
+    <string name="address_province_required">Introduza a sua província</string>
+    <string name="address_region_generic_required">Introduza o seu Estado/Província/Região</string>
+    <string name="address_required">Introduza o seu endereço</string>
+    <string name="address_shipping_address">Endereço de envio</string>
+    <string name="address_state_required">Introduza o seu estado</string>
+    <string name="address_zip_invalid">O seu código postal é inválido.</string>
+    <string name="address_zip_postal_invalid">O seu código postal é inválido</string>
+    <string name="becs_mandate_acceptance">
+    Ao fornecer os seus dados de conta bancária e ao confirmar este pagamento, declara que concorda com este
+    Pedido de Débito Direto e com o contrato de serviços de Pedido de Débito Direto e autoriza a
+    Stripe Payments Australia Pty Ltd ACN 160 180 343, número de ID de Utilizador de Débito Direto 507156
+    (“Stripe”) a debitar a sua conta através do Sistema BECS (Bulk Electronic Clearing System) em
+    nome de %1$s (o \"Comerciante\") em quaisquer montantes comunicados separadamente a si
+    pelo Comerciante. Certifica ainda que é um titular da conta ou um signatário autorizado
+    da conta acima indicada.
+    </string>
+    <string name="becs_widget_account_number">Número de conta</string>
+    <string name="becs_widget_account_number_required">O seu número de conta é obrigatório.</string>
+    <string name="becs_widget_bsb">BSB</string>
+    <string name="becs_widget_bsb_incomplete">O BSB que introduziu está incompleto.</string>
+    <string name="becs_widget_bsb_invalid">O BSB que introduziu é inválido.</string>
+    <string name="becs_widget_email">Endereço de email</string>
+    <string name="becs_widget_email_required">O seu endereço de email é obrigatório.</string>
+    <string name="becs_widget_name">Nome</string>
+    <string name="becs_widget_name_required">O seu nome é obrigatório.</string>
+    <string name="card_ending_in">%1$s terminado em %2$s</string>
+    <string name="close">Fechar</string>
+    <string name="com_facebook_device_auth_instructions">Acesse &lt;b>facebook.com/device&lt;/b> no seu smartphone ou computador e insira este código:</string>
+    <string name="com_facebook_image_download_unknown_error">Erro inesperado ao baixar uma imagem.</string>
+    <string name="com_facebook_internet_permission_error_message">A permissão de INTERNET é necessária para fazer o login WebView</string>
+    <string name="com_facebook_internet_permission_error_title">Erro no AndroidManifest</string>
+    <string name="com_facebook_like_button_liked">Curtiu</string>
+    <string name="com_facebook_like_button_not_liked">Curtir</string>
+    <string name="com_facebook_loading">Carregando…</string>
+    <string name="com_facebook_loginview_cancel_action">Cancelar</string>
+    <string name="com_facebook_loginview_log_in_button">Entrar</string>
+    <string name="com_facebook_loginview_log_in_button_long">Entrar com o Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Sair</string>
+    <string name="com_facebook_loginview_log_out_button">Sair</string>
+    <string name="com_facebook_loginview_logged_in_as">Conectado como: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Você entrou usando o Facebook</string>
+    <string name="com_facebook_send_button_text">Envio</string>
+    <string name="com_facebook_share_button_text">Compartilhar</string>
+    <string name="com_facebook_tooltip_default">Novidade! Você está no controle - escolha quais informações quer compartilhar com os aplicativos.</string>
+    <string name="delete_payment_method">Eliminar método de pagamento?</string>
+    <string name="delete_payment_method_prompt_title">Eliminar método de pagamento?</string>
+    <string name="expiry_date_hint">MM/AA</string>
+    <string name="expiry_label_short">Validade</string>
+    <string name="fpx_bank_offline">%s - Offline</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="invalid_card_number">O número do seu cartão é inválido.</string>
+    <string name="invalid_cvc">O código de segurança do seu cartão é inválido.</string>
+    <string name="invalid_expiry_month">O mês de validade do seu cartão é inválido.</string>
+    <string name="invalid_expiry_year">O ano de validade do seu cartão é inválido.</string>
+    <string name="invalid_shipping_information">Endereço de envio inválido</string>
+    <string name="invalid_zip">O seu código postal está incompleto.</string>
+    <string name="messenger_send_button_text">Enviar</string>
+    <string name="no_payment_methods">Nenhum método de pagamento.</string>
+    <string name="payment_method_add_new_card">Adicionar um novo cartão...</string>
+    <string name="payment_method_add_new_fpx">Selecionar conta bancária (FPX)...</string>
+    <string name="price_free">Gratuito</string>
+    <string name="removed">Removido %s</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Pesquisar"</string>
+    <string name="secure_checkout">Finalização de compra segura</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="title_add_a_card">Adicionar um cartão</string>
+    <string name="title_add_an_address">Definir endereço</string>
+    <string name="title_bank_account">Conta bancária</string>
+    <string name="title_payment_method">Método de pagamento</string>
+    <string name="title_select_shipping_method">Selecionar método de envio</string>
+    <string name="tw__allow_btn_txt">Permitir</string>
+    <string name="tw__composer_hint">O que está acontecendo?</string>
+    <string name="tw__cta_text">Abrir no Vine</string>
+    <string name="tw__install">Instalar</string>
+    <string name="tw__like_tweet">Curtir Tweet</string>
+    <string name="tw__liked_tweet">Descurtir.</string>
+    <string name="tw__loading_tweet">Carregando Tweet</string>
+    <string name="tw__login_btn_txt">Entrar com o Twitter</string>
+    <string name="tw__max_tweet_chars">140</string>
+    <string name="tw__not_now_btn_txt">Agora não</string>
+    <string name="tw__pause">pausar</string>
+    <string name="tw__play">reproduzir</string>
+    <string name="tw__post_tweet">Tweetar</string>
+    <string name="tw__relative_date_format_long">d.MM.y</string>
+    <string name="tw__relative_date_format_short">d \'de\' MMM</string>
+    <string name="tw__replay">repetir</string>
+    <string name="tw__retweeted_by_format">Retweetado por %1$s</string>
+    <string name="tw__share_content_format">Confira o Tweet de \@%1$s: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_email_desc">Permitir %1$s a acessar o e-mail associado à sua conta no Twitter \@%2$s para que %1$s possa usá-lo de acordo com sua política de privacidade. Por exemplo, %1$s pode enviar atualizações e outras informações nesse endereço.</string>
+    <string name="tw__share_email_title">Compartilhar seu endereço de e-mail</string>
+    <string name="tw__share_subject_format">Tweet de %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Compartilhar Tweet</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">Mídia do Tweet</string>
+</resources>

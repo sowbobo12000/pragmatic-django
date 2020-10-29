@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                       
+                                                          
+                                                   
+
+    
+
+                                          
+
+                 
+                        
+                                                                                
+           
+
+    <LinearLayout
+        android:id="@+id/assignment_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="300dp"
+                                                 
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        tools:background="@color/fresco_red" android:tag="layout/view_assignment_bottom_sheet_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <!--This is here to make sure the bottom drawer doesn't overlap with the appbar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:clickable="false"
+            tools:ignore="UselessLeaf"/>
+
+        <TextView
+            android:id="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/assignment_shadow"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:paddingBottom="16dp"
+            android:paddingEnd="64dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="64dp"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:shadowColor="@color/black_54"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:tag="binding_1"                
+            android:textColor="@color/fresco_white"
+            android:textSize="24sp"
+                                                
+            tools:text="Assignment Title"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/assignment_drawer_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fresco_cream"
+                android:orientation="vertical"
+                android:paddingBottom="72dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:tag="binding_2"                                                                                    
+                                                           
+                        fresco:roundAsCircle="true"
+                        tools:background="@color/fresco_blue"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:tag="binding_3"                                                                                    
+                                                           
+                        fresco:roundAsCircle="true"
+                        tools:background="@color/fresco_orange"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:tag="binding_4"                                                                                    
+                                                           
+                        fresco:roundAsCircle="true"
+                        tools:background="@color/fresco_green"/>
+
+                    <TextView
+                        android:id="@+id/outlet_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="18dp"
+                        android:tag="binding_5"           
+                        android:textColor="@color/black_87"
+                        android:textSize="16sp"
+                                                            
+                        tools:text="Outlet Name"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/assignment_caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:lineSpacingExtra="10sp"
+                    android:tag="binding_6"        
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp"
+                    tools:text="Assignment Caption"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_clock_gray"
+                    android:drawablePadding="32dp"
+                    android:drawableStart="@drawable/ic_clock_gray"
+                    android:gravity="center"
+                    android:tag="binding_7"                 
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp"
+                    tools:text="Expiration Time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:tag="binding_8"             
+                    android:textColor="@color/black_54"
+                    android:textSize="12sp"
+                    tools:text="Posted at"/>
+
+                <TextView
+                    android:id="@+id/distance_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_map_gray"
+                    android:drawablePadding="32dp"
+                    android:drawableStart="@drawable/ic_map_gray"
+                    android:gravity="center"
+                    android:tag="binding_9"               
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp"
+                                                                                             
+                    tools:text="Distance Away"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_alert"
+                    android:drawablePadding="32dp"
+                    android:drawableStart="@drawable/ic_alert"
+                    android:gravity="center"
+                    android:text="@string/assignments_warning"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+         

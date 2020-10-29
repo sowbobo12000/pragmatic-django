@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.report.ReportBottomSheetDialogViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <TextView
+            android:id="@+id/delete_comment"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_delete"
+            android:drawablePadding="32dp"
+            android:drawableStart="@drawable/ic_delete"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/delete"
+            android:textSize="16sp"
+            android:visibility="@{model.myComment || model.myGallery  ? View.VISIBLE : View.GONE}"
+            app:onClick="@{model.deleteComment}"/>
+
+        <TextView
+            android:id="@+id/report_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_flag_20dp"
+            android:drawablePadding="32dp"
+            android:drawableStart="@drawable/ic_flag_20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/report_gallery"
+            android:textSize="16sp"
+            android:visibility="@{model.reportingGallery ? View.VISIBLE : View.GONE}"
+            app:onClick="@{model.reportGallery}"/>
+
+        <TextView
+            android:id="@+id/follow_user"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@{model.following ? @drawable/ic_account_check : @drawable/ic_account_add}"
+            android:drawablePadding="32dp"
+            android:drawableStart="@{model.following ? @drawable/ic_account_check : @drawable/ic_account_add}"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@{model.following ? @string/unfollow : @string/follow}"
+            android:textSize="16sp"
+            android:visibility="@{ model.fromComment || model.reportingGallery || !model.blocking || model.blocked ? View.GONE : View.VISIBLE}"
+            app:onClick="@{model.toggleFollow}"
+            tools:drawableStart="@drawable/ic_account_check"
+            tools:text="@string/unfollow"/>
+
+        <TextView
+            android:id="@+id/report_user"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_account_alert_20dp"
+            android:drawablePadding="32dp"
+            android:drawableStart="@drawable/ic_account_alert_20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@{model.reportUserText}"
+            android:textSize="16sp"
+            android:visibility="@{model.myComment || model.noOwner ? View.GONE : View.VISIBLE}"
+            app:onClick="@{model.reportUser}"
+            tools:text="@string/report_user"/>
+
+        <TextView
+            android:id="@+id/block_user"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableLeft="@drawable/ic_block_20dp"
+            android:drawablePadding="32dp"
+            android:drawableStart="@drawable/ic_block_20dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@{model.blockUserText}"
+            android:textSize="16sp"
+            android:visibility="@{model.myComment || model.noOwner ? View.GONE : View.VISIBLE}"
+            app:onClick="@{model.toggleBlockUser}"
+            tools:text="@string/block_user"/>
+
+    </LinearLayout>
+
+</layout>

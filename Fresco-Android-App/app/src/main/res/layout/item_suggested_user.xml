@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.framework.mvvm.viewmodels.UserSearchViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:minHeight="56dp"
+        android:visibility="@{model == null ? View.GONE : View.VISIBLE}"
+        app:onClick="@{model.profilePictureClicked}">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/black_26_background"
+            app:avatar="@{model.getAvatarUrl}"
+            app:failureImage="@drawable/account_white"
+            fresco:placeholderImage="@drawable/account_white"
+            fresco:roundAsCircle="true"/>
+
+        <LinearLayout
+            android:id="@+id/username_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/user_avatar"
+            android:layout_toRightOf="@+id/user_avatar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@{model.getFullName}"
+                android:textColor="@color/black_87"
+                android:textSize="16sp"
+                app:customFont="@{@string/robotoRegular}"
+                tools:text="Name"/>
+
+            <TextView
+                android:id="@+id/user_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@{model.getUsername}"
+                android:textColor="@color/black_54"
+                android:textSize="12sp"
+                app:customFont="@{@string/robotoRegular}"
+                tools:text="username"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username_layout"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_toEndOf="@+id/user_avatar"
+            android:layout_toRightOf="@+id/user_avatar"
+            android:text="@{model.getBio}"
+            android:textColor="@color/black_54"
+            android:textSize="14sp"
+            app:customFont="@{@string/robotoRegular}"
+            tools:text="CEO of Fresco &amp; Thief Fellow 2015"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="?android:selectableItemBackground"
+            android:padding="8dp"
+            android:src="@{model.following ? @drawable/ic_account_check_yellow : @drawable/ic_account_add}"
+            android:visibility="@{model.me ? View.GONE : View.VISIBLE}"
+            app:onClick="@{model.toggleFollow}"
+            tools:src="@drawable/ic_account_check_yellow"/>
+
+    </RelativeLayout>
+
+</layout>

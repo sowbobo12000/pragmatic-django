@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.navdrawer.HeaderViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="@color/primary"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_white_fresco_banner_new"/>
+
+        <!-- consumer layout view not logged in, using visibility to switch between login statuses -->
+        <LinearLayout
+            android:id="@+id/login_text_button"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="@{model.loggedIn ? View.GONE : View.VISIBLE}"
+            app:onClick="@{model.onLoginClicked}">
+
+            <ImageView
+                android:id="@+id/login_text_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="1dp"
+                android:paddingStart="1dp"
+                android:src="@drawable/ic_login"/>
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:paddingLeft="3dp"
+                android:text="@string/log_in"
+                android:textColor="@color/fresco_white"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <!-- my profile logged in -->
+        <LinearLayout
+            android:id="@+id/my_profile"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="@{model.loggedIn ? View.VISIBLE : View.GONE}"
+            app:onClick="@{model.onProfileClicked}">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitCenter"
+                app:avatar="@{model.avatar}"
+                fresco:placeholderImage="@drawable/placeholder"
+                fresco:roundAsCircle="true"/>
+
+            <TextView
+                android:id="@+id/drawer_profile_name"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:paddingLeft="3dp"
+                android:text="@{model.username}"
+                android:textColor="@color/fresco_white"
+                android:textStyle="bold"
+                tools:text="Username"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

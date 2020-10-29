@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.localytics.android:library:5.6.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/014b684b915b47808b4c04d5433dd561/library-5.6.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/014b684b915b47808b4c04d5433dd561/library-5.6.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/014b684b915b47808b4c04d5433dd561/library-5.6.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.localytics.android/library/5.6.1/2bf8fe286a4b7baf0c65e58b1dfc7cfcd38604fb/library-5.6.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

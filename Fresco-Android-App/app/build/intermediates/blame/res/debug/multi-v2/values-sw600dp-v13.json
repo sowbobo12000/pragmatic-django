@@ -1,0 +1,72 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/kyuyeon/.gradle/caches/transforms-2/files-2.1/ffe2d42368f419f8aaa1621c38547682/ui-8.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "44",
+                        "endOffsets": "95"
+                    }
+                },
+                {
+                    "source": "/Users/kyuyeon/.gradle/caches/transforms-2/files-2.1/3c67178a2a753a2ee75802ad5e2f2837/design-25.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,115,185,256,328,386,444,550,614,677",
+                        "endLines": "2,3,4,5,6,7,8,9,10,14",
+                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
+                        "endOffsets": "110,180,251,323,381,439,545,609,672,854"
+                    },
+                    "to": {
+                        "startLines": "11,12,13,14,15,16,17,18,21,22",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "656,716,786,857,929,987,1045,1151,1330,1393",
+                        "endLines": "11,12,13,14,15,16,17,18,21,25",
+                        "endColumns": "59,69,70,71,57,57,105,63,62,12",
+                        "endOffsets": "711,781,852,924,982,1040,1146,1210,1388,1570"
+                    }
+                },
+                {
+                    "source": "/Users/kyuyeon/.gradle/caches/transforms-2/files-2.1/73e88df759d51720a843ce6ecf41db7f/appcompat-v7-25.1.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,169,238,308,382,458,517,588",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "164,233,303,377,453,512,583,651"
+                    }
+                },
+                {
+                    "source": "/Users/kyuyeon/.gradle/caches/transforms-2/files-2.1/09bea8b9a619c9fbf92ac4f82400f68d/material-1.2.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "11,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "617,673",
+                        "endColumns": "55,58",
+                        "endOffsets": "668,727"
+                    },
+                    "to": {
+                        "startLines": "19,20",
+                        "startColumns": "4,4",
+                        "startOffsets": "1215,1271",
+                        "endColumns": "55,58",
+                        "endOffsets": "1266,1325"
+                    }
+                }
+            ]
+        }
+    ]
+}

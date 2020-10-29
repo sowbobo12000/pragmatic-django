@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.gallery.gallerydetail.GalleryContentPurchaseDialogViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/submitted_image_view"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@{model.firstLineIcon}"
+                    tools:src="@drawable/ic_checkbox_marked_circle_outline_green"/>
+
+                <View
+                    android:id="@+id/bridge_submitted_verified_view"
+                    android:layout_width="2dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/submitted_image_view"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:background="@{model.firstToSecondLineColor}"
+                    tools:background="@color/fresco_green"/>
+
+                <ImageView
+                    android:id="@+id/verified_image_view"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/bridge_submitted_verified_view"
+                    android:src="@{model.secondLineIcon}"
+                    tools:src="@drawable/ic_checkbox_marked_circle_outline_green"/>
+
+                <View
+                    android:id="@+id/bridge_verified_cash_view"
+                    android:layout_width="2dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/verified_image_view"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:background="@{model.secondToThirdLineColor}"
+                    android:visibility="@{model.secondToThirdLineColor == 0 ? View.GONE : View.VISIBLE}"
+                    tools:background="@color/fresco_green"/>
+
+                <ImageView
+                    android:id="@+id/cash_image_view"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/bridge_verified_cash_view"
+                    android:src="@{model.thirdLineIcon}"
+                    android:visibility="@{model.thirdLineIcon == null ? View.GONE : View.VISIBLE}"
+                    tools:src="@drawable/ic_cash_usd_green"/>
+
+                <TextView
+                    android:id="@+id/submitted_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/submitted_image_view"
+                    android:layout_toRightOf="@+id/submitted_image_view"
+                    android:text="@string/submitted"
+                    android:textColor="@color/black_87"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/submitted_text_view"
+                    android:layout_alignStart="@+id/submitted_text_view"
+                    android:layout_alignTop="@+id/verified_image_view"
+                    android:text="@{model.secondLineTitle}"
+                    android:textColor="@color/black_87"
+                    android:textSize="16sp"
+                    app:customFont="@{model.secondLineBold ? {@string/robotoMedium} : {@string/robotoRegular}}"
+                    tools:text="@string/verified"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/submitted_text_view"
+                    android:layout_alignStart="@+id/submitted_text_view"
+                    android:layout_below="@+id/verified_image_view"
+                    android:text="@{model.secondLineMessage}"
+                    android:textColor="@color/black_54"
+                    android:textSize="14sp"
+                    tools:text="@string/verified_message"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/submitted_text_view"
+                    android:layout_alignStart="@+id/submitted_text_view"
+                    android:layout_alignTop="@+id/cash_image_view"
+                    android:text="@{model.thirdLineTitle}"
+                    android:textColor="@color/black_87"
+                    android:textSize="16sp"
+                    android:visibility="@{model.thirdLineTitle == null ? View.GONE : View.VISIBLE}"
+                    app:customFont="@{model.thirdLineBold ? {@string/robotoMedium} : {@string/robotoRegular}}"
+                    tools:text="@string/sold"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/sold_content_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/submitted_text_view"
+                    android:layout_alignStart="@+id/submitted_text_view"
+                    android:layout_below="@+id/cash_image_view"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="10dp"
+                    app:bind="@{model.recyclerView}"/>
+
+                <ImageView
+                    android:id="@+id/delete_image_view"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/sold_content_recycler_view"
+                    android:src="@{model.fourthLineIcon == null ? View.GONE : View.VISIBLE}"
+                    tools:src="@drawable/ic_close_circle_outline_red"/>
+
+                <View
+                    android:id="@+id/bridge_cash_deleted_view"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/delete_image_view"
+                    android:layout_below="@+id/cash_image_view"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:background="@{model.thirdToFourthLineColor}"
+                    android:visibility="@{model.thirdToFourthLineColor == 0 ? View.GONE : View.VISIBLE}"
+                    tools:background="@color/fresco_red"/>
+
+                <TextView
+                    android:id="@+id/deleted_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/submitted_text_view"
+                    android:layout_alignStart="@+id/submitted_text_view"
+                    android:layout_alignTop="@+id/delete_image_view"
+                    android:text="@{model.fourthLineTitle}"
+                    android:textColor="@color/black_87"
+                    android:textSize="16sp"
+                    android:visibility="@{model.fourthLineTitle == null ? View.GONE : View.VISIBLE}"
+                    tools:text="@string/deleted"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/submitted_text_view"
+                    android:layout_alignStart="@+id/submitted_text_view"
+                    android:layout_below="@+id/deleted_text_view"
+                    android:text="@{model.fourthLineMessage}"
+                    android:textColor="@color/black_54"
+                    android:textSize="14sp"
+                    android:visibility="@{model.fourthLineMessage == null ? View.GONE : View.VISIBLE}"
+                    tools:text="@string/deleted_message"/>
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_footer_height"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/settings_dialog_footer_padding_top_bottom"
+            android:paddingTop="@dimen/settings_dialog_footer_padding_top_bottom">
+
+            <Button
+                style="@style/DialogButton.Negative"
+                android:text="@string/get_help"
+                app:customFont="@{@string/notaBold}"
+                android:textSize="14sp"
+                app:onClick="@{model.getHelp}"
+                tools:background="@color/fresco_red"/>
+
+            <Button
+                style="@style/DialogButton.Positive"
+                android:text="@string/close"
+                app:customFont="@{@string/notaBold}"
+                app:onClick="@{model.close}"
+                android:textSize="14sp"
+                tools:background="@color/fresco_green"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

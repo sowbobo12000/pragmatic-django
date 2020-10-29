@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- ***************************************** -->
+    <!-- *** Onboarding circle style indicators -->
+    <!-- ***************************************** -->
+    <style name="CircleStyleIndicator">
+        <item name="fillColor">@color/black_54</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/black_26</item>
+        <item name="radius">@dimen/page_indicator_radius</item>
+        <item name="centered">true</item>
+    </style>
+
+    <!-- fillColor sets active page circle, pageColor sets inactive color for circle
+    http://androidopentutorials.com/android-image-slideshow-using-viewpager/
+    removing <item name="strokeColor"></item> so that white color border is removed
+    -->
+    <style name="CircleStyleIndicator.Gallery">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">end</item>
+        <item name="fillColor">@color/white</item>
+        <item name="pageColor">@color/white_70</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="strokeColor">@color/transparent</item>
+        <item name="radius">@dimen/page_indicator_radius</item>
+        <item name="centered">true</item>
+    </style>
+</resources>

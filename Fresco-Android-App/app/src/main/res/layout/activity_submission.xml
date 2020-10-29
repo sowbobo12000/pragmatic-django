@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.submission.SubmissionViewModel"/>
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fresco_cream"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                app:bind="@{model.collapsingToolbar}"
+                app:contentScrim="@color/primary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:statusBarScrim="@color/primary_dark">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/gallery_view_header_height"
+                    android:fitsSystemWindows="true"
+                    app:layout_collapseMode="parallax">
+
+                    <android.support.v4.view.ViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:bind="@{model.viewPager}"/>
+
+                    <com.viewpagerindicator.CirclePageIndicator
+                        style="@style/CircleStyleIndicator.Gallery"
+                        app:bind="@{model.circleIndicator}"/>
+                </FrameLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:navigationIcon="@{model.navIcon}"
+                    app:onNavIconClick="@{model.goBack}"/>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/content_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="48dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="@{model.assignmentCount > 0 ? View.VISIBLE : View.GONE}"
+                    app:bind="@{model.assignmentList}"
+                    tools:layout_height="40dp"/>
+
+                <RadioButton
+                    android:id="@+id/radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:checked="true"
+                    android:text="@string/no_assignment"
+                    app:bind="@{model.noAssignmentButton}"
+                    app:onClick="@{model.noAssignment}"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="@{model.globalCount > 0 ? View.VISIBLE : View.GONE}">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_globe_16dp"
+                        android:drawablePadding="6dp"
+                        android:drawableStart="@drawable/ic_globe_16dp"
+                        android:gravity="center"
+                        android:text="@{model.globalAssignmentsString}"
+                        android:visibility="@{model.globalCount > 0 ? View.VISIBLE : View.GONE}"
+                        app:onClick="@{model.toggleGlobal}"
+                        tools:text="6 Global Assignments"/>
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@{model.globalVisible ? @drawable/ic_chevron_up : @drawable/ic_chevron_down}"
+                        tools:src="@drawable/ic_chevron_up"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="@{model.globalVisible ? View.VISIBLE : View.GONE}"
+                    app:bind="@{model.globalList}"/>
+
+                <EditText
+                    android:id="@+id/caption_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="@string/enter_a_caption"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:lines="5"
+                    app:bindValue="@{model.caption}"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <FrameLayout
+            android:id="@+id/submit_footer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="@color/fresco_cream">
+
+            <View
+                style="@style/HorizontalLine"/>
+
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="@string/submit"
+                android:textColor="@color/fresco_blue"
+                app:onClick="@{model.submit}"/>
+
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+                                                            
+
+    
+
+                 
+                        
+                                                                             
+           
+
+    <LinearLayout
+        android:id="@+id/missing_text_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:background="@color/fresco_cream"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="72dp"
+        android:paddingTop="24dp"
+        android:visibility="visible" android:tag="layout/media_browser_bot_loc_message_0" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <!--Missing Something Layout-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/missing_header"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@string/notaBold"
+                android:text="@string/missing_something"
+                android:textAllCaps="true"
+                android:textColor="@color/black_87"
+                android:textSize="21sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/location_on_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/missing_header"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@string/robotoRegular"
+                android:gravity="center"
+                android:lineSpacingExtra="2dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black_54"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:tag="binding_1"       />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+         

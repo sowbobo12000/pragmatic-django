@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.segment.analytics.android.integrations:mixpanel:2.3.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.segment.analytics.android.integrations/mixpanel/2.3.0/968294b793a68153fa38a5eca38c6fee317a9377/mixpanel-2.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.segment.analytics.android.integrations/mixpanel/2.3.0/8e329a9e704af268af04460ac02e696f8b498247/mixpanel-2.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.segment.analytics.android.integrations/mixpanel/2.3.0/451a6fc5efbc9acf4c074acf2570f89a2ab4ae5a/mixpanel-2.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

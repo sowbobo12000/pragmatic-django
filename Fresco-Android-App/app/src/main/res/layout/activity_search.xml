@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.search.SearchViewModel"/>
+
+        <import type="android.view.View"/>
+    </data>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:onCreate="@{model.onDrawerLayoutCreated}">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:context=".v2.search.SearchActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:visibility="gone"
+                android:src="@drawable/caterfly"/>
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Theme.Fresco2.AppBarOverlay">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/upload_progress_clip"
+                        android:minHeight="?attr/actionBarSize"
+                        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        app:bind="@{model.toolbar}"
+                        app:layout_collapseMode="pin"
+                        app:navigationIcon="@{model.navIcon}"
+                        app:onNavIconClick="@{model.onNavIconClicked}"
+                        app:title="@{model.title}">
+
+                        <EditText
+                            android:layout_width="220dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/transparent"
+                            android:hint="@string/search_title"
+                            android:imeOptions="actionSearch"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:textColorHint="#4dffffff"
+                            android:textSize="20sp"
+                            app:bind="@{model.editText}"
+                            app:customFont="@{@string/robotoRegular}"/>
+
+                        <ImageButton
+                            android:id="@+id/microphone_button"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@color/transparent"
+                            android:src="@drawable/ic_microphone"
+                            android:visibility="@{model.queryFilled == false ? View.VISIBLE : View.GONE}"
+                            app:onClick="@{model.startVoiceSearch}"/>
+
+                        <ImageButton
+                            android:id="@+id/close_button"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginRight="16dp"
+                            android:background="@color/transparent"
+                            android:src="@drawable/ic_close_circle"
+                            android:visibility="@{model.queryFilled == true ? View.VISIBLE : View.GONE}"
+                            app:onClick="@{model.close}"/>
+
+                    </android.support.v7.widget.Toolbar>
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/error_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/fresco_red"
+                        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                        android:visibility="invisible"
+                        app:bind="@{model.errorToolbar}"
+                        app:menu="@{model.uploadErrorMenu}"
+                        app:navigationIcon="@drawable/ic_close"
+                        app:onMenuItemClick="@{model.retryUpload}"
+                        app:onNavIconClick="@{model.cancelUpload}"
+                        app:title="@string/upload_failed"/>
+
+                </FrameLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:refresh="@{model.refresh}">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="@{model.searchMade ? View.GONE : View.VISIBLE}">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:gravity="center"
+                            android:text="@string/suggested_users"
+                            android:textColor="@color/black_87"
+                            android:textSize="24sp"
+                            app:customFont="@{@string/karminaBold}"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/active_citizens_area"
+                            android:textSize="14sp"
+                            app:customFont="@{@string/robotoRegular}"/>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/content_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:bind="@{model.recyclerView}"
+                        tools:context=".v2.search.SearchActivity"
+                        tools:showIn="@layout/activity_search"/>
+
+                </LinearLayout>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <include
+                layout="@layout/awkward_frog"
+                app:isVisible="@{model.emptyState}"/>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:bind="@{model.navigationView}"
+            app:itemBackground="@color/transparent"
+            app:menu="@menu/drawer"
+            app:onNavItemSelected="@{model.onNavItemSelected}"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</layout>
+

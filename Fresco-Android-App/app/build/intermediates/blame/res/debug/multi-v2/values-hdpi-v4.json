@@ -1,0 +1,55 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/kyuyeon/.gradle/caches/transforms-2/files-2.1/73e88df759d51720a843ce6ecf41db7f/appcompat-v7-25.1.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    },
+                    "to": {
+                        "startLines": "8",
+                        "startColumns": "4",
+                        "startOffsets": "397",
+                        "endLines": "12",
+                        "endColumns": "13",
+                        "endOffsets": "669"
+                    }
+                },
+                {
+                    "source": "/Users/kyuyeon/.gradle/caches/transforms-2/files-2.1/7a8ce5f2f4f4c2e52369e5638e61b832/twitter-core-2.2.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,116,168,226,285",
+                        "endColumns": "60,51,57,58,54",
+                        "endOffsets": "111,163,221,280,335"
+                    },
+                    "to": {
+                        "startLines": "3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "112,173,225,283,342",
+                        "endColumns": "60,51,57,58,54",
+                        "endOffsets": "168,220,278,337,392"
+                    }
+                },
+                {
+                    "source": "/Users/kyuyeon/.gradle/caches/transforms-2/files-2.1/4d6ed5f5198178d57e4a2ff1681b813e/stripe-android-16.0.1/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    }
+                }
+            ]
+        }
+    ]
+}

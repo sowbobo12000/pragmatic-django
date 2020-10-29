@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                       
+
+    
+
+                                          
+
+                 
+                        
+                                                                                     
+           
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+                                   
+        app:cardElevation="5dp" android:tag="layout/item_gallery_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_height="300dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="binding_1"      />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    style="@style/CircleStyleIndicator.Gallery"
+                    android:tag="binding_2"            />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:background="?android:selectableItemBackground"
+                    android:drawableLeft="@drawable/ic_repeat_white"
+                    android:drawablePadding="12dp"
+                    android:drawableStart="@drawable/ic_repeat_white"
+                    android:gravity="center_vertical"
+                    android:shadowColor="@color/black_54"
+                    android:shadowDx="0"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:tag="binding_3"           
+                    android:textColor="@color/fresco_white"
+                    android:textSize="14sp"
+                                                                                             
+                                                        
+                                                      
+                    tools:text="Susan Black"
+                    tools:textColor="@color/fresco_blue"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="18dp"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:tag="binding_4"        
+                android:textColor="@color/black_87"
+                                                                                                                       
+                tools:text="Gallery Caption"/>
+
+            <!--Horizontal Bar-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_26"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:tag="binding_5"                              
+                    android:textColor="@color/fresco_blue"
+                    android:textStyle="bold"
+                                                        
+                                                   
+                    tools:text="23 Comments"/>
+
+                <ImageButton
+                    android:id="@+id/share_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_share"
+                    android:tint="@color/fresco_button_tint"
+                    android:tag="binding_6"     />
+
+                <TextView
+                    android:id="@+id/repost_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/share_button"
+                    android:layout_toStartOf="@id/share_button"
+                    android:tag="binding_7"                        
+                                                                                                           
+                                                        
+                                                      
+                    tools:text="85"/>
+
+                <ImageButton
+                    android:id="@+id/repost_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/repost_count"
+                    android:layout_toStartOf="@id/repost_count"
+                    android:paddingBottom="-5dp"
+                    android:tag="binding_8"                                                                  
+                                                                                                      
+                                                 />
+
+                <TextView
+                    android:id="@+id/like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/repost_button"
+                    android:layout_toStartOf="@id/repost_button"
+                    android:tag="binding_9"                      
+                                                                                                      
+                                                        
+                                                    
+                    tools:text="66"/>
+
+                <ImageButton
+                    android:id="@+id/like_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/like_count"
+                    android:layout_toStartOf="@id/like_count"
+                    android:tag="binding_10"                                                      
+                                                                                                 
+                                               />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+         

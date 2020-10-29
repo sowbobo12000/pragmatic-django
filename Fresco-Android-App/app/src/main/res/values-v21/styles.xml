@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Fresco2" parent="Base.Theme.Fresco2">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:windowTranslucentStatus">false</item>
+    </style>
+
+    <style name="Theme.Fresco2.Translucent" parent="Base.Theme.Fresco2">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="Theme.Fresco2.Camera" parent="Base.Theme.Fresco2">
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="ToggleBlue">
+        <item name="colorControlActivated">@color/fresco_blue</item>
+        <item name="android:colorForeground">@color/fresco_blue</item>
+    </style>
+
+    <style name="ToggleTwitter">
+        <item name="colorControlActivated">@color/social_twitter</item>
+        <item name="android:colorForeground">@color/social_twitter</item>
+    </style>
+
+    <style name="ToggleFacebook">
+        <item name="colorControlActivated">@color/social_facebook</item>
+        <item name="android:colorForeground">@color/social_facebook</item>
+    </style>
+
+    <style name="ToggleGooglePlus">
+        <item name="colorControlActivated">@color/social_google</item>
+        <item name="android:colorForeground">@color/social_google</item>
+    </style>
+</resources>

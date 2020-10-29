@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                              
+                                                       
+
+    
+
+                                          
+
+                 
+                                      
+                        
+
+                 
+                            
+                           
+
+                 
+                             
+                            
+
+                 
+                          
+                                         
+           
+
+    <FrameLayout
+        android:id="@+id/avatar_notification_layout"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:tag="layout/view_notifications_toolbar_menu_0"       
+                                  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/profile_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tag="binding_1"                                                   
+                                     
+            fresco:failureImage="@drawable/account_white"
+            fresco:placeholderImage="@drawable/account_white"
+            fresco:roundAsCircle="true"/>
+
+        <ImageView
+            android:id="@+id/notifications_background_layout"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/white_circle"
+            android:tag="binding_2"                                                   />
+
+        <TextView
+            android:id="@+id/notifications_count_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:tag="binding_3"                              
+            android:textColor="@color/fresco_blue"
+                                                                                      
+                                                
+            tools:text="1"/>
+
+    </FrameLayout>
+         

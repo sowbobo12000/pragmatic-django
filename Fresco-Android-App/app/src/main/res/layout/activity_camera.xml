@@ -1,0 +1,195 @@
+<io.codetail.widget.RevealFrameLayout
+    android:id="@+id/reveal_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/accent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <android.support.percent.PercentFrameLayout
+            android:id="@+id/percent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fresco_cream"
+            tools:visibility="gone">
+
+            <TextureView
+                android:id="@+id/surface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </android.support.percent.PercentFrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_buttons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:background="@color/transparent"
+            tools:background="@color/color_ic_instagram">
+
+            <FrameLayout
+                android:id="@+id/browse_media_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/browse_media_button"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/circle_media_browser_bk"
+                    app:civ_border_color="@color/fresco_white"
+                    app:civ_border_width="3dp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/browse_media_white_circle"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:alpha="1"
+                    android:background="@drawable/circle_white"
+                    tools:visibility="visible"/>
+
+                <ImageView
+                    android:id="@+id/gallery_icon_image_view"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/image_multiple"/>
+
+                <TextView
+                    android:id="@+id/next_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/next"
+                    android:textColor="@color/black_87"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/action_buttons_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/take_picture_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_camera_white"/>
+
+                <ImageButton
+                    android:id="@+id/take_video_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_capture_video_white"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="72dp"
+                android:layout_marginRight="72dp">
+
+                <ImageButton
+                    android:id="@+id/flash_torch_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:padding="8dp"
+                    android:src="@drawable/selector_flash_white"
+                    tools:src="@drawable/flash_off"/>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/capture_photo_fab"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="10dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_camera_iris_72dp"
+            android:transitionName="@string/camera_fab_transition"
+            app:borderWidth="0dp"
+            tools:visibility="gone"/>
+
+        <FrameLayout
+            android:id="@+id/camera_video_portrait_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="10dp"
+            android:clipChildren="false"
+            android:elevation="6dp"
+            tools:visibility="visible">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@color/fresco_red"/>
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:scaleType="center"
+                android:src="@drawable/rotate_left"/>
+
+            <ImageView
+                android:id="@+id/phone_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:rotation="-90"
+                android:src="@drawable/ic_cellphone_android"/>
+
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <View
+        android:id="@+id/overlay_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fresco_red"
+        android:visibility="gone"/>
+
+</io.codetail.widget.RevealFrameLayout>

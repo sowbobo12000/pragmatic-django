@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: net.ypresto.androidtranscoder:android-transcoder:0.2.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b3a7dacfa4b117d446f2f53380083a25/android-transcoder-0.2.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b3a7dacfa4b117d446f2f53380083a25/android-transcoder-0.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b3a7dacfa4b117d446f2f53380083a25/android-transcoder-0.2.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.ypresto.androidtranscoder/android-transcoder/0.2.0/fd27833911603a9537dbc1383d5701b4e58d7085/android-transcoder-0.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.ypresto.androidtranscoder/android-transcoder/0.2.0/63874a5425bd798cf24ec5b0be4596b9174d12cf/android-transcoder-0.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.gallery.gallerydetail.GalleryDetailCommentsViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            style="@style/HorizontalLine"
+            android:paddingTop="6dp"
+            android:visibility="@{model.commentCount > 0 ? View.VISIBLE : View.GONE}"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp">
+
+            <TextView
+                android:id="@+id/comments_title_textview"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/comments"
+                android:textColor="@color/fresco_blue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="@{model.commentCount > 0 ? View.VISIBLE : View.GONE}"/>
+
+        </LinearLayout>
+
+        <!--Show more comments button-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:visibility="@{model.commentsRemainingCount > 0 ? View.VISIBLE : View.GONE}">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@{model.commentsRemainingCountString}"
+                android:textColor="@color/black_87"
+                android:textSize="16sp"
+                app:customFont="@{@string/robotoRegular}"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@color/fresco_blue"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@{model.showMoreButtonText}"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:customFont="@{@string/notaXBold}"
+                app:onClick="@{model.loadMoreComments}"
+                tools:text="@string/show_all"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/commentsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:visibility="@{model.commentCount > 0 ? View.VISIBLE : View.GONE}"
+            app:bind="@{model.commentsRecyclerView}"
+            tools:layout_height="100dp"/>
+
+    </LinearLayout>
+
+</layout>

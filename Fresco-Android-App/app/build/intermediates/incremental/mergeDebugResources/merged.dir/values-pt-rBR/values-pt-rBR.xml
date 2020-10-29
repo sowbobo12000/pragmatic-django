@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="Smooch_activityConversation">Mensagens</string>
+    <string name="Smooch_btnSend">Enviar</string>
+    <string name="Smooch_errorCouldNotConnect">Não foi possível conectar ao servidor.</string>
+    <string name="Smooch_errorSendingMessage">A mensagem não foi entregue. Toque para tentar novamente.</string>
+    <string name="Smooch_errorUserOffline">Sem conexão à Internet.</string>
+    <string name="Smooch_messageHint">Digite uma mensagem…</string>
+    <string name="Smooch_startOfConversation">Esse é o começo da sua conversa com a equipe %1$s.</string>
+    <string name="Smooch_welcome">Sinta-se à vontade para nos perguntar qualquer coisa. Responderemos às suas perguntas, sugestões, ou a qualquer outra mansagem, o mais rápido possível.</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navegar para a página inicial"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Navegar para cima"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Mais opções"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Concluído"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Ver tudo"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Selecione um app"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"DESATIVAR"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ATIVAR"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"espaço"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Pesquisar..."</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Limpar consulta"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Consulta de pesquisa"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Pesquisar"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Pesquisa por voz"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartilhar com"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartilhar com %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Recolher"</string>
+    <string name="acc_label_card_number">Número do cartão</string>
+    <string name="acc_label_card_number_node">%s, número do cartão</string>
+    <string name="acc_label_cvc_node">%s, CVC</string>
+    <string name="acc_label_expiry_date">Data de validade</string>
+    <string name="acc_label_expiry_date_node">%s, data de validade</string>
+    <string name="acc_label_zip">Código postal</string>
+    <string name="acc_label_zip_short">Código postal</string>
+    <string name="add_card">Adicione um novo cartão de débito ou crédito para fazer compras neste aplicativo.</string>
+    <string name="added">Adicionou %s</string>
+    <string name="address_city_required">Informe sua cidade</string>
+    <string name="address_country_invalid">País inválido</string>
+    <string name="address_county_required">Informe seu condado</string>
+    <string name="address_label_address">Endereço</string>
+    <string name="address_label_address_line1">Endereço – Linha 1</string>
+    <string name="address_label_address_line1_optional">Endereço – Linha 1 (opcional)</string>
+    <string name="address_label_address_line2">Endereço – Linha 2</string>
+    <string name="address_label_address_line2_optional">Endereço – Linha 2 (opcional)</string>
+    <string name="address_label_address_optional">Endereço (opcional)</string>
+    <string name="address_label_apt">Apt.</string>
+    <string name="address_label_apt_optional">Apt. (opcional)</string>
+    <string name="address_label_city">Cidade</string>
+    <string name="address_label_city_optional">Cidade (opcional)</string>
+    <string name="address_label_country">País</string>
+    <string name="address_label_county">Condado</string>
+    <string name="address_label_county_optional">País (opcional)</string>
+    <string name="address_label_name">Nome</string>
+    <string name="address_label_name_optional">Nome (opcional)</string>
+    <string name="address_label_phone_number">Telefone</string>
+    <string name="address_label_phone_number_optional">Telefone (opcional)</string>
+    <string name="address_label_postal_code">Código postal</string>
+    <string name="address_label_postal_code_optional">Código postal (opcional)</string>
+    <string name="address_label_postcode">Código postal</string>
+    <string name="address_label_postcode_optional">Código postal (opcional)</string>
+    <string name="address_label_province">Província</string>
+    <string name="address_label_province_optional">Província (opcional)</string>
+    <string name="address_label_region_generic">Estado/Província/Região</string>
+    <string name="address_label_region_generic_optional">Estado/Província/Região (opcional)</string>
+    <string name="address_label_state">Estado</string>
+    <string name="address_label_state_optional">Estado (opcional)</string>
+    <string name="address_label_zip_code">Código postal</string>
+    <string name="address_label_zip_code_optional">Código postal (opcional)</string>
+    <string name="address_label_zip_postal_code">Código postal</string>
+    <string name="address_label_zip_postal_code_optional">Código postal (opcional)</string>
+    <string name="address_name_required">Informe seu nome</string>
+    <string name="address_phone_number_required">Informe seu telefone</string>
+    <string name="address_postal_code_invalid">Código postal inválido.</string>
+    <string name="address_postcode_invalid">Código postal inválido</string>
+    <string name="address_province_required">Informe sua província</string>
+    <string name="address_region_generic_required">Informe seu estado/província/região</string>
+    <string name="address_required">Informe seu endereço</string>
+    <string name="address_shipping_address">Endereço de envio</string>
+    <string name="address_state_required">Informe seu estado</string>
+    <string name="address_zip_invalid">Código postal inválido.</string>
+    <string name="address_zip_postal_invalid">Código postal inválido.</string>
+    <string name="articles_list_fragment_error_message">Falha ao obter os artigos</string>
+    <string name="articles_list_fragment_no_articles_found">Nenhum artigo encontrado</string>
+    <string name="articles_search_results_list_fragment_contact_us">Entre em contato conosco</string>
+    <string name="articles_search_results_list_fragment_error_message">Erro</string>
+    <string name="articles_search_results_list_fragment_no_articles_found">Nenhum resultado encontrado</string>
+    <string name="attachment_add_menu">Anexos</string>
+    <string name="attachment_select_source_choose_existing">Escolher existente</string>
+    <string name="attachment_select_source_new_photo">Tirar uma foto</string>
+    <string name="attachment_upload_error_cancel">Cancelar</string>
+    <string name="attachment_upload_error_file_already_added">Arquivo já adicionado</string>
+    <string name="attachment_upload_error_file_not_found">Arquivo não encontrado</string>
+    <string name="attachment_upload_error_file_too_big">O tamanho máximo de anexo é %s</string>
+    <string name="attachment_upload_error_try_again">Tentar novamente</string>
+    <string name="attachment_upload_error_upload_failed">Falha ao carregar o anexo</string>
+    <string name="becs_mandate_acceptance">
+    Ao informar os dados da sua conta bancária e confirmar este pagamento, você aceita esta
+    Solicitação de Débito Direto e o contrato de serviço da Solicitação de Débito Direto, bem como autoriza a
+    Stripe Payments Australia Pty Ltd ACN 160 180 343 com número de Usuário para Débito Direto 507156
+    (a “Stripe”) a debitar de sua conta pelo Bulk Electronic Clearing System (BECS) em
+    nome de %1$s (o \"Comerciante\") quaisquer quantias comunicadas separadamente a você
+    pelo Comerciante. Você confirma que é títular da conta ou signatário
+    autorizado da conta listada acima.
+    </string>
+    <string name="becs_widget_account_number">Número da conta</string>
+    <string name="becs_widget_account_number_required">É obrigatório informar seu número da conta.</string>
+    <string name="becs_widget_bsb">BSB</string>
+    <string name="becs_widget_bsb_incomplete">O BSB inserido está incompleto.</string>
+    <string name="becs_widget_bsb_invalid">O BSB inserido é inválido.</string>
+    <string name="becs_widget_email">Endereço de e-mail</string>
+    <string name="becs_widget_email_required">É obrigatório informar seu e-mail.</string>
+    <string name="becs_widget_name">Nome</string>
+    <string name="becs_widget_name_required">É obrigatório informar seu nome.</string>
+    <string name="categories_list_fragment_error_message">Falha ao obter as categorias</string>
+    <string name="categories_list_fragment_no_categories_found">Nenhuma categoria encontrada</string>
+    <string name="close">Fechar</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Ativar"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> só funciona com o Google Play Services ativado."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Ativar o Google Play Services"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Instalar"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"O app <ns1:g id="APP_NAME">%1$s</ns1:g> não funciona sem o Google Play Services, o qual não está instalado no seu dispositivo."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Instalar o Google Play Services"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Disponibilidade do Google Play Services"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Erro do Google Play Services"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"O app <ns1:g id="APP_NAME">%1$s</ns1:g> está com problemas com o Google Play Services. Tente novamente."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"O app <ns1:g id="APP_NAME">%1$s</ns1:g> não funciona sem o Google Play Services, o qual não é compatível com seu dispositivo."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Atualizar"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> só funciona com uma versão atualizada do Google Play Services."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Atualizar o Google Play Services"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> não funciona sem o Google Play Services, o qual está sendo atualizado no momento."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"É necessária uma nova versão do Google Play Services. Ele será atualizado em breve."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Abrir no smartphone"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Fazer login"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Fazer login com o Google"</string>
+    <string name="contact_fragment_description_hint">Descrição</string>
+    <string name="contact_fragment_email_hint">Email</string>
+    <string name="contact_fragment_email_validation_error">Endereço de email incorreto</string>
+    <string name="contact_fragment_request_subject">Ticket do aplicativo</string>
+    <string name="contact_fragment_send_button_label">Enviar</string>
+    <string name="contact_fragment_title">Entre em contato conosco</string>
+    <string name="delete_payment_method">Excluir forma de pagamento?</string>
+    <string name="delete_payment_method_prompt_title">Excluir forma de pagamento?</string>
+    <string name="expiry_date_hint">MM/AA</string>
+    <string name="expiry_label_short">Validade</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Diversos"</string>
+    <string name="fpx_bank_offline">%s – Offline</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="help_search_no_results_label">Nenhum resultado para</string>
+    <string name="help_see_all_articles_label">Ver todos os artigos</string>
+    <string name="help_see_all_n_articles_label">Ver todos os %d artigos</string>
+    <string name="invalid_card_number">Número do cartão inválido.</string>
+    <string name="invalid_cvc">Código de segurança inválido.</string>
+    <string name="invalid_expiry_month">O mês de validade do cartão é inválido.</string>
+    <string name="invalid_expiry_year">Ano de validade inválido.</string>
+    <string name="invalid_shipping_information">Endereço de envio inválido</string>
+    <string name="invalid_zip">Código postal incompleto.</string>
+    <string name="network_activity_no_connectivity">Sem conexão</string>
+    <string name="no_payment_methods">Sem forma de pagamento.</string>
+    <string name="payment_method_add_new_card">Adicionar novo cartão...</string>
+    <string name="payment_method_add_new_fpx">Selecionar conta bancária (FPX)...</string>
+    <string name="price_free">Grátis</string>
+    <string name="rate_my_app_dialog_dismiss_action_label">Não perguntar novamente</string>
+    <string name="rate_my_app_dialog_feedback_description_label">Nós queremos melhorar. Informe os problemas que você está tendo.</string>
+    <string name="rate_my_app_dialog_feedback_device_api_version">API do SO: %1$d</string>
+    <string name="rate_my_app_dialog_feedback_device_memory">Memória: %1$sMB / %2$sMB</string>
+    <string name="rate_my_app_dialog_feedback_device_model">Modelo: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_device_name">Dispositivo: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_device_os_version">Versão do SO: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_request_subject">Feedback do aplicativo</string>
+    <string name="rate_my_app_dialog_feedback_send_error_no_connectivity_toast">Sem conexão</string>
+    <string name="rate_my_app_dialog_feedback_send_error_toast">Ocorreu um erro, tente novamente</string>
+    <string name="rate_my_app_dialog_feedback_send_success_toast">Obrigado por entrar em contato conosco</string>
+    <string name="rate_my_app_dialog_feedback_title_label">Pedimos desculpas</string>
+    <string name="rate_my_app_dialog_negative_action_label">Não. Desejo enviar feedback.</string>
+    <string name="rate_my_app_dialog_positive_action_label">Sim, classificar nosso aplicativo</string>
+    <string name="rate_my_app_dialog_title_label">Você está satisfeito com nosso aplicativo?</string>
+    <string name="rate_my_app_dialogue_feedback_cancel_button_label">Cancelar</string>
+    <string name="rate_my_app_dialogue_feedback_issue_hint">Descrever seu problema</string>
+    <string name="rate_my_app_dialogue_feedback_send_button_label">Enviar feedback</string>
+    <string name="removed">Removeu %s</string>
+    <string name="request_list_activity_title">Meus tickets</string>
+    <string name="request_list_fragment_error_message">Falha ao obter os tickets</string>
+    <string name="request_list_fragment_no_requests">Nenhum ticket aberto no momento</string>
+    <string name="request_view_comment_entry_hint">Comentar</string>
+    <string name="retry_view_button_label">Tentar novamente</string>
+    <string name="row_request_unread_indicator_alt">Ícone indicando que há comentários não lidos</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Pesquisar"</string>
+    <string name="sections_list_fragment_error_message">Falha ao obter as seções</string>
+    <string name="sections_list_fragment_no_sections_found">Nenhuma seção encontrada</string>
+    <string name="secure_checkout">Secure Checkout</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stripe_3ds2_brand_amex">American Express</string>
+    <string name="stripe_3ds2_brand_discover">Discover</string>
+    <string name="stripe_3ds2_brand_mastercard">Mastercard</string>
+    <string name="stripe_3ds2_brand_visa">Visa</string>
+    <string name="stripe_3ds2_bzv_issuer_image_description">Imagem do emissor</string>
+    <string name="stripe_3ds2_bzv_payment_system_image_description">Imagem do sistema de pagamento</string>
+    <string name="stripe_3ds2_czv_whitelist_no_label">Não</string>
+    <string name="stripe_3ds2_czv_whitelist_yes_label">Sim</string>
+    <string name="stripe_3ds2_hzv_cancel_label">Cancelar</string>
+    <string name="stripe_3ds2_hzv_header_label">Finalização de compra segura</string>
+    <string name="stripe_3ds2_processing">Processando\u2026</string>
+    <string name="support_activity_title">Suporte</string>
+    <string name="support_activity_unable_to_contact_support">Não foi possível conectar</string>
+    <string name="support_contact_menu">Contato</string>
+    <string name="support_conversations_menu">Conversas</string>
+    <string name="support_list_search_hint">Como podemos ajudá-lo?</string>
+    <string name="title_add_a_card">Adicione um cartão</string>
+    <string name="title_add_an_address">Definir endereço</string>
+    <string name="title_bank_account">Conta bancária</string>
+    <string name="title_payment_method">Forma de pagamento</string>
+    <string name="title_select_shipping_method">Selecionar forma de envio</string>
+    <string name="view_article_attachments_error">Falha ao buscar anexos</string>
+    <string name="view_article_seperator">\u2022</string>
+    <string name="view_request_agent_avatar_imageview_alt">Avatar do agente</string>
+    <string name="view_request_load_comments_error">Falha ao carregar os comentários</string>
+    <string name="view_request_send_comment_error">Falha ao enviar o comentário</string>
+</resources>

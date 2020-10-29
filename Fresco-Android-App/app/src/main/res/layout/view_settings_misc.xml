@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.settings.SettingsMiscViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fresco_white"
+        android:elevation="@dimen/settings_screen_card_elevation"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/settings_screen_padding_left"
+        android:paddingRight="@dimen/settings_screen_padding_left">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:gravity="center_vertical"
+            android:text="@string/miscellaneous"
+            android:textColor="@color/fresco_blue"
+            android:textSize="@dimen/settings_screen_section_title_txt_sz"
+            app:customFont="@{@string/robotoMedium}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:drawableLeft="@drawable/wallet_giftcard"
+            android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+            android:drawableStart="@drawable/wallet_giftcard"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/promo_codes"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+            android:visibility="gone"
+            app:customFont="@{@string/robotoRegular}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:drawableLeft="@drawable/about_fresco"
+            android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+            android:drawableStart="@drawable/about_fresco"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/about_fresco"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+            app:customFont="@{@string/robotoRegular}"
+            app:onClick="@{model.goToAboutFresco}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:drawableLeft="@drawable/help_circle"
+            android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+            android:drawableStart="@drawable/help_circle"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/faq"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+            app:customFont="@{@string/robotoRegular}"
+            app:onClick="@{model.openZendesk}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:drawableLeft="@drawable/chat"
+            android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+            android:drawableStart="@drawable/chat"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/ask_us_anything"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+            app:customFont="@{@string/robotoRegular}"
+            app:onClick="@{model.openSmoochChat}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:drawableLeft="@drawable/ic_logout"
+            android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+            android:drawableStart="@drawable/ic_logout"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/logout"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+            app:customFont="@{@string/robotoRegular}"
+            app:onClick="@{model.showLogOutDialog}"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:drawableLeft="@drawable/delete"
+            android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+            android:drawableStart="@drawable/delete"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/disable_my_account"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+            app:customFont="@{@string/robotoRegular}"
+            app:onClick="@{model.showDisableAccountDialog}"/>
+
+    </LinearLayout>
+
+</layout>

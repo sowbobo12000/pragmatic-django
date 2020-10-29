@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xhdpi-v4/values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/kyuyeon/.gradle/caches/transforms-2/files-2.1/4d6ed5f5198178d57e4a2ff1681b813e/stripe-android-16.0.1/res/values-xhdpi-v4/values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    }
+                },
+                {
+                    "source": "/Users/kyuyeon/.gradle/caches/transforms-2/files-2.1/7a8ce5f2f4f4c2e52369e5638e61b832/twitter-core-2.2.0/res/values-xhdpi-v4/values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "54",
+                        "endOffsets": "105"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "112",
+                        "endColumns": "54",
+                        "endOffsets": "162"
+                    }
+                }
+            ]
+        }
+    ]
+}

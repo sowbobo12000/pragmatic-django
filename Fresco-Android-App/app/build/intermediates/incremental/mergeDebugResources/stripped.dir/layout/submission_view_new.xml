@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                            
+
+    
+
+                 
+                        
+                                                                             
+           
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gallery_view_header_height" android:tag="layout/submission_view_new_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="binding_1" 
+                                             
+                                           />
+
+        <com.fresconews.fresco.v2.views.FrescoSubmissionVideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="binding_2"      
+                                               />
+
+        <ImageView
+            android:id="@+id/mute_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_volume_off"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+         

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                       
+
+    
+
+                                          
+
+                 
+                        
+                                                                                            
+           
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/settings_dialog_section_padding_top" android:tag="layout/view_disable_account_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/settings_dialog_padding_left_right"
+            android:layout_marginRight="@dimen/settings_dialog_padding_left_right"
+            android:text="@string/are_you_sure"
+            android:textColor="@color/black_87"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:tag="binding_1"             />
+
+        <TextView
+            android:id="@+id/message_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_text_view"
+            android:layout_marginLeft="@dimen/settings_dialog_padding_left_right"
+            android:layout_marginRight="@dimen/settings_dialog_padding_left_right"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="@string/account_recover"
+            android:textColor="@color/black_54"
+            android:textSize="16sp"
+            android:tag="binding_2"                  />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_footer_height"
+            android:layout_below="@+id/message_text_view"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/settings_dialog_footer_padding_top_bottom"
+            android:paddingTop="@dimen/settings_dialog_footer_padding_top_bottom">
+
+            <Button
+                style="@style/DialogButton.Negative"
+                android:text="@string/cancel"
+                android:tag="binding_3"             
+                                             
+                tools:background="@color/fresco_red"/>
+
+            <Button
+                style="@style/DialogButton.Positive"
+                android:text="@string/disable_my_account"
+                android:textColor="@color/fresco_red"
+                android:tag="binding_4"             
+                                              
+                tools:background="@color/fresco_green"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+         

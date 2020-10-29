@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.framework.mvvm.viewmodels.NotificationFeedItemViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@{model.isSeen ? @drawable/selector_background_fresco_cream : @drawable/selector_background_white_70}"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        app:onClick="@{model.goToActivity}">
+
+        <FrameLayout
+            android:id="@+id/avatar_image_layout"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:visibility="@{model.getImage == null &amp;&amp; !model.isShouldHaveAvatar ? View.GONE : View.VISIBLE}">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/black_26_background"
+                app:avatar="@{model.getImage}"
+                app:failureImage="@drawable/account_white"
+                fresco:placeholderImage="@drawable/account_white"
+                fresco:roundAsCircle="true"
+                tools:background="@color/accent"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="20dp"
+            android:visibility="@{model.getUserCount > 1 &amp;&amp; (model.getImage != null || model.isShouldHaveAvatar) ? View.VISIBLE : View.GONE}">
+
+            <ImageView
+                android:id="@+id/notifications_background_layout"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/white_circle"/>
+
+            <TextView
+                android:id="@+id/notifications_count_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@{model.getUserCountString}"
+                android:textColor="@color/black_54"
+                android:textSize="12sp"
+                tools:text="+1"/>
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/secondary_action_image_view"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="12dp"
+            android:src="@{model.getSecondaryActionImage}"
+            app:onClick="@{model.goToSecondaryActivity}"
+            tools:src="@drawable/about_fresco"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="72dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="72dp"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/avatar_image_layout"
+            android:layout_toRightOf="@+id/avatar_image_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_87"
+                android:textSize="16sp"
+                app:text="@{model.getTitle}"
+                tools:text="Title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_54"
+                android:textSize="14sp"
+                app:text="@{model.getBody}"
+                tools:text="Message"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

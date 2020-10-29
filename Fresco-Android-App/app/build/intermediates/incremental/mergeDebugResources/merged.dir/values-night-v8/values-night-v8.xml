@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="Smooch_night_mode_enabled">true</bool>
+    <color name="Smooch_accent">#0072EE</color>
+    <color name="Smooch_accentDark">#76008a</color>
+    <color name="Smooch_accentDarker">#66008a</color>
+    <color name="Smooch_accentFailure">#800072EE</color>
+    <color name="Smooch_accentLight">#be7cca</color>
+    <color name="Smooch_actionBarColor">#212121</color>
+    <color name="Smooch_actionBarTextColor">#ffffff</color>
+    <color name="Smooch_btnActionButton">#eeeeee</color>
+    <color name="Smooch_btnActionButtonPressed">#cccccc</color>
+    <color name="Smooch_btnActionButtonRipple">#c0c0c0</color>
+    <color name="Smooch_btnNewConversationBackground">@color/Smooch_accent</color>
+    <color name="Smooch_btnNewConversationIconColor">#ffffff</color>
+    <color name="Smooch_btnNewConversationTextColor">#ffffff</color>
+    <color name="Smooch_btnSendHollow">#7fc0c0c0</color>
+    <color name="Smooch_btnSendHollowBorder">#c0c0c0</color>
+    <color name="Smooch_conversationBackground">#212121</color>
+    <color name="Smooch_conversationListBackground">#212121</color>
+    <color name="Smooch_conversationListErrorBackgroundColor">#ffffff</color>
+    <color name="Smooch_conversationListErrorRetryIconColor">#ff000000</color>
+    <color name="Smooch_conversationListErrorTextColor">#212b35</color>
+    <color name="Smooch_conversationListTextColor">#ffffff</color>
+    <color name="Smooch_conversationListTitleTextColor">#ffffff</color>
+    <color name="Smooch_conversationListTitleTimestampTextColor">#99ffffff</color>
+    <color name="Smooch_descriptionText">#FFC0C0C0</color>
+    <color name="Smooch_errorSnackbarBackgroundColor">#353535</color>
+    <color name="Smooch_header">#a0a0a0</color>
+    <color name="Smooch_inputTextBackground">#353535</color>
+    <color name="Smooch_inputTextColor">#ffffff</color>
+    <color name="Smooch_inputTextColorHint">#bdbdbd</color>
+    <color name="Smooch_messageDate">@color/Smooch_header</color>
+    <color name="Smooch_remoteMessageAuthor">@color/Smooch_header</color>
+    <color name="Smooch_remoteMessageBackground">#353535</color>
+    <color name="Smooch_remoteMessageBorder">#d9d9d9</color>
+    <color name="Smooch_remoteMessageText">#ffffff</color>
+    <color name="Smooch_statusBarColor">#000000</color>
+    <color name="Smooch_unreadBadge">@color/Smooch_accent</color>
+    <color name="Smooch_unreadBadgeText">#ffffff</color>
+    <color name="Smooch_userMessageBackground">@color/Smooch_accent</color>
+    <color name="Smooch_userMessageBorder">@color/Smooch_accentDark</color>
+    <color name="Smooch_userMessageFailedBackground">@color/Smooch_accentFailure</color>
+    <color name="Smooch_userMessageFailedBorder">@color/Smooch_accentFailure</color>
+    <color name="Smooch_userMessageText">#ffffff</color>
+    <color name="Smooch_userMessageUnsentBackground">@color/Smooch_userMessageFailedBackground</color>
+    <color name="Smooch_userMessageUnsentBorder">@color/Smooch_userMessageFailedBorder</color>
+    <color name="stripe_3ds2_accent">#5a5a5a</color>
+    <color name="stripe_3ds2_background">#303030</color>
+    <color name="stripe_3ds2_chevron">#80ffffff</color>
+    <color name="stripe_3ds2_control_activated">#c1c1c1</color>
+    <color name="stripe_3ds2_divider">#a5a5a5</color>
+    <color name="stripe_3ds2_primary">#1f1f1f</color>
+    <color name="stripe_3ds2_primary_dark">#000000</color>
+    <color name="stripe_3ds2_text_color">#e1e1e1</color>
+    <color name="stripe_3ds2_text_color_primary">@android:color/white</color>
+    <color name="stripe_3ds2_text_edit">@color/stripe_3ds2_text_color</color>
+    <color name="stripe_3ds2_text_info_toggled">#a1a1a1</color>
+    <color name="stripe_3ds2_text_input_fill">#353535</color>
+    <color name="stripe_3ds2_text_input_hint">#7a7a7a</color>
+    <color name="stripe_color_text_secondary_default">#e1e1e1</color>
+    <color name="stripe_color_text_unselected_primary_default">#e1e1e1</color>
+    <color name="stripe_color_text_unselected_secondary_default">#a5a5a5</color>
+    <color name="stripe_control_normal_color_default">#e1e1e1</color>
+    <color name="stripe_text_color_secondary">@android:color/secondary_text_dark</color>
+    <color name="stripe_toolbar_color_default">#1f1f1f</color>
+    <color name="stripe_toolbar_color_default_dark">#000000</color>
+    <color name="text_failure_color">#ff2851</color>
+    <color name="text_helper_color">#a8a8a8</color>
+    <style name="BaseStripe3DS2Theme" parent="Theme.MaterialComponents">
+        <item name="actionBarTheme">@style/Stripe3DS2Theme</item>
+        <item name="actionBarStyle">@style/Stripe3DS2ActionBar</item>
+        <item name="android:colorBackground">@color/stripe_3ds2_background</item>
+        <item name="colorPrimary">@color/stripe_3ds2_primary</item>
+        <item name="colorPrimaryDark">@color/stripe_3ds2_primary_dark</item>
+        <item name="colorAccent">@color/stripe_3ds2_accent</item>
+        <item name="colorControlActivated">@color/stripe_3ds2_control_activated</item>
+        <item name="android:textColor">@color/stripe_3ds2_text_color</item>
+        <item name="android:textColorPrimary">@color/stripe_3ds2_text_color_primary</item>
+        <item name="android:editTextColor">@color/stripe_3ds2_text_edit</item>
+        <item name="textInputStyle">@style/Stripe3DS2TextInputLayout</item>
+    </style>
+    <style name="Theme.AppCompat.DayNight" parent="Theme.AppCompat"/>
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="Theme.AppCompat"/>
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="Theme.AppCompat.Dialog"/>
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="Theme.AppCompat.Dialog.Alert"/>
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="Theme.AppCompat.Dialog.MinWidth"/>
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="Theme.AppCompat.DialogWhenLarge"/>
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="Theme.AppCompat.NoActionBar"/>
+    <style name="Theme.MaterialComponents.DayNight" parent="Theme.MaterialComponents"/>
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog" parent="Theme.MaterialComponents.BottomSheetDialog"/>
+    <style name="Theme.MaterialComponents.DayNight.Bridge" parent="Theme.MaterialComponents.Bridge"/>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar" parent="Theme.MaterialComponents"/>
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge" parent="Theme.MaterialComponents.Bridge"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog" parent="Theme.MaterialComponents.Dialog"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert" parent="Theme.MaterialComponents.Dialog.Alert"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge" parent="Theme.MaterialComponents.Dialog.Alert.Bridge"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge" parent="Theme.MaterialComponents.Dialog.Bridge"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize" parent="Theme.MaterialComponents.Dialog.FixedSize"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge" parent="Theme.MaterialComponents.Dialog.FixedSize.Bridge"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth" parent="Theme.MaterialComponents.Dialog.MinWidth"/>
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge" parent="Theme.MaterialComponents.Dialog.MinWidth.Bridge"/>
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="Theme.MaterialComponents.DialogWhenLarge"/>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="Theme.MaterialComponents.NoActionBar"/>
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="Theme.MaterialComponents.NoActionBar.Bridge"/>
+    <style name="ThemeOverlay.AppCompat.DayNight" parent="ThemeOverlay.AppCompat.Dark"/>
+    <style name="ThemeOverlay.MaterialComponents.DayNight.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog"/>
+    <style name="Widget.MaterialComponents.ActionBar.PrimarySurface" parent="Widget.MaterialComponents.ActionBar.Surface"/>
+    <style name="Widget.MaterialComponents.AppBarLayout.PrimarySurface" parent="Widget.MaterialComponents.AppBarLayout.Surface"/>
+    <style name="Widget.MaterialComponents.BottomAppBar.PrimarySurface" parent="Widget.MaterialComponents.BottomAppBar"/>
+    <style name="Widget.MaterialComponents.BottomNavigationView.PrimarySurface" parent="Widget.MaterialComponents.BottomNavigationView"/>
+    <style name="Widget.MaterialComponents.TabLayout.PrimarySurface" parent="Widget.MaterialComponents.TabLayout"/>
+    <style name="Widget.MaterialComponents.Toolbar.PrimarySurface" parent="Widget.MaterialComponents.Toolbar.Surface"/>
+</resources>

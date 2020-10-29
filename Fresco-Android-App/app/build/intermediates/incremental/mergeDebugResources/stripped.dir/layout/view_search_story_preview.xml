@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                              
+                                                       
+
+    
+
+                                          
+
+                 
+                        
+                                                                                         
+           
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?android:selectableItemBackground"
+        android:tag="layout/view_search_story_preview_0"                
+                                          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:fresco="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/story_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/black_26_background"
+            android:tag="binding_1"          
+            app:failureImage="@drawable/ic_newspaper_default"
+            fresco:placeholderImage="@drawable/ic_newspaper_default"
+            fresco:roundAsCircle="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toEndOf="@+id/story_image_view"
+            android:layout_toRightOf="@+id/story_image_view"
+            android:tag="binding_2"         
+            android:textColor="@color/black_87"
+            android:textSize="16sp"
+                                                     
+            tools:text="Title"/>
+
+    </RelativeLayout>
+
+         

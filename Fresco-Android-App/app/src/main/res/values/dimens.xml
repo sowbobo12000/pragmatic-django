@@ -1,0 +1,75 @@
+<resources>
+    <!-- Default nextScreenId margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="logo_height">75dp</dimen>
+    <dimen name="logoMarginTop">0dp</dimen>
+    <dimen name="onboardTitleMarginTop">0dp</dimen>
+    <dimen name="onboardTitleMarginBottom">8dp</dimen>
+    <dimen name="onboardGraphicMarginTop">0dp</dimen>
+    <dimen name="onboardGraphicMarginBottom">20dp</dimen>
+    <dimen name="onboardDotsMarginTop">-30dp</dimen>
+    <dimen name="onboardDotsMarginBottom">0dp</dimen>
+    <dimen name="tabstrip_margin">0dp</dimen>
+
+    <dimen name="auth_login_padding">52dp</dimen>
+    <dimen name="auth_signup_padding">16dp</dimen>
+
+    <dimen name="gallery_view_header_height">300dp</dimen>
+    <dimen name="gallery_view_half_header_height">150dp</dimen>
+
+    <dimen name="fab_margin">8dp</dimen>
+
+    <dimen name="page_indicator_radius">3dp</dimen>
+    <dimen name="media_browser_footer_height">52dp</dimen>
+
+    <dimen name="assignment_marker_size">24dp</dimen>
+
+    <!--STORIES PREVIEW DIMENS-->
+    <dimen name="stories_preview_card_elevation">5dp</dimen>
+    <dimen name="stories_preview_top_margin">8dp</dimen>
+    <dimen name="stories_preview_item_header_height">300dp</dimen>
+    <dimen name="stories_preview_item_title_caption_margin">18dp</dimen>
+    <dimen name="stories_preview_item_title_txt_sz">21sp</dimen>
+    <dimen name="stories_preview_item_icons_container_l_r_padding">4.5dp</dimen>
+    <dimen name="stories_preview_item_icons_right_margin">10dp</dimen>
+    <dimen name="stories_preview_item_thumbnails_divider_sz">1dp</dimen>
+
+    <!--SETTINGS SCREEN DIMENS-->
+    <dimen name="settings_screen_margin_top">8dp</dimen>
+    <dimen name="settings_screen_padding_left">16dp</dimen>
+    <dimen name="settings_screen_padding_right">8dp</dimen>
+    <dimen name="settings_screen_item_height">48dp</dimen>
+    <dimen name="settings_screen_card_elevation">5dp</dimen>
+    <dimen name="settings_screen_section_title_txt_sz">14sp</dimen>
+    <dimen name="settings_screen_section_lbl_txt_sz">16sp</dimen>
+    <dimen name="settings_screen_section_lbl_padding">32dp</dimen>
+    <dimen name="settings_screen_section_cvv_lft_margin">20dp</dimen>
+
+    <!--DIALOG DIMENS-->
+    <dimen name="dialog_footer_height">52dp</dimen>
+    <dimen name="dialog_footer_button_text_size">14sp</dimen>
+    <dimen name="dialog_footer_buttons_left_right_margin">8dp</dimen>
+    <!-- *** -->
+    <dimen name="settings_dialog_footer_padding_top_bottom">8dp</dimen>
+    <dimen name="settings_dialog_padding_left_right">24dp</dimen>
+    <dimen name="settings_dialog_padding_top">12dp</dimen>
+    <dimen name="settings_dialog_section_padding_top">18dp</dimen>
+    <dimen name="settings_dialog_section_padding_bottom">6dp</dimen>
+    <dimen name="settings_dialog_section_label_text_size">12sp</dimen>
+    <dimen name="settings_dialog_section_edit_text_size">16sp</dimen>
+
+    <!--ABOUT FRESCO SCREEN DIMENS-->
+    <dimen name="about_fresco_close_btn_padding">16dp</dimen>
+    <dimen name="about_fresco_content_top_margin">12dp</dimen>
+    <dimen name="about_fresco_content_top_margin_2">24dp</dimen>
+    <dimen name="about_fresco_content_top_margin_3">117dp</dimen>
+    <dimen name="about_fresco_social_icon_hor_mar">18dp</dimen>
+    <dimen name="about_fresco_version_txt_sz">20sp</dimen>
+    <dimen name="about_fresco_lbl_txt_sz">14sp</dimen>
+    <dimen name="about_fresco_values_txt_sz">12sp</dimen>
+
+    <dimen name="suspended_layout_margin_top">60dp</dimen>
+
+</resources>

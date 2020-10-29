@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.settings.dialogs.ChangeEmailDialogViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/settings_dialog_padding_left_right"
+        android:paddingRight="@dimen/settings_dialog_padding_left_right"
+        android:paddingTop="@dimen/settings_dialog_padding_top">
+
+        <LinearLayout
+            android:id="@+id/email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+            android:paddingTop="@dimen/settings_dialog_section_padding_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_address"
+                android:textColor="@color/black_54"
+                android:textSize="@dimen/settings_dialog_section_label_text_size"
+                app:customFont="@{@string/robotoRegular}"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:error="@{model.emailError}"
+                app:hintEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textEmailAddress"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                    app:bindValue="@{model.newEmail}"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_layout"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/settings_dialog_section_padding_bottom"
+            android:paddingTop="@dimen/settings_dialog_section_padding_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_text"
+                android:textColor="@color/black_54"
+                android:textSize="@dimen/settings_dialog_section_label_text_size"
+                app:customFont="@{@string/robotoRegular}"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/password_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:error="@{model.passwordError}"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textPassword"
+                    android:textColor="@color/black_87"
+                    android:textSize="@dimen/settings_dialog_section_edit_text_size"
+                    app:bindValue="@{model.newPassword}"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_footer_height"
+            android:layout_below="@+id/password_layout"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/settings_dialog_footer_padding_top_bottom"
+            android:paddingTop="@dimen/settings_dialog_footer_padding_top_bottom">
+
+            <Button
+                style="@style/DialogButton.Negative"
+                android:text="@string/cancel"
+                app:customFont="@{@string/notaBold}"
+                app:onClick="@{model.cancel}"
+                tools:background="@color/fresco_red"/>
+
+            <Button
+                style="@style/DialogButton.Positive"
+                android:text="@string/save_email"
+                app:customFont="@{@string/notaBold}"
+                app:onClick="@{model.save}"
+                tools:background="@color/fresco_green"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

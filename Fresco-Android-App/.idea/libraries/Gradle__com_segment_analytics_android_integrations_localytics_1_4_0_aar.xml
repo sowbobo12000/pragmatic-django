@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.segment.analytics.android.integrations:localytics:1.4.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/50dfb7b43af294110cfdcf0036697a1e/localytics-1.4.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/50dfb7b43af294110cfdcf0036697a1e/localytics-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/50dfb7b43af294110cfdcf0036697a1e/localytics-1.4.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.segment.analytics.android.integrations/localytics/1.4.0/9dca4539a759ab074da1f2a7b2dc5f72b239cbe2/localytics-1.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.segment.analytics.android.integrations/localytics/1.4.0/39099a5e9b7b69644b076732196b13d2fadf327a/localytics-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

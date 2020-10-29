@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="paymentViewModel"
+            type="com.fresconews.fresco.v2.settings.SettingsPaymentViewModel"/>
+
+        <variable
+            name="assignmentViewModel"
+            type="com.fresconews.fresco.v2.settings.SettingsAssignmentViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fresco_white"
+        android:elevation="@dimen/settings_screen_card_elevation"
+        android:orientation="vertical"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:gravity="center_vertical"
+            android:text="@string/assignment_payments"
+            android:textColor="@color/fresco_blue"
+            android:textSize="@dimen/settings_screen_section_title_txt_sz"
+            app:customFont="@{@string/robotoMedium}"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_sms_failed"
+                android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+                android:drawableStart="@drawable/ic_sms_failed"
+                android:gravity="center_vertical"
+                android:text="@string/assignments_notifications"
+                android:textColor="@color/black_87"
+                android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                app:customFont="@{@string/robotoRegular}"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/promotion_switch_compat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:checked="@{assignmentViewModel.assignmentNotificationsOn.get()}"
+                app:onClick="@{assignmentViewModel.assignmentNotificationsSwitch}"
+                app:theme="@style/ToggleBlue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:orientation="horizontal"
+            app:onClick="@{assignmentViewModel.showNotificationRadiusDialog}">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@{assignmentViewModel.assignmentNotificationsOn.get() ? @drawable/map_marker_radius : @drawable/map_marker_radius_26}"
+                android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+                android:drawableStart="@{assignmentViewModel.assignmentNotificationsOn.get() ? @drawable/map_marker_radius : @drawable/map_marker_radius_26}"
+                android:gravity="center_vertical"
+                android:text="@string/notification_radius"
+                android:textColor="@{assignmentViewModel.assignmentNotificationsOn.get() ? @color/black_87 : @color/black_26}"
+                android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                app:customFont="@{@string/robotoRegular}"
+                tools:drawableLeft="@drawable/map_marker_radius"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@{assignmentViewModel.notificationRadiusFeet}"
+                android:textColor="@{assignmentViewModel.assignmentNotificationsOn.get() ? @color/black_87 : @color/black_26}"
+                android:textSize="12sp"
+                app:customFont="@{@string/robotoRegular}"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/credit_card"
+                android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+                android:drawableStart="@drawable/credit_card"
+                android:gravity="center_vertical"
+                android:text="@string/payment_method"
+                android:textColor="@color/black_87"
+                android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                app:customFont="@{@string/robotoRegular}"/>
+
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_background_blue"
+                android:text="@string/new_text"
+                android:textColor="@color/fresco_white"
+                app:customFont="@{@string/notaBold}"
+                app:onClick="@{paymentViewModel.showPaymentDialog}"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bind="@{paymentViewModel.paymentsList}"
+            tools:layout_height="180dp">
+        </ListView>
+
+        <!--TAX INFO-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:orientation="horizontal"
+            android:visibility="@{paymentViewModel.showTaxInfo.get() ? View.VISIBLE : View.GONE}">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="@{!paymentViewModel.isProcessing.get()}"
+                android:drawableLeft="@drawable/account_card_details"
+                android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+                android:drawableStart="@drawable/account_card_details"
+                android:gravity="center_vertical"
+                android:text="@string/id_info"
+                android:textColor="@{paymentViewModel.isProcessing.get() ? @color/black_26 : @color/black_87}"
+                android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                app:customFont="@{@string/robotoRegular}"
+                app:onClick="@{paymentViewModel.showChangeTaxInfoDialog}"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@{paymentViewModel.dueBy}"
+                android:textColor="@{paymentViewModel.isProcessing.get() ? @color/black_26 : @color/fresco_blue}"
+                android:textSize="12sp"
+                app:customFont="@{@string/robotoRegular}"
+                tools:text="Due By Oct 23"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

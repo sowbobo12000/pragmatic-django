@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- "shadow" -->
+
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/black_24"/>
+            <corners android:radius="1dp"/>
+            <padding
+                android:bottom="1px"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/black_12"/>
+            <corners android:radius="1dp"/>
+            <padding
+                android:bottom="2px"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="24dp"
+                android:height="24dp"/>
+            <solid
+                android:color="@color/fresco_yellow"/>
+            <stroke
+                android:width="5dp"
+                android:color="@color/fresco_white"/>
+        </shape>
+
+    </item>
+
+</layer-list>

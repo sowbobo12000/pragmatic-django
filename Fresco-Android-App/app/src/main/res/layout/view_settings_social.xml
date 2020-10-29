@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.settings.SettingsSocialViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fresco_white"
+        android:elevation="@dimen/settings_screen_card_elevation"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/settings_screen_padding_left"
+        android:paddingRight="@dimen/settings_screen_padding_right">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:gravity="center_vertical"
+            android:text="@string/social"
+            android:textColor="@color/fresco_blue"
+            android:textSize="@dimen/settings_screen_section_title_txt_sz"
+            app:customFont="@{@string/robotoMedium}"/>
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/settings_screen_item_height"-->
+        <!--android:text="@string/settings_screen_lbl_find_friends"-->
+        <!--android:textSize="@dimen/settings_screen_section_lbl_txt_sz"-->
+        <!--android:textColor="@color/black_87"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:singleLine="true"-->
+        <!--app:customFont="@{@string/robotoRegular}"-->
+        <!--android:drawableLeft="@drawable/account_multiple_plus"-->
+        <!--android:drawablePadding="@dimen/settings_screen_section_lbl_padding"/>-->
+        <!--TWITTER-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/twitter"
+                android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/twitter"
+                android:textColor="@color/black_87"
+                android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                app:customFont="@{@string/robotoRegular}"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/twitterSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                app:bind="@{model.twitterSwitch}"
+                app:theme="@style/ToggleTwitter"/>
+
+        </LinearLayout>
+
+        <!--FACEBOOK-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/facebook_box"
+                android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/facebook"
+                android:textColor="@color/black_87"
+                android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                app:customFont="@{@string/robotoRegular}"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/facebookSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                app:bind="@{model.facebookSwitch}"
+                app:theme="@style/ToggleFacebook"/>
+
+        </LinearLayout>
+
+        <!--GOOGLE +-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/google_plus"
+                android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/google_plus"
+                android:textColor="@color/black_87"
+                android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                app:customFont="@{@string/robotoRegular}"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/googleSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                app:bind="@{model.googleSwitch}"
+                app:theme="@style/ToggleGooglePlus"/>
+
+        </LinearLayout>
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/settings_screen_item_height"-->
+        <!--android:orientation="horizontal">-->
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="@string/settings_screen_lbl_google_plus"-->
+        <!--android:textSize="@dimen/settings_screen_section_lbl_txt_sz"-->
+        <!--android:textColor="@color/black_87"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:singleLine="true"-->
+        <!--app:customFont="@{@string/robotoRegular}"-->
+        <!--android:drawableLeft="@drawable/google_plus"-->
+        <!--android:drawablePadding="@dimen/settings_screen_section_lbl_padding"-->
+        <!--android:layout_weight="1"/>-->
+        <!--<android.support.v7.widget.SwitchCompat-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:theme="@style/toggleGooglePlus"-->
+        <!--android:layout_gravity="center_vertical|right"/>-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+</layout>

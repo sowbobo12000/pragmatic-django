@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                            
+
+    <LinearLayout
+        android:id="@+id/payment_method_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_screen_item_height"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/settings_screen_padding_right" android:tag="layout/item_payment_method_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RadioButton
+            android:id="@+id/active_payment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="18dp"
+            android:backgroundTint="@color/fresco_blue"
+            android:buttonTint="@color/fresco_blue"
+            android:drawableTint="@color/fresco_blue"
+            android:shadowColor="@color/fresco_blue"/>
+
+        <TextView
+            android:id="@+id/payment_type_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="VISA"
+            android:textColor="@color/black_87"
+            android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+            android:tag="binding_1"                  />
+
+        <RelativeLayout
+            android:layout_width="@dimen/settings_screen_item_height"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/payment_delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:src="@drawable/delete"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+         

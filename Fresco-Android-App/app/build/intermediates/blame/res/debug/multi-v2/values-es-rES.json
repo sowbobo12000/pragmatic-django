@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/kyuyeon/Desktop/Fresco-Android-App/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rES/values-es-rES.xml",
+            "map": [
+                {
+                    "source": "/Users/kyuyeon/.gradle/caches/transforms-2/files-2.1/8ce4b9ad31437b5a3b669e0f236d9e46/facebook-android-sdk-4.17.0/res/values-es-rES/values-es-rES.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,215,327,464,562,630,702,761,835,917,1015,1087,1159,1250,1355,1420,1489,1645",
+                        "endColumns": "159,111,136,97,67,71,58,73,81,97,71,71,90,104,64,68,155,61",
+                        "endOffsets": "210,322,459,557,625,697,756,830,912,1010,1082,1154,1245,1350,1415,1484,1640,1702"
+                    }
+                },
+                {
+                    "source": "/Users/kyuyeon/.gradle/caches/transforms-2/files-2.1/024312560cd91ae3a88b99ec764e0b45/stripe-3ds2-android-4.1.0/res/values-es-rES/values-es-rES.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,123,187,255,311,398,502,568,635,701,783",
+                        "endColumns": "67,63,67,55,86,103,65,66,65,81,67",
+                        "endOffsets": "118,182,250,306,393,497,563,630,696,778,846"
+                    },
+                    "to": {
+                        "startLines": "20,21,22,23,24,25,26,27,28,29,30",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1707,1775,1839,1907,1963,2050,2154,2220,2287,2353,2435",
+                        "endColumns": "67,63,67,55,86,103,65,66,65,81,67",
+                        "endOffsets": "1770,1834,1902,1958,2045,2149,2215,2282,2348,2430,2498"
+                    }
+                }
+            ]
+        }
+    ]
+}

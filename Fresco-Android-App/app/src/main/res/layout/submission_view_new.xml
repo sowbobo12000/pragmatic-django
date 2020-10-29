@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.mediabrowser.MediaItemViewModel"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gallery_view_header_height">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:image="@{model.uri}"
+            app:imageHeight="@{model.height}"
+            app:imageWidth="@{model.width}"/>
+
+        <com.fresconews.fresco.v2.views.FrescoSubmissionVideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:bind="@{model.videoView}"
+            app:streamSubmission="@{model.uri}"/>
+
+        <ImageView
+            android:id="@+id/mute_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_volume_off"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+</layout>

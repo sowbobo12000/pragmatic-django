@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.search.UserSeeAllViewModel"/>
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".v2.search.UserSeeAllActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.Fresco2.AppBarOverlay">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/upload_progress_clip"
+                    android:minHeight="?attr/actionBarSize"
+                    android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    android:textSize="20sp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:bind="@{model.toolbar}"
+                    app:layout_collapseMode="pin"
+                    app:navigationIcon="@{model.navIcon}"
+                    app:onNavIconClick="@{model.onNavIconClicked}"
+                    app:title="@{model.title}">
+                </android.support.v7.widget.Toolbar>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/error_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fresco_red"
+                    android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    android:visibility="invisible"
+                    app:bind="@{model.errorToolbar}"
+                    app:menu="@{model.uploadErrorMenu}"
+                    app:navigationIcon="@drawable/ic_close"
+                    app:onMenuItemClick="@{model.retryUpload}"
+                    app:onNavIconClick="@{model.cancelUpload}"
+                    app:title="@string/upload_failed"/>
+
+            </FrameLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:refresh="@{model.refresh}">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/content_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:onCreate="@{model.onRecyclerViewCreated}"
+                tools:context=".v2.search.UserSeeAllActivity"
+                tools:showIn="@layout/activity_user_see_all"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:scaleType="center"
+            android:src="@drawable/ic_camera_iris_56dp"
+            app:onClick="@{model.openCamera}"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

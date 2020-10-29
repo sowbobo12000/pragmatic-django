@@ -1,0 +1,235 @@
+<resources>
+
+    <style name="Theme.Fresco2" parent="Base.Theme.Fresco2"/>
+
+    <style name="Theme.Fresco2.Search" parent="Theme.AppCompat.Light">
+        <item name="searchViewStyle">@style/AppTheme.SearchView</item>
+        <item name="android:windowBackground">@color/layout_background</item>
+        <item name="android:textColorHint">@color/search_hint</item>
+        <item name="android:textColorPrimary">@color/toolbar_icon</item>
+        <item name="android:textColor">@color/toolbar_icon</item>
+        <!-- need to also set View with this drawable set to it to get shadow to work pre Lollipop
+        will need an api check in MainActivity to turn off the view for API level 21 and greater -->
+        <!-- could be causing global design issues
+        <item name="android:foreground">?android:windowContentOverlay</item>
+        <item name="android:windowContentOverlay">@drawable/bottom_shadow</item>
+                <item name="android:closeIcon">@drawable/ic_close_circle</item>
+        -->
+
+        <item name="colorPrimary">@color/primary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/accent</item>
+
+        <!-- navigation icon color this will set the horizontal lines in the edittext fields of login form and anywhere else
+        other areas of the app might also been adhering to this color value, there is also colorControlActivated, colorControlHighlighted, colorSwitchThumbNormal -->
+        <item name="colorControlNormal">@color/toolbar_icon</item>
+
+        <!-- circles for onboarding page indicator -->
+        <item name="vpiCirclePageIndicatorStyle">@style/CircleStyleIndicator</item>
+        <item name="android:listDivider">@color/black_31</item>
+        <!-- appdialog is being used for the Settings map assignment -->
+        <item name="android:dialogTheme">@style/AppDialogTheme</item>
+
+    </style>
+
+    <style name="Theme.Fresco2.Camera" parent="Base.Theme.Fresco2"/>
+
+    <style name="SpinnerStyle">
+        <item name="android:dropDownVerticalOffset">-56dp</item>
+    </style>
+
+    <style name="Theme.Fresco2.Translucent" parent="Base.Theme.Fresco2"/>
+
+    <style name="AppTheme.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="searchHintIcon">@null</item>
+    </style>
+
+    <style name="Theme.Fresco2.Gray" parent="Base.Theme.Fresco2">
+        <item name="colorPrimary">@color/fresco_cream</item>
+        <item name="colorPrimaryDark">@color/fresco_cream_dark</item>
+        <item name="colorAccent">@color/black_87</item>
+        <item name="titleTextColor">@color/black_87</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <!-- TODO: windowContentOverlay related to getting toolbar shadow to work on API < 21, remove these lines if another solution is found -->
+
+    <style name="Base.Theme.Fresco2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/layout_background</item>
+
+        <!-- need to also set View with this drawable set to it to get shadow to work pre Lollipop
+        will need an api check in MainActivity to turn off the view for API level 21 and greater -->
+        <!-- could be causing global design issues
+        <item name="android:foreground">?android:windowContentOverlay</item>
+        <item name="android:windowContentOverlay">@drawable/bottom_shadow</item>
+        -->
+
+        <item name="colorPrimary">@color/primary</item>
+        <!--   darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/accent</item>
+
+        <!-- navigation icon color this will set the horizontal lines in the edittext fields of login form and anywhere else
+        other areas of the app might also been adhering to this color value, there is also colorControlActivated, colorControlHighlighted, colorSwitchThumbNormal -->
+        <item name="colorControlNormal">@color/black_12</item>
+
+        <!-- circles for onboarding page indicator -->
+        <item name="vpiCirclePageIndicatorStyle">@style/CircleStyleIndicator</item>
+        <item name="android:listDivider">@color/black_31</item>
+        <!-- appdialog is being used for the Settings map assignment -->
+        <item name="android:dialogTheme">@style/AppDialogTheme</item>
+
+        <!--<item name="android:activatedBackgroundIndicator">@drawable/drawer_item</item>-->
+
+    </style>
+
+    <style name="FrescoDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/primary</item>
+        <item name="android:background">@color/fresco_white</item>
+    </style>
+
+    <style name="FrescoPermissionsDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/black_87</item>
+        <item name="android:textColorPrimary">@color/fresco_cream</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:fontFamily">@string/robotoRegular</item>
+        <item name="android:background">@color/fresco_white</item>
+    </style>
+
+    <style name="AppDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <!-- ToolBar -->
+    <style name="DarkToolbar" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="actionMenuTextColor">@color/black</item>
+    </style>
+
+    <style name="AuthFieldTitleText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+
+    <style name="AuthEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="AuthButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/fresco_blue</item>
+    </style>
+
+    <style name="ActionBarButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textColor">@color/fresco_white</item>
+    </style>
+
+    <style name="OnBoardingTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">@dimen/onboardTitleMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/onboardTitleMarginBottom</item>
+    </style>
+
+    <style name="OnBoardingText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black_54</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:maxWidth">400dp</item>
+    </style>
+
+    <style name="Theme.Fresco2.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="Theme.Fresco2.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="ToggleBlue">
+        <item name="colorControlActivated">@color/fresco_blue</item>
+        <item name="android:colorForeground">@color/fresco_blue</item>
+    </style>
+
+    <style name="ToggleTwitter">
+        <item name="colorControlActivated">@color/social_twitter</item>
+        <item name="android:colorForeground">@color/social_twitter</item>
+    </style>
+
+    <style name="ToggleFacebook">
+        <item name="colorControlActivated">@color/social_facebook</item>
+        <item name="android:colorForeground">@color/social_facebook</item>
+    </style>
+
+    <style name="ToggleGooglePlus">
+        <item name="colorControlActivated">@color/social_google</item>
+        <item name="android:colorForeground">@color/social_google</item>
+    </style>
+
+    <style name="SearchButton">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:src">@drawable/ic_search_white</item>
+    </style>
+
+    <style name="DialogButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="DialogButton.Positive">
+        <item name="android:textColor">@color/fresco_blue</item>
+    </style>
+
+    <style name="DialogButton.Negative">
+        <item name="android:textColor">@color/black_87</item>
+    </style>
+
+    <style name="HorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/black_12</item>
+    </style>
+
+    <style name="ReportCheckBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:drawablePadding">32dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black_87</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

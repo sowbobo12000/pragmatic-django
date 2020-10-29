@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.devbrackets.android:exomedia:3.1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/665f319d3eb823852ece11c1b3ec207c/exomedia-3.1.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/665f319d3eb823852ece11c1b3ec207c/exomedia-3.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/665f319d3eb823852ece11c1b3ec207c/exomedia-3.1.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/665f319d3eb823852ece11c1b3ec207c/exomedia-3.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.devbrackets.android/exomedia/3.1.0/f01c3518c0c1b7e8229c1659031400fa10a78772/exomedia-3.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.devbrackets.android/exomedia/3.1.0/a6d0cc2b692046483c60b920103a9bbcd4041219/exomedia-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

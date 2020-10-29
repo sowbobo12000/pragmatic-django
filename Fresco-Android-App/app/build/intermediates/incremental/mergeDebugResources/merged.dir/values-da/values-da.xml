@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="tw__time_hours">
+        <item quantity="one">1t</item>
+        <item quantity="other">%dt</item>
+    </plurals>
+    <plurals name="tw__time_mins">
+        <item quantity="one">1m</item>
+        <item quantity="other">%dm</item>
+    </plurals>
+    <plurals name="tw__time_secs">
+        <item quantity="one">1s</item>
+        <item quantity="other">%ds</item>
+    </plurals>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Naviger hjem"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Naviger op"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Flere muligheder"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Luk"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Se alle"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Vælg en app"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"FRA"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"TIL"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"slet"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Fn+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"mellemrum"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Søg…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Ryd forespørgslen"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Søgeforespørgsel"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Søg"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Indsend forespørgslen"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Talesøgning"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Del med"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Del med %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Skjul"</string>
+    <string name="acc_label_card_number">Kortnummer</string>
+    <string name="acc_label_card_number_node">%s, Kortnummer</string>
+    <string name="acc_label_cvc_node">%sCVC</string>
+    <string name="acc_label_expiry_date">Udløbsdato</string>
+    <string name="acc_label_expiry_date_node">%sUdløbsdato</string>
+    <string name="acc_label_zip">Postnummer</string>
+    <string name="acc_label_zip_short">Postnr.</string>
+    <string name="add_card">Tilføj et nyt hævekort eller kreditkort for at foretage køb i denne app.</string>
+    <string name="added">Tilføjet %s</string>
+    <string name="address_city_required">Indtast din by</string>
+    <string name="address_country_invalid">Dit land er ugyldigt</string>
+    <string name="address_county_required">Indtast dit county</string>
+    <string name="address_label_address">Adresse</string>
+    <string name="address_label_address_line1">Adresselinje 1</string>
+    <string name="address_label_address_line1_optional">Adresselinje 1 (valgfrit)</string>
+    <string name="address_label_address_line2">Adresselinje 2</string>
+    <string name="address_label_address_line2_optional">Adresselinje 2 (valgfrit)</string>
+    <string name="address_label_address_optional">Adresse (valgfrit) </string>
+    <string name="address_label_apt">Lejl. </string>
+    <string name="address_label_apt_optional">Lejl. (valgfrit)</string>
+    <string name="address_label_city">By</string>
+    <string name="address_label_city_optional">By (valgfrit)</string>
+    <string name="address_label_country">Land</string>
+    <string name="address_label_county">Amt</string>
+    <string name="address_label_county_optional">County (valgfrit)</string>
+    <string name="address_label_name">Navn</string>
+    <string name="address_label_name_optional">Navn (valgfrit)</string>
+    <string name="address_label_phone_number">Telefonnr.</string>
+    <string name="address_label_phone_number_optional">Telefonnr. (valgfrit)</string>
+    <string name="address_label_postal_code">Postnr.</string>
+    <string name="address_label_postal_code_optional">Postnr. (valgfrit)</string>
+    <string name="address_label_postcode">Postnr.</string>
+    <string name="address_label_postcode_optional">Postnr. (valgfrit)</string>
+    <string name="address_label_province">Provins</string>
+    <string name="address_label_province_optional">Provins (valgfrit)</string>
+    <string name="address_label_region_generic"> Stat/provins/region</string>
+    <string name="address_label_region_generic_optional">Stat/provins/region (valgfrit)</string>
+    <string name="address_label_state">Stat</string>
+    <string name="address_label_state_optional">Stat (valgfrit)</string>
+    <string name="address_label_zip_code">ZIP-kode</string>
+    <string name="address_label_zip_code_optional">ZIP-kode (valgfrit)</string>
+    <string name="address_label_zip_postal_code">ZIP-kode/Postnr.</string>
+    <string name="address_label_zip_postal_code_optional">ZIP-kode/Postnr. (valgfrit)</string>
+    <string name="address_name_required">Indtast dit navn</string>
+    <string name="address_phone_number_required">Indtast dit telefonnr.</string>
+    <string name="address_postal_code_invalid">Postnummeret er ugyldigt.</string>
+    <string name="address_postcode_invalid">Postnummeret er ugyldigt.</string>
+    <string name="address_province_required">Indtast din provins</string>
+    <string name="address_region_generic_required">Indtast din stat/provins/region</string>
+    <string name="address_required">Indtast din adresse</string>
+    <string name="address_shipping_address">Forsendelsesadresse</string>
+    <string name="address_state_required">Indtast din stat</string>
+    <string name="address_zip_invalid">ZIP-koden er ugyldig.</string>
+    <string name="address_zip_postal_invalid">ZIP-kode/Postnr. er ugyldigt</string>
+    <string name="articles_list_fragment_error_message">Kunne ikke hente artikler</string>
+    <string name="articles_list_fragment_no_articles_found">Der blev ikke fundet nogen artikler</string>
+    <string name="articles_search_results_list_fragment_contact_us">Kontakt os</string>
+    <string name="articles_search_results_list_fragment_error_message">Der er noget galt</string>
+    <string name="articles_search_results_list_fragment_no_articles_found">Der blev ikke fundet nogen resultater</string>
+    <string name="attachment_add_menu">Vedhæftede filer</string>
+    <string name="attachment_select_source_choose_existing">Vælg eksisterende</string>
+    <string name="attachment_select_source_new_photo">Tag et billede</string>
+    <string name="attachment_upload_error_cancel">Annuller</string>
+    <string name="attachment_upload_error_file_already_added">Fil er allerede tilføjet</string>
+    <string name="attachment_upload_error_file_not_found">Fil blev ikke fundet</string>
+    <string name="attachment_upload_error_file_too_big">Maks. størrelse på vedhæftet fil er %s</string>
+    <string name="attachment_upload_error_try_again">Prøv igen</string>
+    <string name="attachment_upload_error_upload_failed">Vefhæftet fil blev ikke uploadet</string>
+    <string name="becs_mandate_acceptance">
+    Ved at angive dine bankoplysninger og bekræfte denne betaling accepterer du denne
+    direkte debiteringsanmodning og debiteringsanmodningens serviceaftale og autoriserer 
+    Stripe Payments Australia Pty Ltd ACN 160 180 343 Direkte debiterings-bruger-ID 507156
+    (“Stripe”) til at debitere din konto via Bulk Electronic Clearing System (BECS) på 
+    vegne af %1$s (“forhandler”) for eventuelle beløb, der separat meddeles dig af
+    forhandleren. Du bekræfter, at du enten er en kontoindehaver eller en
+    autoriseret underskriver på den konto, der er anført ovenfor.
+    </string>
+    <string name="becs_widget_account_number">Kontonummer</string>
+    <string name="becs_widget_account_number_required">Dit kontonummer er påkrævet.</string>
+    <string name="becs_widget_bsb">BSB</string>
+    <string name="becs_widget_bsb_incomplete">Det indtastede BSB-nummer er ufuldstændigt.</string>
+    <string name="becs_widget_bsb_invalid">Det indtastede BSB-nummer er ugyldigt.</string>
+    <string name="becs_widget_email">E-mailadresse.</string>
+    <string name="becs_widget_email_required">Din e-mail er påkrævet.</string>
+    <string name="becs_widget_name">Navn</string>
+    <string name="becs_widget_name_required">Dit navn er påkrævet.</string>
+    <string name="categories_list_fragment_error_message">Kunne ikke hente kategorier</string>
+    <string name="categories_list_fragment_no_categories_found">Der blev ikke fundet nogen kategorier</string>
+    <string name="close">Luk</string>
+    <string name="com_facebook_device_auth_instructions">Gå til &lt;b>facebook.com/device&lt;/b> på din smartphone eller computer, og indtast denne kode:</string>
+    <string name="com_facebook_image_download_unknown_error">Der opstod en uventet fejl under download af et billede.</string>
+    <string name="com_facebook_internet_permission_error_message">WebView-login kræver tilladelse til INTERNET</string>
+    <string name="com_facebook_internet_permission_error_title">Fejl i forbindelse med AndroidManifest</string>
+    <string name="com_facebook_like_button_liked">Synes godt om</string>
+    <string name="com_facebook_like_button_not_liked">Synes godt om</string>
+    <string name="com_facebook_loading">Indlæser …</string>
+    <string name="com_facebook_loginview_cancel_action">Annuller</string>
+    <string name="com_facebook_loginview_log_in_button">Log på</string>
+    <string name="com_facebook_loginview_log_in_button_long">Log på med Facebook</string>
+    <string name="com_facebook_loginview_log_out_action">Log af</string>
+    <string name="com_facebook_loginview_log_out_button">Log af</string>
+    <string name="com_facebook_loginview_logged_in_as">Logget på som: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Logget på med Facebook</string>
+    <string name="com_facebook_send_button_text">Send</string>
+    <string name="com_facebook_share_button_text">Del</string>
+    <string name="com_facebook_tooltip_default">Nyhed! Du har styringen – vælg de oplysninger, som du vil dele med apps.</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Aktivér"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Du skal aktivere Google Play-tjenester, for at <ns1:g id="APP_NAME">%1$s</ns1:g> kan fungere."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Aktivér Google Play-tjenester"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Installer"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"Du skal installere Google Play-tjenester, før <ns1:g id="APP_NAME">%1$s</ns1:g> kan køre på din enhed."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Hent Google Play-tjenester"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Google Play-tjenesters tilgængelighed"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Fejl i Google Play-tjenester"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> har problemer med Google Play-tjenester. Prøv igen."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> fungerer ikke uden Google Play-tjenester, som ikke understøttes på din enhed."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Opdater"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan ikke køre, medmindre du opdaterer Google Play-tjenester."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Opdater Google Play-tjenester"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> kan ikke køre uden Google Play-tjenester, som i øjeblikket opdateres."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Du skal bruge en ny version af Google Play-tjenester. Opdateringen gennemføres automatisk om et øjeblik."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Åbn på telefonen"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Log ind"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Log ind med Google"</string>
+    <string name="contact_fragment_description_hint">Beskrivelse</string>
+    <string name="contact_fragment_email_hint">E-mail</string>
+    <string name="contact_fragment_email_validation_error">Forkert e-mailadresse</string>
+    <string name="contact_fragment_request_subject">App-ticket</string>
+    <string name="contact_fragment_send_button_label">Send</string>
+    <string name="contact_fragment_title">Kontakt os</string>
+    <string name="delete_payment_method">Slet betalingsmetode?</string>
+    <string name="delete_payment_method_prompt_title">Slet betalingsmetode?</string>
+    <string name="expiry_date_hint">MM/ÅÅ</string>
+    <string name="expiry_label_short">Udløbsdato</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Diverse"</string>
+    <string name="fpx_bank_offline">%s -Offline</string>
+    <string name="google_pay">Google Pay</string>
+    <string name="help_search_no_results_label">Ingen resultater for</string>
+    <string name="help_see_all_articles_label">Se alle artikler</string>
+    <string name="help_see_all_n_articles_label">Se alle %d artikler</string>
+    <string name="invalid_card_number">Nummeret på dit kort er ugyldigt.</string>
+    <string name="invalid_cvc">Dit korts sikkerhedskode er ugyldig.</string>
+    <string name="invalid_expiry_month">Kortets udløbsmåned er ugyldig.</string>
+    <string name="invalid_expiry_year">Dit korts udløbsår er ugyldigt.</string>
+    <string name="invalid_shipping_information">Ugyldig forsendelsesadresse</string>
+    <string name="invalid_zip">Postnummeret er ufuldstændigt.</string>
+    <string name="messenger_send_button_text">Send</string>
+    <string name="network_activity_no_connectivity">Ingen forbindelse</string>
+    <string name="no_payment_methods">Ingen betalingsmetoder.</string>
+    <string name="payment_method_add_new_card">Tilføj nyt kort...</string>
+    <string name="payment_method_add_new_fpx">Vælg bankkonto (FPX)...</string>
+    <string name="price_free">Gratis</string>
+    <string name="rate_my_app_dialog_dismiss_action_label">Spørg mig ikke igen</string>
+    <string name="rate_my_app_dialog_feedback_description_label">Vi vil gerne gøre det bedre. Fortæl os om evt. problemer, du måtte have.</string>
+    <string name="rate_my_app_dialog_feedback_device_api_version">OS API: %1$d</string>
+    <string name="rate_my_app_dialog_feedback_device_memory">Hukommelse: %1$s MB/%2$s MB</string>
+    <string name="rate_my_app_dialog_feedback_device_model">Model: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_device_name">Enhed: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_device_os_version">OS-version: %1$s</string>
+    <string name="rate_my_app_dialog_feedback_request_subject">App-feedback</string>
+    <string name="rate_my_app_dialog_feedback_send_error_no_connectivity_toast">Ingen forbindelse</string>
+    <string name="rate_my_app_dialog_feedback_send_error_toast">Der opstod en fejl, prøv igen</string>
+    <string name="rate_my_app_dialog_feedback_send_success_toast">Tak fordi at du kontaktede os</string>
+    <string name="rate_my_app_dialog_feedback_title_label">Vi beklager</string>
+    <string name="rate_my_app_dialog_negative_action_label">Nej, jeg sender feedback</string>
+    <string name="rate_my_app_dialog_positive_action_label">Ja, vurder vores app</string>
+    <string name="rate_my_app_dialog_title_label">Er du tilfreds med vores app?</string>
+    <string name="rate_my_app_dialogue_feedback_cancel_button_label">Annuller</string>
+    <string name="rate_my_app_dialogue_feedback_issue_hint">Beskriv dit problem</string>
+    <string name="rate_my_app_dialogue_feedback_send_button_label">Send feedback</string>
+    <string name="removed">Fjernet %s</string>
+    <string name="request_list_activity_title">Mine tickets</string>
+    <string name="request_list_fragment_error_message">Kunne ikke hente tickets</string>
+    <string name="request_list_fragment_no_requests">Ingen tickets er åbne i øjeblikket</string>
+    <string name="request_view_comment_entry_hint">Kommentar</string>
+    <string name="retry_view_button_label">Prøv igen</string>
+    <string name="row_request_unread_indicator_alt">Ikon tilkendegiver, at der er ulæste kommentarer</string>
+    <string msgid="146198913615257606" name="search_menu_title">"Søg"</string>
+    <string name="sections_list_fragment_error_message">Kunne ikke hente sektioner</string>
+    <string name="sections_list_fragment_no_sections_found">Der blev ikke fundet nogen sektioner</string>
+    <string name="secure_checkout">Sikker Checkout</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stripe_3ds2_brand_amex">American Express</string>
+    <string name="stripe_3ds2_brand_discover">Oplev</string>
+    <string name="stripe_3ds2_brand_mastercard">Mastercard</string>
+    <string name="stripe_3ds2_brand_visa">Visa</string>
+    <string name="stripe_3ds2_bzv_issuer_image_description">Billede af udsteder</string>
+    <string name="stripe_3ds2_bzv_payment_system_image_description">Billede af betalingssystem</string>
+    <string name="stripe_3ds2_czv_whitelist_no_label">Nej</string>
+    <string name="stripe_3ds2_czv_whitelist_yes_label">Ja</string>
+    <string name="stripe_3ds2_hzv_cancel_label">Annullér</string>
+    <string name="stripe_3ds2_hzv_header_label">Sikker Checkout</string>
+    <string name="stripe_3ds2_processing">Behandler\u2026</string>
+    <string name="support_activity_title">Support</string>
+    <string name="support_activity_unable_to_contact_support">Kan ikke etablere forbindelse</string>
+    <string name="support_contact_menu">Kontakt</string>
+    <string name="support_conversations_menu">Samtaler</string>
+    <string name="support_list_search_hint">Hvad kan vi hjælpe med?</string>
+    <string name="title_add_a_card">Tilføj et kort</string>
+    <string name="title_add_an_address">Tilføj en adresse</string>
+    <string name="title_bank_account">Bankkonto</string>
+    <string name="title_payment_method">Betalingsmetode</string>
+    <string name="title_select_shipping_method">Vælg forsendelsesmetode</string>
+    <string name="tw__allow_btn_txt">Tillad</string>
+    <string name="tw__composer_hint">Hvad sker der?</string>
+    <string name="tw__cta_text">Åbn i Vine</string>
+    <string name="tw__install">Installer</string>
+    <string name="tw__like_tweet">Like Tweet</string>
+    <string name="tw__liked_tweet">Fjern like</string>
+    <string name="tw__loading_tweet">Indlæser tweet</string>
+    <string name="tw__login_btn_txt">Log ind med Twitter</string>
+    <string name="tw__max_tweet_chars">140</string>
+    <string name="tw__not_now_btn_txt">Ikke nu</string>
+    <string name="tw__pause">pause</string>
+    <string name="tw__play">afspil</string>
+    <string name="tw__post_tweet">Tweet</string>
+    <string name="tw__relative_date_format_long">d/M/y</string>
+    <string name="tw__relative_date_format_short">d. MMM</string>
+    <string name="tw__replay">afspil igen</string>
+    <string name="tw__retweeted_by_format">Retweetet af %1$s</string>
+    <string name="tw__share_content_format">Tjek \@%1$s\s tweet: https://twitter.com/%1$s/status/%2$s</string>
+    <string name="tw__share_email_desc">Tillad, at %1$s får adgang til den e-mail-adresse, der er knyttet til din Twitter-konto \@%2$s, så %1$s kan bruge den i overensstemmelse med privatlivspolitikken. %1$s kan f.eks. sende opdateringer og andre oplysninger til adressen.</string>
+    <string name="tw__share_email_title">Del din e-mailadresse</string>
+    <string name="tw__share_subject_format">Tweet fra %1$s (\@%2$s)</string>
+    <string name="tw__share_tweet">Del tweet</string>
+    <string name="tw__tweet_content_description">%1$s. %2$s. %3$s.</string>
+    <string name="tw__tweet_media">Tweet-medie</string>
+    <string name="view_article_attachments_error">Kunne ikke hente vedhæftede filer</string>
+    <string name="view_article_seperator">\u2022</string>
+    <string name="view_request_agent_avatar_imageview_alt">Agents avatar</string>
+    <string name="view_request_load_comments_error">Kunne ikke indlæse kommentarer</string>
+    <string name="view_request_send_comment_error">Kunne ikke sende kommentar</string>
+</resources>

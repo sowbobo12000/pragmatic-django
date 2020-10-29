@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.segment.analytics.android.integrations:adjust:0.3.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1706cca1ba73c5854fcb4ed06ed0f002/adjust-0.3.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1706cca1ba73c5854fcb4ed06ed0f002/adjust-0.3.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1706cca1ba73c5854fcb4ed06ed0f002/adjust-0.3.4/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.segment.analytics.android.integrations/adjust/0.3.4/668e2b2f254c8f0c1e59c89465d9c7cbe0f6654d/adjust-0.3.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.segment.analytics.android.integrations/adjust/0.3.4/fe64cf24d1628f3d8a94de9aeca6a1e06d50cf1/adjust-0.3.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

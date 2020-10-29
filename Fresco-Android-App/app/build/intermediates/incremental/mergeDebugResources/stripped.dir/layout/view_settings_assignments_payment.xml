@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                       
+                                                   
+
+    
+
+                                          
+
+                 
+                                   
+                                                                               
+
+                 
+                                      
+                                                                                  
+           
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fresco_white"
+        android:elevation="@dimen/settings_screen_card_elevation"
+        android:orientation="vertical"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp" android:tag="layout/view_settings_assignments_payment_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:gravity="center_vertical"
+            android:text="@string/assignment_payments"
+            android:textColor="@color/fresco_blue"
+            android:textSize="@dimen/settings_screen_section_title_txt_sz"
+            android:tag="binding_1"                 />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_sms_failed"
+                android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+                android:drawableStart="@drawable/ic_sms_failed"
+                android:gravity="center_vertical"
+                android:text="@string/assignments_notifications"
+                android:textColor="@color/black_87"
+                android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                android:tag="binding_2"                  />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/promotion_switch_compat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:tag="binding_3"                                                 
+                                                                                  
+                app:theme="@style/ToggleBlue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:orientation="horizontal"
+            android:tag="binding_4"                                          >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="binding_5"                                                                                                                     
+                android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+                                                                                                                                                             
+                android:gravity="center_vertical"
+                android:text="@string/notification_radius"
+                                                                                                                              
+                android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                                                         
+                tools:drawableLeft="@drawable/map_marker_radius"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:tag="binding_6"                                     
+                                                                                                                              
+                android:textSize="12sp"
+                                                         />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/credit_card"
+                android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+                android:drawableStart="@drawable/credit_card"
+                android:gravity="center_vertical"
+                android:text="@string/payment_method"
+                android:textColor="@color/black_87"
+                android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                android:tag="binding_7"                  />
+
+            <Button
+                android:layout_width="64dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_background_blue"
+                android:text="@string/new_text"
+                android:textColor="@color/fresco_white"
+                android:tag="binding_8"             
+                                                                   />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:tag="binding_9"                    
+            tools:layout_height="180dp">
+        </ListView>
+
+        <!--TAX INFO-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/settings_screen_item_height"
+            android:orientation="horizontal"
+            android:tag="binding_10"                                                             >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tag="binding_11"                                   
+                android:drawableLeft="@drawable/account_card_details"
+                android:drawablePadding="@dimen/settings_screen_section_lbl_padding"
+                android:drawableStart="@drawable/account_card_details"
+                android:gravity="center_vertical"
+                android:text="@string/id_info"
+                                                                                                              
+                android:textSize="@dimen/settings_screen_section_lbl_txt_sz"
+                                                         
+                                                                         />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:tag="binding_12"                
+                                                                                                                 
+                android:textSize="12sp"
+                                                         
+                tools:text="Due By Oct 23"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+         

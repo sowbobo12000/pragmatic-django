@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                           
+                                                       
+
+    
+
+                                          
+
+                 
+                        
+                                                                                                         
+           
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:tag="layout/view_gallery_status_details_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/submitted_image_view"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:tag="binding_1"             
+                    tools:src="@drawable/ic_checkbox_marked_circle_outline_green"/>
+
+                <View
+                    android:id="@+id/bridge_submitted_verified_view"
+                    android:layout_width="2dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/submitted_image_view"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:tag="binding_2"                             
+                    tools:background="@color/fresco_green"/>
+
+                <ImageView
+                    android:id="@+id/verified_image_view"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/bridge_submitted_verified_view"
+                    android:tag="binding_3"              
+                    tools:src="@drawable/ic_checkbox_marked_circle_outline_green"/>
+
+                <View
+                    android:id="@+id/bridge_verified_cash_view"
+                    android:layout_width="2dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/verified_image_view"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:tag="binding_4"                             
+                                                                                                        
+                    tools:background="@color/fresco_green"/>
+
+                <ImageView
+                    android:id="@+id/cash_image_view"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/bridge_verified_cash_view"
+                    android:tag="binding_5"             
+                                                                                                  
+                    tools:src="@drawable/ic_cash_usd_green"/>
+
+                <TextView
+                    android:id="@+id/submitted_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_toEndOf="@+id/submitted_image_view"
+                    android:layout_toRightOf="@+id/submitted_image_view"
+                    android:text="@string/submitted"
+                    android:textColor="@color/black_87"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/submitted_text_view"
+                    android:layout_alignStart="@+id/submitted_text_view"
+                    android:layout_alignTop="@+id/verified_image_view"
+                    android:tag="binding_6"                
+                    android:textColor="@color/black_87"
+                    android:textSize="16sp"
+                                                                                                               
+                    tools:text="@string/verified"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/submitted_text_view"
+                    android:layout_alignStart="@+id/submitted_text_view"
+                    android:layout_below="@+id/verified_image_view"
+                    android:tag="binding_7"                  
+                    android:textColor="@color/black_54"
+                    android:textSize="14sp"
+                    tools:text="@string/verified_message"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/submitted_text_view"
+                    android:layout_alignStart="@+id/submitted_text_view"
+                    android:layout_alignTop="@+id/cash_image_view"
+                    android:tag="binding_8"               
+                    android:textColor="@color/black_87"
+                    android:textSize="16sp"
+                                                                                                   
+                                                                                                              
+                    tools:text="@string/sold"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/sold_content_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/submitted_text_view"
+                    android:layout_alignStart="@+id/submitted_text_view"
+                    android:layout_below="@+id/cash_image_view"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="10dp"
+                    android:tag="binding_9"         />
+
+                <ImageView
+                    android:id="@+id/delete_image_view"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/sold_content_recycler_view"
+                    android:tag="binding_10"                                                
+                    tools:src="@drawable/ic_close_circle_outline_red"/>
+
+                <View
+                    android:id="@+id/bridge_cash_deleted_view"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/delete_image_view"
+                    android:layout_below="@+id/cash_image_view"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:tag="binding_11"                            
+                                                                                                        
+                    tools:background="@color/fresco_red"/>
+
+                <TextView
+                    android:id="@+id/deleted_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/submitted_text_view"
+                    android:layout_alignStart="@+id/submitted_text_view"
+                    android:layout_alignTop="@+id/delete_image_view"
+                    android:tag="binding_12"               
+                    android:textColor="@color/black_87"
+                    android:textSize="16sp"
+                                                                                                    
+                    tools:text="@string/deleted"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/submitted_text_view"
+                    android:layout_alignStart="@+id/submitted_text_view"
+                    android:layout_below="@+id/deleted_text_view"
+                    android:tag="binding_13"                 
+                    android:textColor="@color/black_54"
+                    android:textSize="14sp"
+                                                                                                      
+                    tools:text="@string/deleted_message"/>
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_footer_height"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/settings_dialog_footer_padding_top_bottom"
+            android:paddingTop="@dimen/settings_dialog_footer_padding_top_bottom">
+
+            <Button
+                style="@style/DialogButton.Negative"
+                android:text="@string/get_help"
+                android:tag="binding_14"            
+                android:textSize="14sp"
+                                              
+                tools:background="@color/fresco_red"/>
+
+            <Button
+                style="@style/DialogButton.Positive"
+                android:text="@string/close"
+                android:tag="binding_15"            
+                                            
+                android:textSize="14sp"
+                tools:background="@color/fresco_green"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+         

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.framework.mvvm.viewmodels.StorySearchViewModel"/>
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?android:selectableItemBackground"
+        android:visibility="@{model == null ? View.GONE : View.VISIBLE}"
+        app:onClick="@{model.goToStory}">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/story_image_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/black_26_background"
+            app:avatar="@{model.getImageUrl}"
+            app:failureImage="@drawable/ic_newspaper_default"
+            fresco:placeholderImage="@drawable/ic_newspaper_default"
+            fresco:roundAsCircle="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toEndOf="@+id/story_image_view"
+            android:layout_toRightOf="@+id/story_image_view"
+            android:text="@{model.getTitle}"
+            android:textColor="@color/black_87"
+            android:textSize="16sp"
+            app:customFont="@{@string/robotoRegular}"
+            tools:text="Title"/>
+
+    </RelativeLayout>
+
+</layout>

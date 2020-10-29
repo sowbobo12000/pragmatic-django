@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="unreadNotifications"
+            type="int"/>
+
+        <variable
+            name="avatarUrl"
+            type="String"/>
+
+        <variable
+            name="isLoggedIn"
+            type="boolean"/>
+
+        <variable
+            name="onClick"
+            type="rx.functions.Action1"/>
+    </data>
+
+    <FrameLayout
+        android:id="@+id/avatar_notification_layout"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="@{isLoggedIn ? View.VISIBLE : View.GONE}"
+        app:onClick="@{onClick}">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/profile_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:visibility="@{unreadNotifications > 0 ? View.GONE : View.VISIBLE}"
+            app:avatar="@{avatarUrl}"
+            fresco:failureImage="@drawable/account_white"
+            fresco:placeholderImage="@drawable/account_white"
+            fresco:roundAsCircle="true"/>
+
+        <ImageView
+            android:id="@+id/notifications_background_layout"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/white_circle"
+            android:visibility="@{unreadNotifications > 0 ? View.VISIBLE : View.GONE}"/>
+
+        <TextView
+            android:id="@+id/notifications_count_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{String.valueOf(unreadNotifications)}"
+            android:textColor="@color/fresco_blue"
+            android:visibility="@{unreadNotifications > 0 ? View.VISIBLE : View.GONE}"
+            app:customFont="@{@string/notaBold}"
+            tools:text="1"/>
+
+    </FrameLayout>
+</layout>

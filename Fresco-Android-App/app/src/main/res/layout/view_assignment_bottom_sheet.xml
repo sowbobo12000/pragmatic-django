@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.assignments.AssignmentMapViewModel"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/assignment_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="300dp"
+        app:bind="@{model.assignmentBottomSheet}"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        tools:background="@color/fresco_red">
+
+        <!--This is here to make sure the bottom drawer doesn't overlap with the appbar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:clickable="false"
+            tools:ignore="UselessLeaf"/>
+
+        <TextView
+            android:id="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/assignment_shadow"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:minHeight="50dp"
+            android:paddingBottom="16dp"
+            android:paddingEnd="64dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="64dp"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:shadowColor="@color/black_54"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="@{model.assignmentTitle}"
+            android:textColor="@color/fresco_white"
+            android:textSize="24sp"
+            app:customFont="@{@string/notaBold}"
+            tools:text="Assignment Title"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/assignment_drawer_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fresco_cream"
+                android:orientation="vertical"
+                android:paddingBottom="72dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:visibility="@{model.outlet1Avatar == null || model.outlet1Avatar.empty ? View.GONE : View.VISIBLE}"
+                        app:avatar="@{model.outlet1Avatar}"
+                        fresco:roundAsCircle="true"
+                        tools:background="@color/fresco_blue"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:visibility="@{model.outlet2Avatar == null || model.outlet2Avatar.empty ? View.GONE : View.VISIBLE}"
+                        app:avatar="@{model.outlet2Avatar}"
+                        fresco:roundAsCircle="true"
+                        tools:background="@color/fresco_orange"/>
+
+                    <com.facebook.drawee.view.SimpleDraweeView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:visibility="@{model.outlet3Avatar == null || model.outlet3Avatar.empty ? View.GONE : View.VISIBLE}"
+                        app:avatar="@{model.outlet3Avatar}"
+                        fresco:roundAsCircle="true"
+                        tools:background="@color/fresco_green"/>
+
+                    <TextView
+                        android:id="@+id/outlet_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="18dp"
+                        android:text="@{model.outletName}"
+                        android:textColor="@color/black_87"
+                        android:textSize="16sp"
+                        app:customFont="@{@string/notaBold}"
+                        tools:text="Outlet Name"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/assignment_caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:lineSpacingExtra="10sp"
+                    android:text="@{model.caption}"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp"
+                    tools:text="Assignment Caption"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_clock_gray"
+                    android:drawablePadding="32dp"
+                    android:drawableStart="@drawable/ic_clock_gray"
+                    android:gravity="center"
+                    android:text="@{model.expirationString}"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp"
+                    tools:text="Expiration Time"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginStart="16dp"
+                    android:gravity="center"
+                    android:text="@{model.approvedTime}"
+                    android:textColor="@color/black_54"
+                    android:textSize="12sp"
+                    tools:text="Posted at"/>
+
+                <TextView
+                    android:id="@+id/distance_away"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_map_gray"
+                    android:drawablePadding="32dp"
+                    android:drawableStart="@drawable/ic_map_gray"
+                    android:gravity="center"
+                    android:text="@{model.distanceString}"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp"
+                    android:visibility="@{model.haveUserLocation ? View.VISIBLE : View.GONE}"
+                    tools:text="Distance Away"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableLeft="@drawable/ic_alert"
+                    android:drawablePadding="32dp"
+                    android:drawableStart="@drawable/ic_alert"
+                    android:gravity="center"
+                    android:text="@string/assignments_warning"
+                    android:textColor="@color/black_87"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

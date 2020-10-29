@@ -1,0 +1,69 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+    <group
+        android:id="@+id/top_menu"
+        android:checkableBehavior="single">
+
+        <!-- need to add functionality for logged in user where string will change from Highlights to Home, a user who is not logged in will see Highlights -->
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_app_home_20dp"
+            android:title="@string/highlights"
+            app:actionLayout="@layout/view_drawer_new_highlights"
+            app:showAsAction="always"/>
+
+        <item
+            android:id="@+id/stories"
+            android:icon="@drawable/ic_stories_20dp"
+            android:title="@string/stories"/>
+
+        <!-- only logged in users should see assignments, need to add login functionality -->
+        <item
+            android:id="@+id/assignments"
+            android:icon="@drawable/ic_assignments_20dp"
+            android:title="@string/assignments"/>
+
+    </group>
+
+    <!-- NOTE horizontal line is being put in automatically due to group tag stacking
+    see styles file and listDivider attribute that set the horiz rule color -->
+    <group
+        android:id="@+id/bottom_menu"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings"/>
+
+        <item
+            android:id="@+id/dev_options"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/dev_options"/>
+
+        <!--
+        <item
+            android:id="@+id/support"
+            android:icon="@drawable/ic_help"
+            android:title="@string/help_and_feedback" />
+            -->
+
+        <!-- testing restart activity for when lat/lon does not sync or when other primary init functionality fails -->
+        <item
+            android:id="@+id/restart_activity"
+            android:icon="@drawable/ic_undo_24dp"
+            android:title="@string/restart_activity"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/reset"
+            android:icon="@drawable/ic_undo_24dp"
+            android:title="@string/reset_onboarding"
+            android:visible="false"/>
+    </group>
+
+</menu>

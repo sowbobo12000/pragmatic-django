@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="model"
+            type="com.fresconews.fresco.v2.search.SearchUsersViewModel"/>
+
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/search_user_card_full"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="@{model.totalUserCount > 0 ? View.VISIBLE : View.GONE}"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/users"
+                android:textColor="@color/fresco_blue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:customFont="@{@string/robotoMedium}"/>
+
+            <include
+                layout="@layout/item_user"
+                app:model="@{model.user1SearchViewModel}"/>
+
+            <include
+                layout="@layout/item_user"
+                app:model="@{model.user2SearchViewModel}"/>
+
+            <include
+                layout="@layout/item_user"
+                app:model="@{model.user3SearchViewModel}"/>
+
+            <Button
+                android:id="@+id/search_see_all_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@{model.seeUsersButtonText}"
+                android:textColor="@color/fresco_blue"
+                android:textStyle="bold"
+                android:visibility="@{model.totalUserCount > 3 ? View.VISIBLE : View.GONE}"
+                app:customFont="@{@string/notaBold}"
+                app:onClick="@{model.seeAllUsers}"
+                tools:text="See All"
+                tools:visibility="visible"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</layout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                       
+                                                   
+
+    
+
+                 
+                        
+                                                                        
+           
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="layout/activity_settings_0"       xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:context=".v2.settings.SettingsActivity">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Theme.Fresco2.AppBarOverlay">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    android:tag="binding_1"              
+                                                                  
+                    app:popupTheme="@style/Theme.Fresco2.PopupOverlay"
+                                              />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/settings_screen_margin_top"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:tag="binding_2">
+
+                    <include
+                        layout="@layout/view_settings_me"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                                                                >
+                    </include>
+
+                    <include
+                        layout="@layout/view_settings_assignments_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/settings_screen_margin_top"
+                                                                                      
+                                                                                >
+                    </include>
+
+                    <include
+                        layout="@layout/view_settings_social"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/settings_screen_margin_top"
+                                                                    >
+                    </include>
+
+                    <include
+                        layout="@layout/view_settings_misc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/settings_screen_margin_top"
+                        android:layout_marginTop="@dimen/settings_screen_margin_top"
+                                                                  >
+                    </include>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <android.support.design.widget.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:tag="binding_3"           
+            app:itemBackground="@color/transparent"
+            app:menu="@menu/drawer"
+                                                              />
+    </android.support.v4.widget.DrawerLayout>
+
+         
